@@ -4,7 +4,8 @@ This repository holds relevant pharmacogenomic annotations from external sources
 other than CPIC to be accessed the PharMe's Annotation Interface (Anni).
 
 Anni reads each of the files in [`annotations/`](./annotations/) and adds their
-contents to its database when its initialization endpoint is triggered.
+contents to its database when its initialization endpoint is triggered. The file
+name (with `.json` omitted) will be displayed as the source in Anni and the App.
 
 ## Data format
 
