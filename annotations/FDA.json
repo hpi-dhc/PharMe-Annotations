@@ -1,0 +1,21 @@
+[
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:20352",
+        "drug": {
+            "name": "carvedilol"
+        },
+        "lookupkey": {
+            "CYP2D6": "0.0"
+        },
+        "guideline": {
+            "name": "Pharmacogenetic associations table",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations"
+        },
+        "implications": {
+            "CYP2D6": "Results in higher systemic concentrations and higher adverse reaction risk (dizziness)."
+        },
+        "drugrecommendation": "Not given by FDA"
+    }
+]
