@@ -23,7 +23,7 @@ abiding by the following structure.
     "lookupkey": {
         [gene: String]: String
     },
-    "phenotype": {
+    "phenotypes": {
         [gene: String]: String
     },
     "guideline": {
