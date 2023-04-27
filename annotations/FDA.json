@@ -9,6 +9,9 @@
         "lookupkey": {
             "CYP2D6": "0.0"
         },
+        "phenotypes": {
+            "CYP2D6": "Poor metabolizer"
+        },
         "guideline": {
             "name": "Pharmacogenetic associations table",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations"
