@@ -23,6 +23,9 @@ abiding by the following structure.
     "lookupkey": {
         [gene: String]: String
     },
+    "phenotype": {
+        [gene: String]: String
+    },
     "guideline": {
         "name": String,
         "url": String
@@ -38,7 +41,7 @@ abiding by the following structure.
 A large example of such a list can be found by using CPIC's API as follows.
 
 ```plain
-https://api.cpicpgx.org/v1/recommendation?select=id,drugid,version,drug(name),lookupkey,guideline(name,url),implications,drugrecommendation,comments
+https://api.cpicpgx.org/v1/recommendation?select=id,drugid,version,drug(name),lookupkey,phenotypes,guideline(name,url),implications,drugrecommendation,comments
 ```
 
 ## Phenotype identification
@@ -46,6 +49,8 @@ https://api.cpicpgx.org/v1/recommendation?select=id,drugid,version,drug(name),lo
 Note that these annotations use a CPIC `lookupkey` for phenotype identification
 and that the same phenotype may be a result of multiple `lookupkey`s. In these
 cases, the given entry should be duplicated for all matching `lookupkey`s.
+
+In the annotation interface, 
 
 To check which `lookupkey`s map to a given phenotype, use the following API
 endpoint of CPIC
