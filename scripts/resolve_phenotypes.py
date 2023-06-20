@@ -7,8 +7,9 @@ import json
 import os
 import requests
 
-UNRESOLVED_DIR = 'unresolved-annotations'
-RESOLVED_DIR = 'annotations'
+from constants import UNRESOLVED_DIR, RESOLVED_DIR
+
+
 DIPLOTYPE_ENDPOINT = 'https://api.cpicpgx.org/v1/diplotype'
 
 for fileName in os.listdir(UNRESOLVED_DIR):

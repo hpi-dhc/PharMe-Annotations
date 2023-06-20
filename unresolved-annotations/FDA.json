@@ -2,20 +2,989 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:20352",
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "abrocitinib"
+        },
+        "phenotypes": {
+            "CYP2C19": "poor metabolizers"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2C19": "Results in higher systemic concentrations and may result in higher adverse reaction risk. Dosage adjustment is recommended. Refer to FDA labeling for specific dosing recommendations."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "amifampridine "
+        },
+        "phenotypes": {
+            "NAT2": "poor metabolizers"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "NAT2": "Results in higher systemic concentrations and higher adverse reaction risk. Use lowest recommended starting dosage and monitor for adverse reactions. Refer to FDA labeling for specific dosing recommendations."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "amifampridine phosphate"
+        },
+        "phenotypes": {
+            "NAT2": "poor metabolizers"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "NAT2": "Results in higher systemic concentrations. Use lowest recommended starting dosage (15 mg/day) and monitor for adverse reactions."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "amphetamine"
+        },
+        "phenotypes": {
+            "CYP2D6": "poor metabolizers"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2D6": "May affect systemic concentrations and adverse reaction risk. Consider lower starting dosage or use alternative agent."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "aripiprazole"
+        },
+        "phenotypes": {
+            "CYP2D6": "poor metabolizers"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2D6": "Results in higher systemic concentrations and higher adverse reaction risk. Dosage adjustment is recommended. Refer to FDA labeling for specific dosing recommendations."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "aripiprazole lauroxil "
+        },
+        "phenotypes": {
+            "CYP2D6": "poor metabolizers"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2D6": "Results in higher systemic concentrations. Dosage adjustment is recommended. Refer to FDA labeling for specific dosing recommendations."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "belinostat"
+        },
+        "phenotypes": {
+            "UGT1A1": "*28/*28 (poor metabolizers)"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "UGT1A1": "May result in higher systemic concentrations and higher adverse reaction risk. Reduce starting dose to 750 mg/m2 in poor metabolizers."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "belzutifan"
+        },
+        "phenotypes": {
+            "CYP2C19 and/or UGT2B17": "poor metabolizers"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2C19 and/or UGT2B17": "Results in higher systemic concentrations and may result in higher adverse reaction risk (anemia, hypoxia). Monitor patients who are poor metabolizers for both genes for adverse reactions."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "brexpiprazole "
+        },
+        "phenotypes": {
+            "CYP2D6": "poor metabolizers"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2D6": "Results in higher systemic concentrations. Dosage adjustment is recommended. Refer to FDA labeling for specific dosing recommendations."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "brivaracetam"
+        },
+        "phenotypes": {
+            "CYP2C19": "intermediate or poor metabolizers"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2C19": "Results in higher systemic concentrations and higher adverse reaction risk. Consider dosage reductions in poor metabolizers."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "clobazam"
+        },
+        "phenotypes": {
+            "CYP2C19": "intermediate or poor metabolizers"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2C19": "Results in higher systemic active metabolite concentrations. Poor metabolism results in higher adverse reaction risk. Dosage adjustment is recommended. Refer to FDA labeling for specific dosing recommendations."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "clozapine"
+        },
+        "phenotypes": {
+            "CYP2D6": "poor metabolizers"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2D6": "Results in higher systemic concentrations. Dosage reductions may be necessary."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "deutetrabenazine"
+        },
+        "phenotypes": {
+            "CYP2D6": "poor metabolizers"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2D6": "Results in higher systemic concentrations and adverse reaction risk (QT prolongation). The maximum recommended dosage should not exceed 36 mg (maximum single dose of 18 mg)."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "dronabinol"
+        },
+        "phenotypes": {
+            "CYP2C9": "intermediate or poor metabolizers"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2C9": "May result in higher systemic concentrations and higher adverse reaction risk. Monitor for adverse reactions."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "eliglustat"
+        },
+        "phenotypes": {
+            "CYP2D6": "ultrarapid, normal, intermediate, or poor metabolizers"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2D6": "Alters systemic concentrations, effectiveness, and adverse reaction risk (QT prolongation). Indicated for normal, intermediate, and poor metabolizer patients. Ultrarapid metabolizers may not achieve adequate concentrations to achieve a therapeutic effect. The recommended dosages are based on CYP2D6 metabolizer status. Coadministration with strong CYP3A inhibitors is contraindicated in intermediate and poor CYP2D6 metabolizers. Refer to FDA labeling for specific dosing recommendations."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "erdafitinib "
+        },
+        "phenotypes": {
+            "CYP2C9": "*3/*3 (poor metabolizers)"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2C9": "May result in higher systemic concentrations and higher adverse reaction risk. Monitor for adverse reactions."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "flibanserin"
+        },
+        "phenotypes": {
+            "CYP2C19": "poor metabolizers"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2C19": "May result in higher systemic concentrations and higher adverse reaction risk. Monitor patients for adverse reactions."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "gefitinib"
+        },
+        "phenotypes": {
+            "CYP2D6": "poor metabolizers"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2D6": "Results in higher systemic concentrations and higher adverse reaction risk. Monitor for adverse reactions."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "iloperidone"
+        },
+        "phenotypes": {
+            "CYP2D6": "poor metabolizers"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2D6": "Results in higher systemic concentrations and higher adverse reaction risk (QT prolongation). Reduce dosage by 50%."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "irinotecan"
+        },
+        "phenotypes": {
+            "UGT1A1": "*1/*6, *1/*28 (intermediate metabolizers) or\u00a0\n\t\t\t*6/*6, *6/*28, *28/*28 (poor metabolizers)"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "UGT1A1": "Results in higher systemic active metabolite concentrations and higher adverse reaction risk (severe or life-threatening neutropenia, severe diarrhea). Closely monitor for neutropenia during and after treatment. Consider reducing the starting dosage by at least one level in poor metabolizers and modify the dosage based on individual patient tolerance. Refer to FDA labeling for specific dosing recommendations."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "lofexidine"
+        },
+        "phenotypes": {
+            "CYP2D6": "poor metabolizers"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2D6": "Results in higher systemic concentrations and higher adverse reaction risk. Monitor for orthostatic hypotension and bradycardia."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "meclizine"
+        },
+        "phenotypes": {
+            "CYP2D6": "ultrarapid, intermediate, or poor metabolizers"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2D6": "May affect systemic concentrations. Monitor for adverse reactions and clinical effect."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "metoclopramide"
+        },
+        "phenotypes": {
+            "CYP2D6": "poor metabolizers"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2D6": "Results in higher systemic concentrations and higher adverse reaction risk. The recommended dosage is lower. Refer to FDA labeling for specific dosing recommendations."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "mivacurium"
+        },
+        "phenotypes": {
+            "BCHE": "intermediate or poor metabolizers"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "BCHE": "Results in higher systemic concentrations and higher adverse reaction risk (prolonged neuromuscular blockade). Avoid use in poor metabolizers."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "nateglinide"
+        },
+        "phenotypes": {
+            "CYP2C9": "poor metabolizers"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2C9": "Results in higher systemic concentrations and may result in higher adverse reaction risk (hypoglycemia). Dosage reduction is recommended. Increase monitoring frequency for adverse reactions. Refer to FDA labeling for specific dosing recommendations."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "oliceridine"
+        },
+        "phenotypes": {
+            "CYP2D6": "poor metabolizers"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2D6": "Results in higher systemic concentrations and higher adverse reaction risk (respiratory depression and sedation). May require less frequent dosing."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "pimozide"
+        },
+        "phenotypes": {
+            "CYP2D6": "poor metabolizers"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2D6": "Results in higher systemic concentrations. Dosages should not exceed 0.05 mg/kg in children or 4 mg/day in adults who are poor metabolizers and dosages should not be increased earlier than 14 days."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "pitolisant"
+        },
+        "phenotypes": {
+            "CYP2D6": "poor metabolizers"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2D6": "Results in higher systemic concentrations. Use lowest recommended starting dosage. Refer to FDA labeling for specific dosing recommendations."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "propafenone"
+        },
+        "phenotypes": {
+            "CYP2D6": "poor metabolizers"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2D6": "Results in higher systemic concentrations and higher adverse reaction risk (arrhythmia). Avoid use in poor metabolizers taking a CYP3A4 inhibitor."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "sacituzumab govitecan-hziy"
+        },
+        "phenotypes": {
+            "UGT1A1": "*28/*28 (poor metabolizers)"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "UGT1A1": "May result in higher systemic concentrations and adverse reaction risk (neutropenia). Monitor for adverse reactions and tolerance to treatment."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "siponimod"
+        },
+        "phenotypes": {
+            "CYP2C9": "intermediate or poor metabolizers"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2C9": "Results in higher systemic concentrations. Adjust dosage based on genotype. Do not use in patients with CYP2C9 *3/*3 genotype. Refer to FDA labeling for specific dosing recommendations."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "succinylcholine "
+        },
+        "phenotypes": {
+            "BCHE": "intermediate or poor metabolizers"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "BCHE": "Results in higher systemic concentrations and higher adverse reaction risk (prolonged neuromuscular blockade). Avoid use in poor metabolizers. May administer test dose to assess sensitivity and administer cautiously via slow infusion."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "tetrabenazine"
+        },
+        "phenotypes": {
+            "CYP2D6": "poor metabolizers"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2D6": "Results in higher systemic concentrations. The maximum recommended single dose is 25 mg and should not exceed 50 mg/day."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "thioridazine"
+        },
+        "phenotypes": {
+            "CYP2D6": "poor metabolizers"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2D6": "Results in higher systemic concentrations and higher adverse reaction risk (QT prolongation). Predicted effect based on experience with CYP2D6 inhibitors. Contraindicated in poor metabolizers."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "valbenazine"
+        },
+        "phenotypes": {
+            "CYP2D6": "poor metabolizers"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2D6": "Results in higher systemic active metabolite concentrations and higher adverse reaction risk (QT prolongation). Dosage reductions may be necessary."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "warfarin"
+        },
+        "phenotypes": {
+            "CYP2C9": "intermediate or poor metabolizers"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2C9": "Alters systemic concentrations and dosage requirements. Select initial dosage, taking into account clinical and genetic factors. Monitor and adjust dosages based on INR."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "warfarin"
+        },
+        "phenotypes": {
+            "CYP4F2": "V433M variant carriers"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP4F2": "May affect dosage requirements. Monitor and adjust doses based on INR."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "warfarin"
+        },
+        "phenotypes": {
+            "VKORC1": "-1639G>A variant carriers"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "VKORC1": "Alters dosage requirements. Select initial dosage, taking into account clinical and genetic factors. Monitor and adjust dosages based on INR."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
         "drug": {
             "name": "carvedilol"
         },
         "phenotypes": {
-            "CYP2D6": "Poor Metabolizer"
+            "CYP2D6": "poor metabolizers"
         },
         "guideline": {
-            "name": "Pharmacogenetic associations table",
-            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations"
+            "name": "Table of Pharmacogenetic Associations (Section 2)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
         },
         "implications": {
             "CYP2D6": "Results in higher systemic concentrations and higher adverse reaction risk (dizziness)."
         },
-        "drugrecommendation": "Not given by FDA"
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "cevimeline"
+        },
+        "phenotypes": {
+            "CYP2D6": "poor metabolizers"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 2)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
+        },
+        "implications": {
+            "CYP2D6": "May result in higher adverse reaction risk. Use with caution."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "isoniazid"
+        },
+        "phenotypes": {
+            "Nonspecific (NAT)": "poor metabolizers"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 2)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
+        },
+        "implications": {
+            "Nonspecific (NAT)": "May result in higher systemic concentrations and adverse reaction risk."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "lapatinib"
+        },
+        "phenotypes": {
+            "HLA-DRB1": "*07:01 allele positive"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 2)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
+        },
+        "implications": {
+            "HLA-DRB1": "Results in higher adverse reaction risk (hepatotoxicity). Monitor liver function tests regardless of genotype."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "lapatinib"
+        },
+        "phenotypes": {
+            "HLA-DQA1": "*02:01 allele positive"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 2)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
+        },
+        "implications": {
+            "HLA-DQA1": "Results in higher adverse reaction risk (hepatotoxicity). Monitor liver function tests regardless of genotype."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "mavacamten"
+        },
+        "phenotypes": {
+            "CYP2C19": "intermediate or poor metabolizers"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 2)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
+        },
+        "implications": {
+            "CYP2C19": "Results in higher systemic concentrations and may have higher adverse reaction risk (heart failure). Dosage is based on individual response. The dose titration and monitoring schedule accounts for differences due to CYP2C19 genetic variation, so adjustments based on CYP2C19 genotype are not necessary. Refer to FDA labeling for specific dosing recommendations and monitoring."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "nilotinib"
+        },
+        "phenotypes": {
+            "UGT1A1": "*28/*28 (poor metabolizers)"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 2)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
+        },
+        "implications": {
+            "UGT1A1": "Results in higher adverse reaction risk (hyperbilirubinemia)."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "pazopanib"
+        },
+        "phenotypes": {
+            "HLA-B": "*57:01 allele positive"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 2)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
+        },
+        "implications": {
+            "HLA-B": "May result in higher adverse reaction risk (liver enzyme elevations). Monitor liver function tests regardless of genotype."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "pazopanib"
+        },
+        "phenotypes": {
+            "UGT1A1": "*28/*28 (poor metabolizers)"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 2)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
+        },
+        "implications": {
+            "UGT1A1": "Results in higher adverse reaction risk (hyperbilirubinemia)."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "perphenazine"
+        },
+        "phenotypes": {
+            "CYP2D6": "poor metabolizers"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 2)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
+        },
+        "implications": {
+            "CYP2D6": "Results in higher systemic concentrations and higher adverse reaction risk."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "procainamide"
+        },
+        "phenotypes": {
+            "Nonspecific (NAT)": "poor metabolizers"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 2)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
+        },
+        "implications": {
+            "Nonspecific (NAT)": "Alters systemic parent drug and metabolite concentrations. May result in higher adverse reaction risk."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "sulfamethoxazole and trimethoprim "
+        },
+        "phenotypes": {
+            "Nonspecific (NAT)": "poor metabolizers"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 2)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
+        },
+        "implications": {
+            "Nonspecific (NAT)": "May result in higher adverse reaction risk."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "sulfasalazine "
+        },
+        "phenotypes": {
+            "Nonspecific (NAT)": "poor metabolizers"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 2)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
+        },
+        "implications": {
+            "Nonspecific (NAT)": "Results in higher systemic metabolite concentrations and higher adverse reaction risk."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:TODO",
+        "drug": {
+            "name": "tolterodine"
+        },
+        "phenotypes": {
+            "CYP2D6": "poor metabolizers"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 2)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
+        },
+        "implications": {
+            "CYP2D6": "Results in higher systemic concentrations and higher adverse reaction risk (QT prolongation)."
+        },
+        "drugrecommendation": "Potentially included in implication"
     }
 ]
