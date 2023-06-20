@@ -2,12 +2,12 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:2591476",
         "drug": {
             "name": "abrocitinib"
         },
         "phenotypes": {
-            "CYP2C19": "poor metabolizers"
+            "CYP2C19": "Poor Metabolizer"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 1)",
@@ -21,12 +21,12 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:2106338",
         "drug": {
-            "name": "amifampridine "
+            "name": "amifampridine"
         },
         "phenotypes": {
-            "NAT2": "poor metabolizers"
+            "NAT2": "Poor Metabolizer"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 1)",
@@ -40,12 +40,12 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:2106337",
         "drug": {
             "name": "amifampridine phosphate"
         },
         "phenotypes": {
-            "NAT2": "poor metabolizers"
+            "NAT2": "Poor Metabolizer"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 1)",
@@ -59,12 +59,12 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:725",
         "drug": {
             "name": "amphetamine"
         },
         "phenotypes": {
-            "CYP2D6": "poor metabolizers"
+            "CYP2D6": "Poor Metabolizer"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 1)",
@@ -78,12 +78,12 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:89013",
         "drug": {
             "name": "aripiprazole"
         },
         "phenotypes": {
-            "CYP2D6": "poor metabolizers"
+            "CYP2D6": "Poor Metabolizer"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 1)",
@@ -97,12 +97,12 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:1673265",
         "drug": {
-            "name": "aripiprazole lauroxil "
+            "name": "aripiprazole lauroxil"
         },
         "phenotypes": {
-            "CYP2D6": "poor metabolizers"
+            "CYP2D6": "Poor Metabolizer"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 1)",
@@ -116,12 +116,12 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:1543543",
         "drug": {
             "name": "belinostat"
         },
         "phenotypes": {
-            "UGT1A1": "*28/*28 (poor metabolizers)"
+            "UGT1A1": "Poor Metabolizer"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 1)",
@@ -135,31 +135,12 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:1658314",
         "drug": {
-            "name": "belzutifan"
+            "name": "brexpiprazole"
         },
         "phenotypes": {
-            "CYP2C19 and/or UGT2B17": "poor metabolizers"
-        },
-        "guideline": {
-            "name": "Table of Pharmacogenetic Associations (Section 1)",
-            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
-        },
-        "implications": {
-            "CYP2C19 and/or UGT2B17": "Results in higher systemic concentrations and may result in higher adverse reaction risk (anemia, hypoxia). Monitor patients who are poor metabolizers for both genes for adverse reactions."
-        },
-        "drugrecommendation": "Potentially included in implication"
-    },
-    {
-        "id": 1,
-        "version": 1,
-        "drugid": "RxNorm:TODO",
-        "drug": {
-            "name": "brexpiprazole "
-        },
-        "phenotypes": {
-            "CYP2D6": "poor metabolizers"
+            "CYP2D6": "Poor Metabolizer"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 1)",
@@ -173,12 +154,12 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:1739745",
         "drug": {
             "name": "brivaracetam"
         },
         "phenotypes": {
-            "CYP2C19": "intermediate or poor metabolizers"
+            "CYP2C19": "Poor Metabolizer"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 1)",
@@ -192,12 +173,31 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:1739745",
+        "drug": {
+            "name": "brivaracetam"
+        },
+        "phenotypes": {
+            "CYP2C19": "Intermediate Metabolizer"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2C19": "Results in higher systemic concentrations and higher adverse reaction risk. Consider dosage reductions in poor metabolizers."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:21241",
         "drug": {
             "name": "clobazam"
         },
         "phenotypes": {
-            "CYP2C19": "intermediate or poor metabolizers"
+            "CYP2C19": "Poor Metabolizer"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 1)",
@@ -211,12 +211,31 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:21241",
+        "drug": {
+            "name": "clobazam"
+        },
+        "phenotypes": {
+            "CYP2C19": "Intermediate Metabolizer"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2C19": "Results in higher systemic active metabolite concentrations. Poor metabolism results in higher adverse reaction risk. Dosage adjustment is recommended. Refer to FDA labeling for specific dosing recommendations."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:2626",
         "drug": {
             "name": "clozapine"
         },
         "phenotypes": {
-            "CYP2D6": "poor metabolizers"
+            "CYP2D6": "Poor Metabolizer"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 1)",
@@ -230,12 +249,12 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:1876905",
         "drug": {
             "name": "deutetrabenazine"
         },
         "phenotypes": {
-            "CYP2D6": "poor metabolizers"
+            "CYP2D6": "Poor Metabolizer"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 1)",
@@ -249,12 +268,12 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:10402",
         "drug": {
             "name": "dronabinol"
         },
         "phenotypes": {
-            "CYP2C9": "intermediate or poor metabolizers"
+            "CYP2C9": "Poor Metabolizer"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 1)",
@@ -268,12 +287,31 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:10402",
+        "drug": {
+            "name": "dronabinol"
+        },
+        "phenotypes": {
+            "CYP2C9": "Intermediate Metabolizer"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2C9": "May result in higher systemic concentrations and higher adverse reaction risk. Monitor for adverse reactions."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:1547220",
         "drug": {
             "name": "eliglustat"
         },
         "phenotypes": {
-            "CYP2D6": "ultrarapid, normal, intermediate, or poor metabolizers"
+            "CYP2D6": "Poor Metabolizer"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 1)",
@@ -287,12 +325,69 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:1547220",
         "drug": {
-            "name": "erdafitinib "
+            "name": "eliglustat"
         },
         "phenotypes": {
-            "CYP2C9": "*3/*3 (poor metabolizers)"
+            "CYP2D6": "Intermediate Metabolizer"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2D6": "Alters systemic concentrations, effectiveness, and adverse reaction risk (QT prolongation). Indicated for normal, intermediate, and poor metabolizer patients. Ultrarapid metabolizers may not achieve adequate concentrations to achieve a therapeutic effect. The recommended dosages are based on CYP2D6 metabolizer status. Coadministration with strong CYP3A inhibitors is contraindicated in intermediate and poor CYP2D6 metabolizers. Refer to FDA labeling for specific dosing recommendations."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:1547220",
+        "drug": {
+            "name": "eliglustat"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2D6": "Alters systemic concentrations, effectiveness, and adverse reaction risk (QT prolongation). Indicated for normal, intermediate, and poor metabolizer patients. Ultrarapid metabolizers may not achieve adequate concentrations to achieve a therapeutic effect. The recommended dosages are based on CYP2D6 metabolizer status. Coadministration with strong CYP3A inhibitors is contraindicated in intermediate and poor CYP2D6 metabolizers. Refer to FDA labeling for specific dosing recommendations."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:1547220",
+        "drug": {
+            "name": "eliglustat"
+        },
+        "phenotypes": {
+            "CYP2D6": "Normal Metabolizer"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2D6": "Alters systemic concentrations, effectiveness, and adverse reaction risk (QT prolongation). Indicated for normal, intermediate, and poor metabolizer patients. Ultrarapid metabolizers may not achieve adequate concentrations to achieve a therapeutic effect. The recommended dosages are based on CYP2D6 metabolizer status. Coadministration with strong CYP3A inhibitors is contraindicated in intermediate and poor CYP2D6 metabolizers. Refer to FDA labeling for specific dosing recommendations."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:2123125",
+        "drug": {
+            "name": "erdafitinib"
+        },
+        "phenotypes": {
+            "CYP2C9": "Poor Metabolizer"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 1)",
@@ -306,12 +401,12 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:1665509",
         "drug": {
             "name": "flibanserin"
         },
         "phenotypes": {
-            "CYP2C19": "poor metabolizers"
+            "CYP2C19": "Poor Metabolizer"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 1)",
@@ -325,12 +420,12 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:328134",
         "drug": {
             "name": "gefitinib"
         },
         "phenotypes": {
-            "CYP2D6": "poor metabolizers"
+            "CYP2D6": "Poor Metabolizer"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 1)",
@@ -344,12 +439,12 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:73178",
         "drug": {
             "name": "iloperidone"
         },
         "phenotypes": {
-            "CYP2D6": "poor metabolizers"
+            "CYP2D6": "Poor Metabolizer"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 1)",
@@ -363,12 +458,12 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:51499",
         "drug": {
             "name": "irinotecan"
         },
         "phenotypes": {
-            "UGT1A1": "*1/*6, *1/*28 (intermediate metabolizers) or\u00a0\n\t\t\t*6/*6, *6/*28, *28/*28 (poor metabolizers)"
+            "UGT1A1": "Poor Metabolizer"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 1)",
@@ -382,12 +477,31 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:51499",
+        "drug": {
+            "name": "irinotecan"
+        },
+        "phenotypes": {
+            "UGT1A1": "Intermediate Metabolizer"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "UGT1A1": "Results in higher systemic active metabolite concentrations and higher adverse reaction risk (severe or life-threatening neutropenia, severe diarrhea). Closely monitor for neutropenia during and after treatment. Consider reducing the starting dosage by at least one level in poor metabolizers and modify the dosage based on individual patient tolerance. Refer to FDA labeling for specific dosing recommendations."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:28863",
         "drug": {
             "name": "lofexidine"
         },
         "phenotypes": {
-            "CYP2D6": "poor metabolizers"
+            "CYP2D6": "Poor Metabolizer"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 1)",
@@ -401,12 +515,12 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:6676",
         "drug": {
             "name": "meclizine"
         },
         "phenotypes": {
-            "CYP2D6": "ultrarapid, intermediate, or poor metabolizers"
+            "CYP2D6": "Poor Metabolizer"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 1)",
@@ -420,12 +534,50 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:6676",
+        "drug": {
+            "name": "meclizine"
+        },
+        "phenotypes": {
+            "CYP2D6": "Intermediate Metabolizer"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2D6": "May affect systemic concentrations. Monitor for adverse reactions and clinical effect."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:6676",
+        "drug": {
+            "name": "meclizine"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2D6": "May affect systemic concentrations. Monitor for adverse reactions and clinical effect."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:6915",
         "drug": {
             "name": "metoclopramide"
         },
         "phenotypes": {
-            "CYP2D6": "poor metabolizers"
+            "CYP2D6": "Poor Metabolizer"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 1)",
@@ -439,12 +591,12 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:30077",
         "drug": {
             "name": "mivacurium"
         },
         "phenotypes": {
-            "BCHE": "intermediate or poor metabolizers"
+            "BCHE": "Poor Metabolizer"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 1)",
@@ -458,12 +610,31 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:30077",
+        "drug": {
+            "name": "mivacurium"
+        },
+        "phenotypes": {
+            "BCHE": "Intermediate Metabolizer"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "BCHE": "Results in higher systemic concentrations and higher adverse reaction risk (prolonged neuromuscular blockade). Avoid use in poor metabolizers."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:274332",
         "drug": {
             "name": "nateglinide"
         },
         "phenotypes": {
-            "CYP2C9": "poor metabolizers"
+            "CYP2C9": "Poor Metabolizer"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 1)",
@@ -477,12 +648,12 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:2392230",
         "drug": {
             "name": "oliceridine"
         },
         "phenotypes": {
-            "CYP2D6": "poor metabolizers"
+            "CYP2D6": "Poor Metabolizer"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 1)",
@@ -496,12 +667,12 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:8331",
         "drug": {
             "name": "pimozide"
         },
         "phenotypes": {
-            "CYP2D6": "poor metabolizers"
+            "CYP2D6": "Poor Metabolizer"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 1)",
@@ -515,12 +686,12 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:2197878",
         "drug": {
             "name": "pitolisant"
         },
         "phenotypes": {
-            "CYP2D6": "poor metabolizers"
+            "CYP2D6": "Poor Metabolizer"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 1)",
@@ -534,12 +705,12 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:8754",
         "drug": {
             "name": "propafenone"
         },
         "phenotypes": {
-            "CYP2D6": "poor metabolizers"
+            "CYP2D6": "Poor Metabolizer"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 1)",
@@ -553,12 +724,12 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:2360530",
         "drug": {
             "name": "sacituzumab govitecan-hziy"
         },
         "phenotypes": {
-            "UGT1A1": "*28/*28 (poor metabolizers)"
+            "UGT1A1": "Poor Metabolizer"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 1)",
@@ -572,12 +743,12 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:2121085",
         "drug": {
             "name": "siponimod"
         },
         "phenotypes": {
-            "CYP2C9": "intermediate or poor metabolizers"
+            "CYP2C9": "Poor Metabolizer"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 1)",
@@ -591,31 +762,31 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:2121085",
         "drug": {
-            "name": "succinylcholine "
+            "name": "siponimod"
         },
         "phenotypes": {
-            "BCHE": "intermediate or poor metabolizers"
+            "CYP2C9": "Intermediate Metabolizer"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 1)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
         },
         "implications": {
-            "BCHE": "Results in higher systemic concentrations and higher adverse reaction risk (prolonged neuromuscular blockade). Avoid use in poor metabolizers. May administer test dose to assess sensitivity and administer cautiously via slow infusion."
+            "CYP2C9": "Results in higher systemic concentrations. Adjust dosage based on genotype. Do not use in patients with CYP2C9 *3/*3 genotype. Refer to FDA labeling for specific dosing recommendations."
         },
         "drugrecommendation": "Potentially included in implication"
     },
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:10390",
         "drug": {
             "name": "tetrabenazine"
         },
         "phenotypes": {
-            "CYP2D6": "poor metabolizers"
+            "CYP2D6": "Poor Metabolizer"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 1)",
@@ -629,12 +800,12 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:10502",
         "drug": {
             "name": "thioridazine"
         },
         "phenotypes": {
-            "CYP2D6": "poor metabolizers"
+            "CYP2D6": "Poor Metabolizer"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 1)",
@@ -648,12 +819,12 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:1918219",
         "drug": {
             "name": "valbenazine"
         },
         "phenotypes": {
-            "CYP2D6": "poor metabolizers"
+            "CYP2D6": "Poor Metabolizer"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 1)",
@@ -667,12 +838,12 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:11289",
         "drug": {
             "name": "warfarin"
         },
         "phenotypes": {
-            "CYP2C9": "intermediate or poor metabolizers"
+            "CYP2C9": "Poor Metabolizer"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 1)",
@@ -686,7 +857,26 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:11289",
+        "drug": {
+            "name": "warfarin"
+        },
+        "phenotypes": {
+            "CYP2C9": "Intermediate Metabolizer"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2C9": "Alters systemic concentrations and dosage requirements. Select initial dosage, taking into account clinical and genetic factors. Monitor and adjust dosages based on INR."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:11289",
         "drug": {
             "name": "warfarin"
         },
@@ -705,7 +895,7 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:11289",
         "drug": {
             "name": "warfarin"
         },
@@ -724,12 +914,12 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:20352",
         "drug": {
             "name": "carvedilol"
         },
         "phenotypes": {
-            "CYP2D6": "poor metabolizers"
+            "CYP2D6": "Poor Metabolizer"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 2)",
@@ -743,12 +933,12 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:44281",
         "drug": {
             "name": "cevimeline"
         },
         "phenotypes": {
-            "CYP2D6": "poor metabolizers"
+            "CYP2D6": "Poor Metabolizer"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 2)",
@@ -762,12 +952,12 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:6038",
         "drug": {
             "name": "isoniazid"
         },
         "phenotypes": {
-            "Nonspecific (NAT)": "poor metabolizers"
+            "Nonspecific (NAT)": "Poor Metabolizer"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 2)",
@@ -781,7 +971,7 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:480167",
         "drug": {
             "name": "lapatinib"
         },
@@ -800,7 +990,7 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:480167",
         "drug": {
             "name": "lapatinib"
         },
@@ -819,12 +1009,12 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:2600867",
         "drug": {
             "name": "mavacamten"
         },
         "phenotypes": {
-            "CYP2C19": "intermediate or poor metabolizers"
+            "CYP2C19": "Poor Metabolizer"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 2)",
@@ -838,12 +1028,31 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:2600867",
+        "drug": {
+            "name": "mavacamten"
+        },
+        "phenotypes": {
+            "CYP2C19": "Intermediate Metabolizer"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 2)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
+        },
+        "implications": {
+            "CYP2C19": "Results in higher systemic concentrations and may have higher adverse reaction risk (heart failure). Dosage is based on individual response. The dose titration and monitoring schedule accounts for differences due to CYP2C19 genetic variation, so adjustments based on CYP2C19 genotype are not necessary. Refer to FDA labeling for specific dosing recommendations and monitoring."
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:662281",
         "drug": {
             "name": "nilotinib"
         },
         "phenotypes": {
-            "UGT1A1": "*28/*28 (poor metabolizers)"
+            "UGT1A1": "Poor Metabolizer"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 2)",
@@ -857,7 +1066,7 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:714438",
         "drug": {
             "name": "pazopanib"
         },
@@ -876,12 +1085,12 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:714438",
         "drug": {
             "name": "pazopanib"
         },
         "phenotypes": {
-            "UGT1A1": "*28/*28 (poor metabolizers)"
+            "UGT1A1": "Poor Metabolizer"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 2)",
@@ -895,12 +1104,12 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:8076",
         "drug": {
             "name": "perphenazine"
         },
         "phenotypes": {
-            "CYP2D6": "poor metabolizers"
+            "CYP2D6": "Poor Metabolizer"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 2)",
@@ -914,12 +1123,12 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:8700",
         "drug": {
             "name": "procainamide"
         },
         "phenotypes": {
-            "Nonspecific (NAT)": "poor metabolizers"
+            "Nonspecific (NAT)": "Poor Metabolizer"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 2)",
@@ -933,50 +1142,12 @@
     {
         "id": 1,
         "version": 1,
-        "drugid": "RxNorm:TODO",
-        "drug": {
-            "name": "sulfamethoxazole and trimethoprim "
-        },
-        "phenotypes": {
-            "Nonspecific (NAT)": "poor metabolizers"
-        },
-        "guideline": {
-            "name": "Table of Pharmacogenetic Associations (Section 2)",
-            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
-        },
-        "implications": {
-            "Nonspecific (NAT)": "May result in higher adverse reaction risk."
-        },
-        "drugrecommendation": "Potentially included in implication"
-    },
-    {
-        "id": 1,
-        "version": 1,
-        "drugid": "RxNorm:TODO",
-        "drug": {
-            "name": "sulfasalazine "
-        },
-        "phenotypes": {
-            "Nonspecific (NAT)": "poor metabolizers"
-        },
-        "guideline": {
-            "name": "Table of Pharmacogenetic Associations (Section 2)",
-            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
-        },
-        "implications": {
-            "Nonspecific (NAT)": "Results in higher systemic metabolite concentrations and higher adverse reaction risk."
-        },
-        "drugrecommendation": "Potentially included in implication"
-    },
-    {
-        "id": 1,
-        "version": 1,
-        "drugid": "RxNorm:TODO",
+        "drugid": "RxNorm:119565",
         "drug": {
             "name": "tolterodine"
         },
         "phenotypes": {
-            "CYP2D6": "poor metabolizers"
+            "CYP2D6": "Poor Metabolizer"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 2)",

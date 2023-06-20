@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 
 from constants import TEMP_DIR, UNRESOLVED_DIR
 
+FDA_URL = 'https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations'
 class UnexpectedWebpageFormatError(Exception):
     def __init__(self, reason=None):
         message = '[ERROR] Unexpected webpage format'
@@ -12,21 +13,16 @@ class UnexpectedWebpageFormatError(Exception):
             message += f': {reason}'
         super().__init__(message)
 
-if not os.path.isdir(TEMP_DIR):
-    os.mkdir(TEMP_DIR)
-
-fdaUrl = 'https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations'
-fdaFileName = 'fda_content.html'
-fdaFilePath = os.path.join(TEMP_DIR, fdaFileName)
-if not os.path.isfile(fdaFilePath):
+def getFdaContent():
+    fdaFileName = 'fda-content.html'
+    fdaFilePath = os.path.join(TEMP_DIR, fdaFileName)
+    if os.path.isfile(fdaFilePath):
+        with open(fdaFilePath, 'r') as fdaFile:
+            return fdaFile.read()
+    fdaContent = requests.get(FDA_URL).text
     with open(fdaFilePath, 'w') as fdaFile:
-        fdaUrl 
-        fdaFile.write(requests.get(fdaUrl).text)
-
-with open(fdaFilePath, 'r') as fdaFile:
-    fdaContent = fdaFile.read()
-
-soup = BeautifulSoup(fdaContent, 'html.parser')
+        fdaFile.write(fdaContent)
+    return fdaContent
 
 def getSectionLink(soup, id):
     sectionLink = soup.find('a', id=id)
@@ -44,54 +40,132 @@ def getTable(soup, id):
 def getCpicDrugs():
     cpicUrl = 'https://api.cpicpgx.org/v1/recommendation'
     params = { 'select': 'drug(name)' }
+    cpicRecommendationsPath = os.path.join(TEMP_DIR, 'cpic-drugs.json')
+    if os.path.isfile(cpicRecommendationsPath):
+        with open(cpicRecommendationsPath, 'r') as cpicFile:
+            return  json.load(cpicFile)
     cpicRecommendations = requests.get(cpicUrl, params=params).json()
     cpicDrugs = set()
     for recommendation in cpicRecommendations:
         cpicDrugs.add(recommendation['drug']['name'])
+    cpicDrugs = list(cpicDrugs)
+    with open(cpicRecommendationsPath, 'w') as cpicFile:
+        json.dump(cpicDrugs, cpicFile, indent=4)
     return cpicDrugs
 
+def rxCuiPath():
+    return os.path.join(TEMP_DIR, 'rx-cuis.json')
+
+def areRxCuisCached():
+    return os.path.isfile(rxCuiPath())
+
+def getRxCuis():
+    rxCuis = {}
+    if areRxCuisCached():
+        with open(rxCuiPath(), 'r')  as rxCuiFile:
+            rxCuis = json.load(rxCuiFile)
+    return rxCuis
+
+def getRxCui(rxCuis, drug):
+    if drug in rxCuis:
+        return rxCuis[drug]
+    else:        
+        rxUrl = f'https://rxnav.nlm.nih.gov/REST/rxcui.json?name={drug}'
+        rxNorms = requests.get(rxUrl).json()['idGroup']['rxnormId']
+        if len(rxNorms) != 1:
+            raise Exception('[ERROR]: expecting Rx response of length 1')
+        rxCui = rxNorms[0]
+        rxCuis[drug] = rxCui
+        return rxCui
+
+def cpicFormatFdaDrug(fdaDrug):
+    return fdaDrug.lower().replace(' and ', ' / ').strip()
+
+def cpicFormatFdaGenes(fdaGenes):
+    return fdaGenes.split(' and/or ')
+
+# This is a bit hacky as it is very tailored to the content present at the
+# time of coding
+def cpicFormatFdaPhenotypes(fdaPhenotypes):
+    cpicPhenotypes = []
+    if 'poor' in fdaPhenotypes:
+        cpicPhenotypes.append('Poor Metabolizer')
+    if 'intermediate' in fdaPhenotypes:
+        cpicPhenotypes.append('Intermediate Metabolizer')
+    if 'ultrarapid' in fdaPhenotypes:
+        cpicPhenotypes.append('Ultrarapid Metabolizer')
+    if 'normal' in fdaPhenotypes:
+        cpicPhenotypes.append('Normal Metabolizer')
+    if len(cpicPhenotypes) == 0:
+        cpicPhenotypes = [fdaPhenotypes]
+    return cpicPhenotypes
+
+soup = BeautifulSoup(getFdaContent(), 'html.parser')
 cpicDrugs = getCpicDrugs()
+rxCuis = getRxCuis()
 fdaAnnotations = []
 includedSections = { 'section1': 'Section 1', 'section2': 'Section 2' }
 for sectionId, sectionName in includedSections.items():
     sectionTable = getTable(soup, sectionId)
     sectionSourceName = f'Table of Pharmacogenetic Associations ({sectionName})'
-    sectionSourceUrl = f"{fdaUrl}#{getSectionLink(soup, sectionId)['name']}"
+    sectionSourceUrl = f"{FDA_URL}#{getSectionLink(soup, sectionId)['name']}"
     for row in sectionTable.find_all('tr'):
         cells = row.find_all('td')
         if len(cells) == 0:
             continue
         if len(cells) != 4:
             raise UnexpectedWebpageFormatError('expecting 4 table cells')
-        medication = cells[0].text.lower()
-        if medication in cpicDrugs:
+        
+        drug = cpicFormatFdaDrug(cells[0].text)
+        if drug in cpicDrugs:
+            print(f'Skipping {drug} (included in CPIC)')
             continue
-        gene = cells[1].text
-        phenotype = cells[2].text
+        
+        rxCui = getRxCui(rxCuis, drug)
+        genes = cpicFormatFdaGenes(cells[1].text)
+        phenotypes = cpicFormatFdaPhenotypes(cells[2].text)
         description = cells[3].text
-        # TODO: ID important? (Also for resolve script!)
-        # TODO: Multiple genes
-        # TODO: Multiple phenotypes
-        # TODO: Get RxNorm
-        fdaAnnotations.append({
-            'id': 1,
-            'version': 1,
-            'drugid': 'RxNorm:TODO',
-            'drug': {
-                'name': medication
-            },
-            'phenotypes': {
-                gene: phenotype
-            },
-            'guideline': {
-                'name': sectionSourceName,
-                'url': sectionSourceUrl
-            },
-            'implications': {
-                gene: description
-            },
-            'drugrecommendation': 'Potentially included in implication'
-        })
+
+        geneImplications = {}
+        for index, gene in enumerate(genes):
+            if index == 0:
+                geneImplications[gene] = description
+            else:
+                geneImplications[gene] = f'Might be included in {genes[0]} ' \
+                    'implication'
+        
+        genePhenotypeCombinations = []
+        # TODO: For multiple genes, create gene and phenotype combinations –
+        # including 'Indeterminate', as formulation on FDA website is "and/or"
+        # Hacky but sufficient: only case not in CPIC is Belzutifan, only one
+        # phenotype (could throw exception if multiple genes AND phenotypes)
+        if len(genes) > 1:
+            print(f'Skipping {drug} (multiple genes not implemented yet)')
+            continue
+        else:
+            for phenotype in phenotypes:
+                genePhenotypeCombinations.append({ genes[0]: phenotype })
+        for genePhenotypeCombination in genePhenotypeCombinations:
+            # TODO: ID important? (Also for resolve script! But I think not)
+            fdaAnnotations.append({
+                'id': 1,
+                'version': 1,
+                'drugid': f'RxNorm:{rxCui}',
+                'drug': {
+                    'name': drug
+                },
+                'phenotypes': genePhenotypeCombination,
+                'guideline': {
+                    'name': sectionSourceName,
+                    'url': sectionSourceUrl
+                },
+                'implications': geneImplications,
+                'drugrecommendation': 'Potentially included in implication'
+            })
+
+if not areRxCuisCached():
+    with open(rxCuiPath(), 'w') as rxCuiFile:
+        json.dump(rxCuis, rxCuiFile, indent=4)
 
 with open(os.path.join(UNRESOLVED_DIR, 'FDA.json'), 'w') as unresolvedFile:
     json.dump(fdaAnnotations, unresolvedFile, indent=4)
