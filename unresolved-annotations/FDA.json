@@ -16,9 +16,6 @@
         "implications": {
             "CYP2D6": "Results in higher systemic concentrations and higher adverse reaction risk (dizziness)."
         },
-        "drugrecommendation": "Not given by FDA",
-        "lookupkey": {
-            "CYP2D6": "0.0"
-        }
+        "drugrecommendation": "Not given by FDA"
     }
 ]

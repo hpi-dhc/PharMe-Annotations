@@ -9,8 +9,8 @@ name (with `.json` omitted) will be displayed as the source in Anni and the App.
 
 ## Data format
 
-All data is kept as JSON in CPIC's `recommendation` format, as a list of items
-abiding by the following structure.
+All data in `annotations/` is kept as JSON in CPIC's `recommendation` format,
+as a list of items abiding by the following structure:
 
 ```typescript
 {
@@ -38,26 +38,32 @@ abiding by the following structure.
 }
 ```
 
-A large example of such a list can be found by using CPIC's API as follows.
+A large example of such a list can be found by using CPIC's API as follow:
 
 ```plain
 https://api.cpicpgx.org/v1/recommendation?select=id,drugid,version,drug(name),lookupkey,phenotypes,guideline(name,url),implications,drugrecommendation,comments
 ```
 
-## Phenotype identification
-
 Note that these annotations use a CPIC `lookupkey` for phenotype identification
 and that the same phenotype may be a result of multiple `lookupkey`s. In these
-cases, the given entry should be duplicated for all matching `lookupkey`s.
+cases, the given entry should be duplicated for all matching `lookupkey`s (also
+ [see below](#scripts) for automation of this step).
 
-In the annotation interface, 
+## Scripts
 
-To check which `lookupkey`s map to a given phenotype, use the following API
-endpoint of CPIC
+Helpers to automate tiresome manual work:
 
-```plain
-https://api.cpicpgx.org/v1/diplotype?genesymbol=eq.<GENE_SYMBOL>&generesult=eq.<GENE_RESULT>&select=lookupkey,generesult
-```
+* Have 🐍 Python 3 and pip installed (would recommend to use virtual
+  environment)
+* Install requirements `pip install -r scripts/requirements.txt`
+* Run script `python scripts/<SCRIPT_NAME>`
 
-by replacing `GENE_SYMBOL` and `GENE_RESULT` with the desired
-phenotype information, e.g. `CYP2D6` and `Poor Metabolizer` respectively.
+### Resolve phenotypes
+
+Uses the CPIC API to copy files from `unresolved-annotations/` to `annotations/`
+and duplicate phenotype entries per `lookupkey`.
+
+⚠️ _Mind that Anni fetches data only from `annotations/`, if you make changes
+only in `unresolved-annotations/` without running the script, they will not
+be adopted. (And yes, this could be automated with a workflow, but I currently
+don't have time for this.)_
