@@ -92,6 +92,8 @@ def cpicFormatFdaGenes(fdaGenes):
 # time of coding
 def cpicFormatFdaPhenotypes(fdaPhenotypes):
     cpicPhenotypes = []
+    fdaPhenotypes = fdaPhenotypes.replace('allele positive', 'positive')
+    fdaPhenotypes = fdaPhenotypes.replace('allele negative', 'negative')
     if 'poor' in fdaPhenotypes:
         cpicPhenotypes.append('Poor Metabolizer')
     if 'intermediate' in fdaPhenotypes:

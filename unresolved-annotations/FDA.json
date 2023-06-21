@@ -1039,7 +1039,7 @@
             "name": "lapatinib"
         },
         "phenotypes": {
-            "HLA-DRB1": "*07:01 allele positive"
+            "HLA-DRB1": "*07:01 positive"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 2)",
@@ -1058,7 +1058,7 @@
             "name": "lapatinib"
         },
         "phenotypes": {
-            "HLA-DQA1": "*02:01 allele positive"
+            "HLA-DQA1": "*02:01 positive"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 2)",
@@ -1134,7 +1134,7 @@
             "name": "pazopanib"
         },
         "phenotypes": {
-            "HLA-B": "*57:01 allele positive"
+            "HLA-B": "*57:01 positive"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 2)",
