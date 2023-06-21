@@ -1,9 +1,11 @@
+import copy
 import json
 import os
 import requests
 from bs4 import BeautifulSoup
 
 from constants import TEMP_DIR, UNRESOLVED_DIR
+from constants import CacheMissError
 
 FDA_URL = 'https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations'
 class UnexpectedWebpageFormatError(Exception):
@@ -67,7 +69,9 @@ def getRxCuis():
     return rxCuis
 
 def getRxCui(rxCuis, drug):
-    if drug in rxCuis:
+    if areRxCuisCached():
+        if drug not in rxCuis:
+            raise CacheMissError(drug, rxCuiPath())
         return rxCuis[drug]
     else:        
         rxUrl = f'https://rxnav.nlm.nih.gov/REST/rxcui.json?name={drug}'
@@ -118,7 +122,7 @@ for sectionId, sectionName in includedSections.items():
         
         drug = cpicFormatFdaDrug(cells[0].text)
         if drug in cpicDrugs:
-            print(f'Skipping {drug} (included in CPIC)')
+            print(f'[INFO] Skipping {drug} (included in CPIC)')
             continue
         
         rxCui = getRxCui(rxCuis, drug)
@@ -134,17 +138,32 @@ for sectionId, sectionName in includedSections.items():
                 geneImplications[gene] = f'Might be included in {genes[0]} ' \
                     'implication'
         
+        # Create gene and phenotype combinations – for each phenotype, one
+        # annotation will be created.
+        # If multiple genes are present, include 'Indeterminate' phenotype,
+        # as formulation on FDA website is "and/or".
         genePhenotypeCombinations = []
-        # TODO: For multiple genes, create gene and phenotype combinations –
-        # including 'Indeterminate', as formulation on FDA website is "and/or"
-        # Hacky but sufficient: only case not in CPIC is Belzutifan, only one
-        # phenotype (could throw exception if multiple genes AND phenotypes)
-        if len(genes) > 1:
-            print(f'Skipping {drug} (multiple genes not implemented yet)')
+    
+        # Only case with multiple genes in FDA and not in CPIC is Belzutifan,
+        # which has only one phenotype, so not implemented multiple phenotypes
+        # (would need to implement combinations of multiple phenotypes, too).
+        if len(genes) > 1 and  len(phenotypes) > 1:
+            print(f'[WARNING] Skipping {drug} (multiple genes and phenotypes ' \
+                  'not implemented yet, will lack phenotype combinations)')
             continue
-        else:
-            for phenotype in phenotypes:
-                genePhenotypeCombinations.append({ genes[0]: phenotype })
+
+        for phenotype in phenotypes:
+            completePhenotype = {}
+            for gene in genes:
+                completePhenotype[gene] = phenotype
+            genePhenotypeCombinations.append(completePhenotype)
+            if len(genes) > 1:
+                indeterminatePhenotypes = []
+                for gene in genes:
+                    geneUnknownPhenotype = copy.deepcopy(completePhenotype)
+                    geneUnknownPhenotype[gene] = 'Indeterminate'
+                    genePhenotypeCombinations.append(geneUnknownPhenotype)
+        
         for genePhenotypeCombination in genePhenotypeCombinations:
             # TODO: ID important? (Also for resolve script! But I think not)
             fdaAnnotations.append({

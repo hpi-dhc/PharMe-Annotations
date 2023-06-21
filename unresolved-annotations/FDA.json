@@ -135,6 +135,69 @@
     {
         "id": 1,
         "version": 1,
+        "drugid": "RxNorm:2567226",
+        "drug": {
+            "name": "belzutifan"
+        },
+        "phenotypes": {
+            "CYP2C19": "Poor Metabolizer",
+            "UGT2B17": "Poor Metabolizer"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2C19": "Results in higher systemic concentrations and may result in higher adverse reaction risk (anemia, hypoxia). Monitor patients who are poor metabolizers for both genes for adverse reactions.",
+            "UGT2B17": "Might be included in CYP2C19 implication"
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:2567226",
+        "drug": {
+            "name": "belzutifan"
+        },
+        "phenotypes": {
+            "CYP2C19": "Indeterminate",
+            "UGT2B17": "Poor Metabolizer"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2C19": "Results in higher systemic concentrations and may result in higher adverse reaction risk (anemia, hypoxia). Monitor patients who are poor metabolizers for both genes for adverse reactions.",
+            "UGT2B17": "Might be included in CYP2C19 implication"
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:2567226",
+        "drug": {
+            "name": "belzutifan"
+        },
+        "phenotypes": {
+            "CYP2C19": "Poor Metabolizer",
+            "UGT2B17": "Indeterminate"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2C19": "Results in higher systemic concentrations and may result in higher adverse reaction risk (anemia, hypoxia). Monitor patients who are poor metabolizers for both genes for adverse reactions.",
+            "UGT2B17": "Might be included in CYP2C19 implication"
+        },
+        "drugrecommendation": "Potentially included in implication"
+    },
+    {
+        "id": 1,
+        "version": 1,
         "drugid": "RxNorm:1658314",
         "drug": {
             "name": "brexpiprazole"
