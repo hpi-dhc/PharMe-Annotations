@@ -1,4 +1,5 @@
 import copy
+import itertools
 import json
 import os
 import requests
@@ -50,18 +51,23 @@ for fileName in os.listdir(UNRESOLVED_DIR):
         unresolvedContent = json.load(unresolvedFile)
         resolvedContent = []
         for unresolvedGuideline in unresolvedContent:
-            # TODO: need to account for multiple genes
+            unresolvedLookupkeys = {}
             for gene, phenotype in unresolvedGuideline['phenotypes'].items():
                 lookupkeys = getLookupkeys(lookupkeyMap, gene, phenotype)
                 if len(lookupkeys) == 0:
                     print('[WARNING] No CPIC guideline for ' \
                           f'({unresolvedGuideline["drug"]["name"]}, {gene}, ' \
                             f'{phenotype}); using FDA phenotype "{phenotype}"')
-                    lookupkeys = [{ gene: phenotype }]
-                for lookupkey in lookupkeys:
-                    resolvedGuideline = copy.deepcopy(unresolvedGuideline)
-                    resolvedGuideline['lookupkey'] = lookupkey
-                    resolvedContent.append(resolvedGuideline)
+                    lookupkeys = [{gene: phenotype}]
+                unresolvedLookupkeys[gene] = lookupkeys
+            lookupkeyCombinations = list(itertools.product(*unresolvedLookupkeys.values()))
+            for lookupkeyCombination in lookupkeyCombinations:
+                lookupkey = {}
+                for lookupitem in lookupkeyCombination:
+                    lookupkey = {**lookupkey, **lookupitem}
+                resolvedGuideline = copy.deepcopy(unresolvedGuideline)
+                resolvedGuideline['lookupkey'] = lookupkey
+                resolvedContent.append(resolvedGuideline)
         with open(os.path.join(RESOLVED_DIR, fileName), 'w') as resolvedFile:
             json.dump(resolvedContent, resolvedFile, indent=4)
 
