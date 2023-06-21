@@ -67,3 +67,21 @@ and duplicate phenotype entries per `lookupkey`.
 only in `unresolved-annotations/` without running the script, they will not
 be adopted. (And yes, this could be automated with a workflow, but I currently
 don't have time for this.)_
+
+### Crawl FDA Associations
+
+Uses the FDA
+[Table of Pharmacogenetic Associations](https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations)
+to create CPIC-style annotations in `unresolved-annotations/`.
+
+Uses the CPIC API to skip drugs already included in CPIC and the Rx API to
+get RxCUIs.
+
+⚠️ _Potentially confusing behavior_: when multiple genes are stated in the table
+with "and/or", combinations with "Indeterminate" phenotype will be created.
+
+🚨 **Known problem**: if associations for one drug and multiple genes are not
+contained in one row, one guideline will be created per gene instead of having
+combined guidelines. Need to clarify how to deal with these, as we want to show
+users one combined guideline. Currently ignoring these cases, could add later
+manually.
