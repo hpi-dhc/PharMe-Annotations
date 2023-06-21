@@ -1,7 +1,3 @@
-# `https://api.cpicpgx.org/v1/diplotype?genesymbol=eq.<GENE_SYMBOL>&generesult=eq.<GENE_RESULT>&select=lookupkey,generesult`
-# by replacing `GENE_SYMBOL` and `GENE_RESULT` with the desired
-# phenotype information, e.g. `CYP2D6` and `Poor Metabolizer` respectively.
-
 import copy
 import json
 import os
@@ -57,6 +53,11 @@ for fileName in os.listdir(UNRESOLVED_DIR):
             # TODO: need to account for multiple genes
             for gene, phenotype in unresolvedGuideline['phenotypes'].items():
                 lookupkeys = getLookupkeys(lookupkeyMap, gene, phenotype)
+                if len(lookupkeys) == 0:
+                    print('[WARNING] No CPIC guideline for ' \
+                          f'({unresolvedGuideline["drug"]["name"]}, {gene}, ' \
+                            f'{phenotype}); using FDA phenotype "{phenotype}"')
+                    lookupkeys = [{ gene: phenotype }]
                 for lookupkey in lookupkeys:
                     resolvedGuideline = copy.deepcopy(unresolvedGuideline)
                     resolvedGuideline['lookupkey'] = lookupkey
