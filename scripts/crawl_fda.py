@@ -77,7 +77,7 @@ def getRxCui(rxCuis, drug):
         rxUrl = f'https://rxnav.nlm.nih.gov/REST/rxcui.json?name={drug}'
         rxNorms = requests.get(rxUrl).json()['idGroup']['rxnormId']
         if len(rxNorms) != 1:
-            raise Exception('[ERROR]: expecting Rx response of length 1')
+            raise Exception('[ERROR] Expecting Rx response of length 1')
         rxCui = rxNorms[0]
         rxCuis[drug] = rxCui
         return rxCui
