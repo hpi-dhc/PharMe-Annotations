@@ -8,6 +8,7 @@ import os
 import requests
 
 from constants import UNRESOLVED_DIR, RESOLVED_DIR, TEMP_DIR
+from constants import CacheMissError
 
 DIPLOTYPE_ENDPOINT = 'https://api.cpicpgx.org/v1/diplotype'
 
@@ -25,7 +26,9 @@ def getLookupkeyMap():
     return lookupkeyMap
 
 def getLookupkeys(lookupkeyMap, gene, phenotype):
-    if gene in lookupkeyMap and phenotype in lookupkeyMap[gene]:
+    if areLookupkeysCached():
+        if gene not in lookupkeyMap or phenotype not in lookupkeyMap[gene]:
+            raise CacheMissError(f'({gene}, {phenotype})', lookupkeysPath())
         return lookupkeyMap[gene][phenotype]
     params = {
         'genesymbol': f'eq.{gene}',
@@ -51,16 +54,9 @@ for fileName in os.listdir(UNRESOLVED_DIR):
         unresolvedContent = json.load(unresolvedFile)
         resolvedContent = []
         for unresolvedGuideline in unresolvedContent:
+            # TODO: need to account for multiple genes
             for gene, phenotype in unresolvedGuideline['phenotypes'].items():
                 lookupkeys = getLookupkeys(lookupkeyMap, gene, phenotype)
-                params = {
-                    'genesymbol': f'eq.{gene}',
-                    'generesult': f'eq.{phenotype}',
-                    'select': 'lookupkey',
-                }
-                lookupkeys = map(
-                    lambda result: result['lookupkey'],
-                    requests.get(DIPLOTYPE_ENDPOINT, params).json())
                 for lookupkey in lookupkeys:
                     resolvedGuideline = copy.deepcopy(unresolvedGuideline)
                     resolvedGuideline['lookupkey'] = lookupkey
