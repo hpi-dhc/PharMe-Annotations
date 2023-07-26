@@ -1,0 +1,200 @@
+[
+    {
+        "id": 1,
+        "drugId": "RxNorm:42347",
+        "version": 1,
+        "drug": {
+            "name": "bupropion"
+        },
+        "lookupkey": {
+            "foo": "bar"
+        },
+        "phenotypes": {
+            "foo": "bar"
+        },
+        "guideline": {
+            "name": "foo",
+            "url": "foo.bar"
+        },
+        "implications": {
+            "foo": "bar"
+        },
+        "drugrecommendation": "foobar"
+    },
+    {
+        "id": 1,
+        "drugId": "RxNorm:4493",
+        "version": 1,
+        "drug": {
+            "name": "fluoxetine"
+        },
+        "lookupkey": {
+            "foo": "bar"
+        },
+        "phenotypes": {
+            "foo": "bar"
+        },
+        "guideline": {
+            "name": "foo",
+            "url": "foo.bar"
+        },
+        "implications": {
+            "foo": "bar"
+        },
+        "drugrecommendation": "foobar"
+    },
+    {
+        "id": 1,
+        "drugId": "RxNorm:9068",
+        "version": 1,
+        "drug": {
+            "name": "quinidine"
+        },
+        "lookupkey": {
+            "foo": "bar"
+        },
+        "phenotypes": {
+            "foo": "bar"
+        },
+        "guideline": {
+            "name": "foo",
+            "url": "foo.bar"
+        },
+        "implications": {
+            "foo": "bar"
+        },
+        "drugrecommendation": "foobar"
+    },
+    {
+        "id": 1,
+        "drugId": "RxNorm:37801",
+        "version": 1,
+        "drug": {
+            "name": "terbinafine"
+        },
+        "lookupkey": {
+            "foo": "bar"
+        },
+        "phenotypes": {
+            "foo": "bar"
+        },
+        "guideline": {
+            "name": "foo",
+            "url": "foo.bar"
+        },
+        "implications": {
+            "foo": "bar"
+        },
+        "drugrecommendation": "foobar"
+    },
+    {
+        "id": 1,
+        "drugId": "RxNorm:1100072",
+        "version": 1,
+        "drug": {
+            "name": "abiraterone"
+        },
+        "lookupkey": {
+            "foo": "bar"
+        },
+        "phenotypes": {
+            "foo": "bar"
+        },
+        "guideline": {
+            "name": "foo",
+            "url": "foo.bar"
+        },
+        "implications": {
+            "foo": "bar"
+        },
+        "drugrecommendation": "foobar"
+    },
+    {
+        "id": 1,
+        "drugId": "RxNorm:407990",
+        "version": 1,
+        "drug": {
+            "name": "cinacalcet"
+        },
+        "lookupkey": {
+            "foo": "bar"
+        },
+        "phenotypes": {
+            "foo": "bar"
+        },
+        "guideline": {
+            "name": "foo",
+            "url": "foo.bar"
+        },
+        "implications": {
+            "foo": "bar"
+        },
+        "drugrecommendation": "foobar"
+    },
+    {
+        "id": 1,
+        "drugId": "RxNorm:72625",
+        "version": 1,
+        "drug": {
+            "name": "duloxetine"
+        },
+        "lookupkey": {
+            "foo": "bar"
+        },
+        "phenotypes": {
+            "foo": "bar"
+        },
+        "guideline": {
+            "name": "foo",
+            "url": "foo.bar"
+        },
+        "implications": {
+            "foo": "bar"
+        },
+        "drugrecommendation": "foobar"
+    },
+    {
+        "id": 1,
+        "drugId": "RxNorm:1300701",
+        "version": 1,
+        "drug": {
+            "name": "lorcaserin"
+        },
+        "lookupkey": {
+            "foo": "bar"
+        },
+        "phenotypes": {
+            "foo": "bar"
+        },
+        "guideline": {
+            "name": "foo",
+            "url": "foo.bar"
+        },
+        "implications": {
+            "foo": "bar"
+        },
+        "drugrecommendation": "foobar"
+    },
+    {
+        "id": 1,
+        "drugId": "RxNorm:1300786",
+        "version": 1,
+        "drug": {
+            "name": "mirabegron"
+        },
+        "lookupkey": {
+            "foo": "bar"
+        },
+        "phenotypes": {
+            "foo": "bar"
+        },
+        "guideline": {
+            "name": "foo",
+            "url": "foo.bar"
+        },
+        "implications": {
+            "foo": "bar"
+        },
+        "drugrecommendation": "foobar"
+    }
+]

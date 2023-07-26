@@ -68,19 +68,26 @@ def getRxCuis():
             rxCuis = json.load(rxCuiFile)
     return rxCuis
 
+def getRxCuiForDrug(drug):
+    rxUrl = f'https://rxnav.nlm.nih.gov/REST/rxcui.json?name={drug}'
+    rxNorms = requests.get(rxUrl).json()['idGroup']['rxnormId']
+    if len(rxNorms) != 1:
+        raise Exception('[ERROR] Expecting Rx response of length 1')
+    rxCui = rxNorms[0]
+    return rxCui
+
 def getRxCui(rxCuis, drug):
     if areRxCuisCached():
         if drug not in rxCuis:
             raise CacheMissError(drug, rxCuiPath())
         return rxCuis[drug]
-    else:        
-        rxUrl = f'https://rxnav.nlm.nih.gov/REST/rxcui.json?name={drug}'
-        rxNorms = requests.get(rxUrl).json()['idGroup']['rxnormId']
-        if len(rxNorms) != 1:
-            raise Exception('[ERROR] Expecting Rx response of length 1')
-        rxCui = rxNorms[0]
+    else:
+        rxCui = getRxCuiForDrug(drug)
         rxCuis[drug] = rxCui
         return rxCui
+
+def formatRxCui(rxCui):
+    return f'RxNorm:{rxCui}'
 
 def cpicFormatFdaDrug(fdaDrug):
     return fdaDrug.lower().replace(' and ', ' / ').strip()
@@ -198,7 +205,7 @@ for drug, fdaAssociation in fdaAssociations.items():
         fdaAnnotations.append({
             'id': 1,
             'version': 1,
-            'drugid': f'RxNorm:{rxCui}',
+            'drugid': formatRxCui(rxCui),
             'drug': {
                 'name': drug
             },

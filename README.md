@@ -58,7 +58,7 @@ Helpers to automate tiresome manual work:
 * Install requirements `pip install -r scripts/requirements.txt`
 * Run script `python scripts/<SCRIPT_NAME>`
 
-### Resolve phenotypes
+### Resolve annotations
 
 Uses the CPIC API to copy files from `unresolved-annotations/` to `annotations/`
 and duplicate phenotype entries per `lookupkey`.
@@ -67,6 +67,11 @@ and duplicate phenotype entries per `lookupkey`.
 only in `unresolved-annotations/` without running the script, they will not
 be adopted. (And yes, this could be automated with a workflow, but I currently
 don't have time for this.)_
+
+_Special case: `additional_drugs.json`_. These are drugs without guidelines
+that are needed in PharMe, e.g., for drug-drug interactions. Empty annotations
+will be created to comply with the `CpicRecommendation` in Anni. RxCUIs will be
+added using the Rx API.
 
 ### Crawl FDA Associations
 

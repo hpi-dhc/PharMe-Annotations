@@ -7,6 +7,8 @@ import requests
 from constants import UNRESOLVED_DIR, RESOLVED_DIR, TEMP_DIR
 from constants import CacheMissError
 
+from crawl_fda import getRxCuiForDrug, formatRxCui
+
 DIPLOTYPE_ENDPOINT = 'https://api.cpicpgx.org/v1/diplotype'
 
 def lookupkeysPath():
@@ -43,7 +45,19 @@ def getLookupkeys(lookupkeyMap, gene, phenotype):
         lookupkeyMap[gene] = {}
     lookupkeyMap[gene][phenotype] = uniqueLookupkeys
     return uniqueLookupkeys
-    
+
+def resolveDrug(drug):
+    return {
+        'id': 1,
+        'drugId': formatRxCui(getRxCuiForDrug(drug)),
+        'version': 1,
+        'drug': { 'name': drug },
+        'lookupkey': { 'foo': 'bar' },
+        'phenotypes': { 'foo': 'bar' },
+        'guideline': { 'name': 'foo', 'url': 'foo.bar' },
+        'implications': { 'foo': 'bar' },
+        'drugrecommendation': 'foobar',
+    }
 
 lookupkeyMap = getLookupkeyMap()
 for fileName in os.listdir(UNRESOLVED_DIR):
@@ -51,6 +65,9 @@ for fileName in os.listdir(UNRESOLVED_DIR):
         unresolvedContent = json.load(unresolvedFile)
         resolvedContent = []
         for unresolvedGuideline in unresolvedContent:
+            if (fileName.startswith('additional_drugs')):
+                resolvedContent.append(resolveDrug(unresolvedGuideline))
+                continue
             unresolvedLookupkeys = {}
             for gene, phenotype in unresolvedGuideline['phenotypes'].items():
                 lookupkeys = getLookupkeys(lookupkeyMap, gene, phenotype)
