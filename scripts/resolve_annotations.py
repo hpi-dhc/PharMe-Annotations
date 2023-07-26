@@ -49,7 +49,7 @@ def getLookupkeys(lookupkeyMap, gene, phenotype):
 def resolveDrug(drug):
     return {
         'id': 1,
-        'drugId': formatRxCui(getRxCuiForDrug(drug)),
+        'drugid': formatRxCui(getRxCuiForDrug(drug)),
         'version': 1,
         'drug': { 'name': drug },
         'lookupkey': { 'foo': 'bar' },
