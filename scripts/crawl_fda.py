@@ -209,7 +209,8 @@ for drug, fdaAssociation in fdaAssociations.items():
             'phenotypes': genePhenotypeCombination,
             'guideline': guideline,
             'implications': geneImplications,
-            'drugrecommendation': 'Potentially included in implication'
+            'drugrecommendation': 'Might be included in implication ' \
+                '(imported from FDA, only one text stated there)'
         })
 
 if not areRxCuisCached():
