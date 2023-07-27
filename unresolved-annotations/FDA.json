@@ -1,7 +1,5 @@
 [
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:2591476",
         "drug": {
             "name": "abrocitinib"
@@ -19,8 +17,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:2106338",
         "drug": {
             "name": "amifampridine"
@@ -38,8 +34,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:2106337",
         "drug": {
             "name": "amifampridine phosphate"
@@ -57,8 +51,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:725",
         "drug": {
             "name": "amphetamine"
@@ -76,8 +68,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:89013",
         "drug": {
             "name": "aripiprazole"
@@ -95,8 +85,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:1673265",
         "drug": {
             "name": "aripiprazole lauroxil"
@@ -114,8 +102,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:1543543",
         "drug": {
             "name": "belinostat"
@@ -133,8 +119,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:2567226",
         "drug": {
             "name": "belzutifan"
@@ -154,8 +138,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:2567226",
         "drug": {
             "name": "belzutifan"
@@ -175,8 +157,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:2567226",
         "drug": {
             "name": "belzutifan"
@@ -196,8 +176,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:1658314",
         "drug": {
             "name": "brexpiprazole"
@@ -215,8 +193,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:1739745",
         "drug": {
             "name": "brivaracetam"
@@ -234,8 +210,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:1739745",
         "drug": {
             "name": "brivaracetam"
@@ -253,8 +227,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:21241",
         "drug": {
             "name": "clobazam"
@@ -272,8 +244,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:21241",
         "drug": {
             "name": "clobazam"
@@ -291,8 +261,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:2626",
         "drug": {
             "name": "clozapine"
@@ -310,8 +278,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:1876905",
         "drug": {
             "name": "deutetrabenazine"
@@ -329,8 +295,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:10402",
         "drug": {
             "name": "dronabinol"
@@ -348,8 +312,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:10402",
         "drug": {
             "name": "dronabinol"
@@ -367,8 +329,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:1547220",
         "drug": {
             "name": "eliglustat"
@@ -386,8 +346,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:1547220",
         "drug": {
             "name": "eliglustat"
@@ -405,8 +363,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:1547220",
         "drug": {
             "name": "eliglustat"
@@ -424,8 +380,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:1547220",
         "drug": {
             "name": "eliglustat"
@@ -443,8 +397,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:2123125",
         "drug": {
             "name": "erdafitinib"
@@ -462,8 +414,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:1665509",
         "drug": {
             "name": "flibanserin"
@@ -481,8 +431,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:328134",
         "drug": {
             "name": "gefitinib"
@@ -500,8 +448,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:73178",
         "drug": {
             "name": "iloperidone"
@@ -519,8 +465,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:51499",
         "drug": {
             "name": "irinotecan"
@@ -538,8 +482,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:51499",
         "drug": {
             "name": "irinotecan"
@@ -557,8 +499,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:28863",
         "drug": {
             "name": "lofexidine"
@@ -576,8 +516,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:6676",
         "drug": {
             "name": "meclizine"
@@ -595,8 +533,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:6676",
         "drug": {
             "name": "meclizine"
@@ -614,8 +550,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:6676",
         "drug": {
             "name": "meclizine"
@@ -633,8 +567,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:6915",
         "drug": {
             "name": "metoclopramide"
@@ -652,8 +584,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:30077",
         "drug": {
             "name": "mivacurium"
@@ -671,8 +601,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:30077",
         "drug": {
             "name": "mivacurium"
@@ -690,8 +618,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:274332",
         "drug": {
             "name": "nateglinide"
@@ -709,8 +635,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:2392230",
         "drug": {
             "name": "oliceridine"
@@ -728,8 +652,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:8331",
         "drug": {
             "name": "pimozide"
@@ -747,8 +669,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:2197878",
         "drug": {
             "name": "pitolisant"
@@ -766,8 +686,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:8754",
         "drug": {
             "name": "propafenone"
@@ -785,8 +703,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:2360530",
         "drug": {
             "name": "sacituzumab govitecan-hziy"
@@ -804,8 +720,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:2121085",
         "drug": {
             "name": "siponimod"
@@ -823,8 +737,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:2121085",
         "drug": {
             "name": "siponimod"
@@ -842,8 +754,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:10390",
         "drug": {
             "name": "tetrabenazine"
@@ -861,8 +771,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:10502",
         "drug": {
             "name": "thioridazine"
@@ -880,8 +788,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:1918219",
         "drug": {
             "name": "valbenazine"
@@ -899,8 +805,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:20352",
         "drug": {
             "name": "carvedilol"
@@ -918,8 +822,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:44281",
         "drug": {
             "name": "cevimeline"
@@ -937,8 +839,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:6038",
         "drug": {
             "name": "isoniazid"
@@ -956,8 +856,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:2600867",
         "drug": {
             "name": "mavacamten"
@@ -975,8 +873,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:2600867",
         "drug": {
             "name": "mavacamten"
@@ -994,8 +890,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:662281",
         "drug": {
             "name": "nilotinib"
@@ -1013,8 +907,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:8076",
         "drug": {
             "name": "perphenazine"
@@ -1032,8 +924,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:8700",
         "drug": {
             "name": "procainamide"
@@ -1051,8 +941,6 @@
         "drugrecommendation": "Potentially included in implication"
     },
     {
-        "id": 1,
-        "version": 1,
         "drugid": "RxNorm:119565",
         "drug": {
             "name": "tolterodine"

@@ -63,6 +63,9 @@ Helpers to automate tiresome manual work:
 Uses the CPIC API to copy files from `unresolved-annotations/` to `annotations/`
 and duplicate phenotype entries per `lookupkey`.
 
+The fields `id` and `version` do not need to given, if missing both will be set
+to `1`.
+
 ⚠️ _Mind that Anni fetches data only from `annotations/`, if you make changes
 only in `unresolved-annotations/` without running the script, they will not
 be adopted. (And yes, this could be automated with a workflow, but I currently

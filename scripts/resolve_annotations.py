@@ -4,7 +4,8 @@ import json
 import os
 import requests
 
-from constants import UNRESOLVED_DIR, RESOLVED_DIR, TEMP_DIR
+from constants import UNRESOLVED_DIR, RESOLVED_DIR, TEMP_DIR, \
+    DEFAULT_ID_AND_VERSION
 from constants import CacheMissError
 
 from crawl_fda import getRxCuiForDrug, formatRxCui
@@ -48,9 +49,9 @@ def getLookupkeys(lookupkeyMap, gene, phenotype):
 
 def resolveDrug(drug):
     return {
-        'id': 1,
+        'id': DEFAULT_ID_AND_VERSION,
         'drugid': formatRxCui(getRxCuiForDrug(drug)),
-        'version': 1,
+        'version': DEFAULT_ID_AND_VERSION,
         'drug': { 'name': drug },
         'lookupkey': { 'foo': 'bar' },
         'phenotypes': { 'foo': 'bar' },
@@ -69,6 +70,10 @@ for fileName in os.listdir(UNRESOLVED_DIR):
                 resolvedContent.append(resolveDrug(unresolvedGuideline))
                 continue
             unresolvedLookupkeys = {}
+            if not 'id' in unresolvedGuideline:
+                unresolvedGuideline['id'] = DEFAULT_ID_AND_VERSION
+            if not 'version' in unresolvedGuideline:
+                unresolvedGuideline['version'] = DEFAULT_ID_AND_VERSION
             for gene, phenotype in unresolvedGuideline['phenotypes'].items():
                 lookupkeys = getLookupkeys(lookupkeyMap, gene, phenotype)
                 if len(lookupkeys) == 0:

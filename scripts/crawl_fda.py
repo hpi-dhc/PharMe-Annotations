@@ -201,10 +201,7 @@ for drug, fdaAssociation in fdaAssociations.items():
                 genePhenotypeCombinations.append(geneUnknownPhenotype)
 
     for genePhenotypeCombination in genePhenotypeCombinations:
-        # TODO: ID important? (Also for resolve script! But I think not)
         fdaAnnotations.append({
-            'id': 1,
-            'version': 1,
             'drugid': formatRxCui(rxCui),
             'drug': {
                 'name': drug
