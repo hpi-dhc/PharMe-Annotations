@@ -113,109 +113,113 @@ def cpicFormatFdaPhenotypes(fdaPhenotypes):
         cpicPhenotypes = [fdaPhenotypes]
     return cpicPhenotypes
 
-soup = BeautifulSoup(getFdaContent(), 'html.parser')
-includedSections = { 'section1': 'Section 1', 'section2': 'Section 2' }
-cpicDrugs = getCpicDrugs()
-fdaAssociations = {}
-skippedRows = set()
-for sectionId, sectionName in includedSections.items():
-    sectionTable = getTable(soup, sectionId)
-    sectionSourceName = f'Table of Pharmacogenetic Associations ({sectionName})'
-    sectionSourceUrl = f"{FDA_URL}#{getSectionLink(soup, sectionId)['name']}"
-    for row in sectionTable.find_all('tr'):
-        cells = row.find_all('td')
-        if len(cells) == 0:
-            continue
-        if len(cells) != 4:
-            raise UnexpectedWebpageFormatError('expecting 4 table cells')
-        
-        drug = cpicFormatFdaDrug(cells[0].text)
+def main():
+    soup = BeautifulSoup(getFdaContent(), 'html.parser')
+    includedSections = { 'section1': 'Section 1', 'section2': 'Section 2' }
+    cpicDrugs = getCpicDrugs()
+    fdaAssociations = {}
+    skippedRows = set()
+    for sectionId, sectionName in includedSections.items():
+        sectionTable = getTable(soup, sectionId)
+        sectionSourceName = f'Table of Pharmacogenetic Associations ({sectionName})'
+        sectionSourceUrl = f"{FDA_URL}#{getSectionLink(soup, sectionId)['name']}"
+        for row in sectionTable.find_all('tr'):
+            cells = row.find_all('td')
+            if len(cells) == 0:
+                continue
+            if len(cells) != 4:
+                raise UnexpectedWebpageFormatError('expecting 4 table cells')
+            
+            drug = cpicFormatFdaDrug(cells[0].text)
 
-        if drug in cpicDrugs:
-            print(f'[INFO] Skipping {drug} (included in CPIC)')
-            continue
+            if drug in cpicDrugs:
+                print(f'[INFO] Skipping {drug} (included in CPIC)')
+                continue
 
-        if drug in fdaAssociations:
-            skippedRows.add(drug)
-            continue
+            if drug in fdaAssociations:
+                skippedRows.add(drug)
+                continue
 
-        genes = cpicFormatFdaGenes(cells[1].text)
-        phenotypes = cpicFormatFdaPhenotypes(cells[2].text)
+            genes = cpicFormatFdaGenes(cells[1].text)
+            phenotypes = cpicFormatFdaPhenotypes(cells[2].text)
 
-        # Only case with multiple genes in FDA and not in CPIC is Belzutifan,
-        # which has only one phenotype, so not implemented multiple phenotypes
-        # (would need to implement combinations of multiple phenotypes, too).
-        if len(genes) > 1 and  len(phenotypes) > 1:
-            print(f'[WARNING] Skipping {drug} (multiple genes and phenotypes ' \
-                    'not implemented yet, will lack phenotype combinations)')
-            continue
+            # Only case with multiple genes in FDA and not in CPIC is Belzutifan,
+            # which has only one phenotype, so not implemented multiple phenotypes
+            # (would need to implement combinations of multiple phenotypes, too).
+            if len(genes) > 1 and  len(phenotypes) > 1:
+                print(f'[WARNING] Skipping {drug} (multiple genes and phenotypes ' \
+                        'not implemented yet, will lack phenotype combinations)')
+                continue
 
-        fdaAssociations[drug] = {
-            'genes': genes,
-            'phenotypes': phenotypes,
-            'description': cells[3].text,
-            'guideline': {
-                'name': sectionSourceName,
-                'url': sectionSourceUrl
+            fdaAssociations[drug] = {
+                'genes': genes,
+                'phenotypes': phenotypes,
+                'description': cells[3].text,
+                'guideline': {
+                    'name': sectionSourceName,
+                    'url': sectionSourceUrl
+                }
             }
-        }
 
-for drug in skippedRows:
-    del fdaAssociations[drug]
-    print(f'[INFO] Skipping {drug} (multiple rows)')
+    for drug in skippedRows:
+        del fdaAssociations[drug]
+        print(f'[INFO] Skipping {drug} (multiple rows)')
 
-rxCuis = getRxCuis()
-fdaAnnotations = []
-for drug, fdaAssociation in fdaAssociations.items():
-    rxCui = getRxCui(rxCuis, drug)
-    genes = fdaAssociation['genes']
-    phenotypes = fdaAssociation['phenotypes']
-    description = fdaAssociation['description']
-    guideline = fdaAssociation['guideline']
+    rxCuis = getRxCuis()
+    fdaAnnotations = []
+    for drug, fdaAssociation in fdaAssociations.items():
+        rxCui = getRxCui(rxCuis, drug)
+        genes = fdaAssociation['genes']
+        phenotypes = fdaAssociation['phenotypes']
+        description = fdaAssociation['description']
+        guideline = fdaAssociation['guideline']
 
-    geneImplications = {}
-    for index, gene in enumerate(genes):
-        if index == 0:
-            geneImplications[gene] = description
-        else:
-            geneImplications[gene] = f'Might be included in {genes[0]} ' \
-                'implication; mind that description might not apply if' \
-                'one gene is "Indeterminate" (generated by script to ' \
-                'match CPIC behavior)'
+        geneImplications = {}
+        for index, gene in enumerate(genes):
+            if index == 0:
+                geneImplications[gene] = description
+            else:
+                geneImplications[gene] = f'Might be included in {genes[0]} ' \
+                    'implication; mind that description might not apply if' \
+                    'one gene is "Indeterminate" (generated by script to ' \
+                    'match CPIC behavior)'
 
-    # Create gene and phenotype combinations – for each phenotype, one
-    # annotation will be created.
-    # If multiple genes are present, include 'Indeterminate' phenotype,
-    # as formulation on FDA website is "and/or".
-    genePhenotypeCombinations = []
-    for phenotype in phenotypes:
-        completePhenotype = {}
-        for gene in genes:
-            completePhenotype[gene] = phenotype
-        genePhenotypeCombinations.append(completePhenotype)
-        if len(genes) > 1:
-            indeterminatePhenotypes = []
+        # Create gene and phenotype combinations – for each phenotype, one
+        # annotation will be created.
+        # If multiple genes are present, include 'Indeterminate' phenotype,
+        # as formulation on FDA website is "and/or".
+        genePhenotypeCombinations = []
+        for phenotype in phenotypes:
+            completePhenotype = {}
             for gene in genes:
-                geneUnknownPhenotype = copy.deepcopy(completePhenotype)
-                geneUnknownPhenotype[gene] = 'Indeterminate'
-                genePhenotypeCombinations.append(geneUnknownPhenotype)
+                completePhenotype[gene] = phenotype
+            genePhenotypeCombinations.append(completePhenotype)
+            if len(genes) > 1:
+                indeterminatePhenotypes = []
+                for gene in genes:
+                    geneUnknownPhenotype = copy.deepcopy(completePhenotype)
+                    geneUnknownPhenotype[gene] = 'Indeterminate'
+                    genePhenotypeCombinations.append(geneUnknownPhenotype)
 
-    for genePhenotypeCombination in genePhenotypeCombinations:
-        fdaAnnotations.append({
-            'drugid': formatRxCui(rxCui),
-            'drug': {
-                'name': drug
-            },
-            'phenotypes': genePhenotypeCombination,
-            'guideline': guideline,
-            'implications': geneImplications,
-            'drugrecommendation': 'Might be included in implication ' \
-                '(imported from FDA, only one text stated there)'
-        })
+        for genePhenotypeCombination in genePhenotypeCombinations:
+            fdaAnnotations.append({
+                'drugid': formatRxCui(rxCui),
+                'drug': {
+                    'name': drug
+                },
+                'phenotypes': genePhenotypeCombination,
+                'guideline': guideline,
+                'implications': geneImplications,
+                'drugrecommendation': 'Might be included in implication text ' \
+                    '(imported from FDA; source only states one text per guideline)'
+            })
 
-if not areRxCuisCached():
-    with open(rxCuiPath(), 'w') as rxCuiFile:
-        json.dump(rxCuis, rxCuiFile, indent=4)
+    if not areRxCuisCached():
+        with open(rxCuiPath(), 'w') as rxCuiFile:
+            json.dump(rxCuis, rxCuiFile, indent=4)
 
-with open(os.path.join(UNRESOLVED_DIR, 'FDA.json'), 'w') as unresolvedFile:
-    json.dump(fdaAnnotations, unresolvedFile, indent=4)
+    with open(os.path.join(UNRESOLVED_DIR, 'FDA.json'), 'w') as unresolvedFile:
+        json.dump(fdaAnnotations, unresolvedFile, indent=4)
+
+if __name__ == '__main__':
+    main()

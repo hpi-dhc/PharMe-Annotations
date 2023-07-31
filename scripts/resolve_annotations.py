@@ -60,39 +60,43 @@ def resolveDrug(drug):
         'drugrecommendation': 'foobar',
     }
 
-lookupkeyMap = getLookupkeyMap()
-for fileName in os.listdir(UNRESOLVED_DIR):
-    with open(os.path.join(UNRESOLVED_DIR, fileName), 'r') as unresolvedFile:
-        unresolvedContent = json.load(unresolvedFile)
-        resolvedContent = []
-        for unresolvedGuideline in unresolvedContent:
-            if (fileName.startswith('additional_drugs')):
-                resolvedContent.append(resolveDrug(unresolvedGuideline))
-                continue
-            unresolvedLookupkeys = {}
-            if not 'id' in unresolvedGuideline:
-                unresolvedGuideline['id'] = DEFAULT_ID_AND_VERSION
-            if not 'version' in unresolvedGuideline:
-                unresolvedGuideline['version'] = DEFAULT_ID_AND_VERSION
-            for gene, phenotype in unresolvedGuideline['phenotypes'].items():
-                lookupkeys = getLookupkeys(lookupkeyMap, gene, phenotype)
-                if len(lookupkeys) == 0:
-                    print('[WARNING] No CPIC guideline for ' \
-                          f'({unresolvedGuideline["drug"]["name"]}, {gene}, ' \
-                            f'{phenotype}); using FDA phenotype "{phenotype}"')
-                    lookupkeys = [{gene: phenotype}]
-                unresolvedLookupkeys[gene] = lookupkeys
-            lookupkeyCombinations = list(itertools.product(*unresolvedLookupkeys.values()))
-            for lookupkeyCombination in lookupkeyCombinations:
-                lookupkey = {}
-                for lookupitem in lookupkeyCombination:
-                    lookupkey = {**lookupkey, **lookupitem}
-                resolvedGuideline = copy.deepcopy(unresolvedGuideline)
-                resolvedGuideline['lookupkey'] = lookupkey
-                resolvedContent.append(resolvedGuideline)
-        with open(os.path.join(RESOLVED_DIR, fileName), 'w') as resolvedFile:
-            json.dump(resolvedContent, resolvedFile, indent=4)
+def main():
+    lookupkeyMap = getLookupkeyMap()
+    for fileName in os.listdir(UNRESOLVED_DIR):
+        with open(os.path.join(UNRESOLVED_DIR, fileName), 'r') as unresolvedFile:
+            unresolvedContent = json.load(unresolvedFile)
+            resolvedContent = []
+            for unresolvedGuideline in unresolvedContent:
+                if (fileName.startswith('additional_drugs')):
+                    resolvedContent.append(resolveDrug(unresolvedGuideline))
+                    continue
+                unresolvedLookupkeys = {}
+                if not 'id' in unresolvedGuideline:
+                    unresolvedGuideline['id'] = DEFAULT_ID_AND_VERSION
+                if not 'version' in unresolvedGuideline:
+                    unresolvedGuideline['version'] = DEFAULT_ID_AND_VERSION
+                for gene, phenotype in unresolvedGuideline['phenotypes'].items():
+                    lookupkeys = getLookupkeys(lookupkeyMap, gene, phenotype)
+                    if len(lookupkeys) == 0:
+                        print('[WARNING] No CPIC guideline for ' \
+                            f'({unresolvedGuideline["drug"]["name"]}, {gene}, ' \
+                                f'{phenotype}); using FDA phenotype "{phenotype}"')
+                        lookupkeys = [{gene: phenotype}]
+                    unresolvedLookupkeys[gene] = lookupkeys
+                lookupkeyCombinations = list(itertools.product(*unresolvedLookupkeys.values()))
+                for lookupkeyCombination in lookupkeyCombinations:
+                    lookupkey = {}
+                    for lookupitem in lookupkeyCombination:
+                        lookupkey = {**lookupkey, **lookupitem}
+                    resolvedGuideline = copy.deepcopy(unresolvedGuideline)
+                    resolvedGuideline['lookupkey'] = lookupkey
+                    resolvedContent.append(resolvedGuideline)
+            with open(os.path.join(RESOLVED_DIR, fileName), 'w') as resolvedFile:
+                json.dump(resolvedContent, resolvedFile, indent=4)
 
-if not areLookupkeysCached():
-    with open(lookupkeysPath(), 'w')  as lookupkeysFile:
-        json.dump(lookupkeyMap, lookupkeysFile, indent=4)
+    if not areLookupkeysCached():
+        with open(lookupkeysPath(), 'w')  as lookupkeysFile:
+            json.dump(lookupkeyMap, lookupkeysFile, indent=4)
+
+if __name__ == '__main__':
+    main()
