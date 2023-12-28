@@ -14,8 +14,13 @@
             "name": "CYP2C9, VKORC1, CYP4F2 and Warfarin",
             "url": "https://cpicpgx.org/guidelines/guideline-for-warfarin-and-cyp2c9-and-vkorc1/"
         },
-        "implications": {},
-        "drugrecommendation": "",
+        "implications": {
+            "CYP2C9": "Poor Metabolizer",
+            "VKORC1": "-1639G>A variant carriers",
+            "CYP4F2": "rs2108622 T carriers",
+            "CYP2C": "rs12777823 A carriers"
+        },
+        "drugrecommendation": "none",
         "id": 1,
         "version": 1,
         "lookupkey": {
@@ -40,8 +45,13 @@
             "name": "CYP2C9, VKORC1, CYP4F2 and Warfarin",
             "url": "https://cpicpgx.org/guidelines/guideline-for-warfarin-and-cyp2c9-and-vkorc1/"
         },
-        "implications": {},
-        "drugrecommendation": "",
+        "implications": {
+            "CYP2C9": "Poor Metabolizer",
+            "VKORC1": "-1639G>A variant carriers",
+            "CYP4F2": "rs2108622 T carriers",
+            "CYP2C": "rs12777823 A carriers"
+        },
+        "drugrecommendation": "none",
         "id": 1,
         "version": 1,
         "lookupkey": {
