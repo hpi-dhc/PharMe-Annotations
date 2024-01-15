@@ -62,13 +62,10 @@ def getCpicDrugs():
         json.dump(cpicDrugs, cpicFile, indent=4)
     return cpicDrugs
 
-def addToFdaInfoFile(drug, gene):
+def addToFdaInfoFile(drug, gene, section):
     with open(FDA_INFO_FILE, 'a') as infoFile:
-        writer = csv.DictWriter(infoFile, fieldnames=['drug', 'gene'])
-        writer.writerow({
-            'drug': drug,
-            'gene': gene,
-        })
+        writer = csv.writer(infoFile)
+        writer.writerow([drug, gene, section])
 
 def rxCuiPath():
     return os.path.join(TEMP_DIR, 'rx-cuis.json')
@@ -156,7 +153,7 @@ def main():
             genes = cpicFormatFdaGenes(cells[1].text)
 
             for gene in genes:
-                addToFdaInfoFile(drug, gene)
+                addToFdaInfoFile(drug, gene, sectionName)
 
             if drug in fdaAssociations:
                 skippedRows.add(drug)

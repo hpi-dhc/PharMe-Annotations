@@ -1,47 +1,47 @@
-abrocitinib,CYP2C19
-amifampridine,NAT2
-amifampridine phosphate,NAT2
-amphetamine,CYP2D6
-aripiprazole,CYP2D6
-aripiprazole lauroxil,CYP2D6
-belinostat,UGT1A1
-belzutifan,CYP2C19
-belzutifan,UGT2B17
-brexpiprazole,CYP2D6
-brivaracetam,CYP2C19
-clobazam,CYP2C19
-clozapine,CYP2D6
-deutetrabenazine,CYP2D6
-dronabinol,CYP2C9
-eliglustat,CYP2D6
-erdafitinib,CYP2C9
-flibanserin,CYP2C19
-gefitinib,CYP2D6
-iloperidone,CYP2D6
-irinotecan,UGT1A1
-lofexidine,CYP2D6
-meclizine,CYP2D6
-metoclopramide,CYP2D6
-mivacurium,BCHE
-nateglinide,CYP2C9
-oliceridine,CYP2D6
-pimozide,CYP2D6
-pitolisant,CYP2D6
-propafenone,CYP2D6
-sacituzumab govitecan-hziy,UGT1A1
-siponimod,CYP2C9
-tetrabenazine,CYP2D6
-thioridazine,CYP2D6
-valbenazine,CYP2D6
-carvedilol,CYP2D6
-cevimeline,CYP2D6
-isoniazid,Nonspecific (NAT)
-lapatinib,HLA-DRB1
-lapatinib,HLA-DQA1
-mavacamten,CYP2C19
-nilotinib,UGT1A1
-pazopanib,HLA-B
-pazopanib,UGT1A1
-perphenazine,CYP2D6
-procainamide,Nonspecific (NAT)
-tolterodine,CYP2D6
+abrocitinib,CYP2C19,Section 1
+amifampridine,NAT2,Section 1
+amifampridine phosphate,NAT2,Section 1
+amphetamine,CYP2D6,Section 1
+aripiprazole,CYP2D6,Section 1
+aripiprazole lauroxil,CYP2D6,Section 1
+belinostat,UGT1A1,Section 1
+belzutifan,CYP2C19,Section 1
+belzutifan,UGT2B17,Section 1
+brexpiprazole,CYP2D6,Section 1
+brivaracetam,CYP2C19,Section 1
+clobazam,CYP2C19,Section 1
+clozapine,CYP2D6,Section 1
+deutetrabenazine,CYP2D6,Section 1
+dronabinol,CYP2C9,Section 1
+eliglustat,CYP2D6,Section 1
+erdafitinib,CYP2C9,Section 1
+flibanserin,CYP2C19,Section 1
+gefitinib,CYP2D6,Section 1
+iloperidone,CYP2D6,Section 1
+irinotecan,UGT1A1,Section 1
+lofexidine,CYP2D6,Section 1
+meclizine,CYP2D6,Section 1
+metoclopramide,CYP2D6,Section 1
+mivacurium,BCHE,Section 1
+nateglinide,CYP2C9,Section 1
+oliceridine,CYP2D6,Section 1
+pimozide,CYP2D6,Section 1
+pitolisant,CYP2D6,Section 1
+propafenone,CYP2D6,Section 1
+sacituzumab govitecan-hziy,UGT1A1,Section 1
+siponimod,CYP2C9,Section 1
+tetrabenazine,CYP2D6,Section 1
+thioridazine,CYP2D6,Section 1
+valbenazine,CYP2D6,Section 1
+carvedilol,CYP2D6,Section 2
+cevimeline,CYP2D6,Section 2
+isoniazid,Nonspecific (NAT),Section 2
+lapatinib,HLA-DRB1,Section 2
+lapatinib,HLA-DQA1,Section 2
+mavacamten,CYP2C19,Section 2
+nilotinib,UGT1A1,Section 2
+pazopanib,HLA-B,Section 2
+pazopanib,UGT1A1,Section 2
+perphenazine,CYP2D6,Section 2
+procainamide,Nonspecific (NAT),Section 2
+tolterodine,CYP2D6,Section 2
