@@ -1,4 +1,5 @@
 import copy
+import csv
 import json
 import os
 import requests
@@ -166,6 +167,14 @@ def main():
         print(f'[INFO] Skipping {drug} (multiple rows)')
 
     rxCuis = getRxCuis()
+    with open('FDA_info.csv', 'w') as infoFile:
+        writer = csv.DictWriter(infoFile, fieldnames=['drug', 'genes'])
+        for drug in fdaAssociations.keys():
+            writer.writerow({
+                'drug': drug,
+                'genes': ', '.join(fdaAssociations[drug]['genes']),
+            })
+            
     fdaAnnotations = []
     for drug, fdaAssociation in fdaAssociations.items():
         rxCui = getRxCui(rxCuis, drug)
