@@ -9,6 +9,8 @@ from constants import TEMP_DIR, UNRESOLVED_DIR
 from constants import CacheMissError
 
 FDA_URL = 'https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations'
+FDA_INFO_FILE = 'FDA_info.csv'
+
 class UnexpectedWebpageFormatError(Exception):
     def __init__(self, reason=None):
         message = '[ERROR] Unexpected webpage format'
@@ -51,10 +53,22 @@ def getCpicDrugs():
     cpicDrugs = set()
     for recommendation in cpicRecommendations:
         cpicDrugs.add(recommendation['drug']['name'])
+    with open(os.path.join(UNRESOLVED_DIR, 'CPIC.json')) as manualCpicFile:
+        manualCpicGuidelines = json.load(manualCpicFile)
+        for entry in manualCpicGuidelines:
+            cpicDrugs.add(entry['drug']['name'])
     cpicDrugs = list(cpicDrugs)
     with open(cpicRecommendationsPath, 'w') as cpicFile:
         json.dump(cpicDrugs, cpicFile, indent=4)
     return cpicDrugs
+
+def addToFdaInfoFile(drug, gene):
+    with open(FDA_INFO_FILE, 'a') as infoFile:
+        writer = csv.DictWriter(infoFile, fieldnames=['drug', 'gene'])
+        writer.writerow({
+            'drug': drug,
+            'gene': gene,
+        })
 
 def rxCuiPath():
     return os.path.join(TEMP_DIR, 'rx-cuis.json')
@@ -120,6 +134,8 @@ def main():
     cpicDrugs = getCpicDrugs()
     fdaAssociations = {}
     skippedRows = set()
+    with open(FDA_INFO_FILE, 'w') as fdaInfoFile:
+        fdaInfoFile.write('')
     for sectionId, sectionName in includedSections.items():
         sectionTable = getTable(soup, sectionId)
         sectionSourceName = f'Table of Pharmacogenetic Associations ({sectionName})'
@@ -137,11 +153,15 @@ def main():
                 print(f'[INFO] Skipping {drug} (included in CPIC)')
                 continue
 
+            genes = cpicFormatFdaGenes(cells[1].text)
+
+            for gene in genes:
+                addToFdaInfoFile(drug, gene)
+
             if drug in fdaAssociations:
                 skippedRows.add(drug)
                 continue
 
-            genes = cpicFormatFdaGenes(cells[1].text)
             phenotypes = cpicFormatFdaPhenotypes(cells[2].text)
 
             # Only case with multiple genes in FDA and not in CPIC is Belzutifan,
@@ -167,14 +187,6 @@ def main():
         print(f'[INFO] Skipping {drug} (multiple rows)')
 
     rxCuis = getRxCuis()
-    with open('FDA_info.csv', 'w') as infoFile:
-        writer = csv.DictWriter(infoFile, fieldnames=['drug', 'genes'])
-        for drug in fdaAssociations.keys():
-            writer.writerow({
-                'drug': drug,
-                'genes': ', '.join(fdaAssociations[drug]['genes']),
-            })
-            
     fdaAnnotations = []
     for drug, fdaAssociation in fdaAssociations.items():
         rxCui = getRxCui(rxCuis, drug)

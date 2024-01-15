@@ -5,7 +5,8 @@ amphetamine,CYP2D6
 aripiprazole,CYP2D6
 aripiprazole lauroxil,CYP2D6
 belinostat,UGT1A1
-belzutifan,"CYP2C19, UGT2B17"
+belzutifan,CYP2C19
+belzutifan,UGT2B17
 brexpiprazole,CYP2D6
 brivaracetam,CYP2C19
 clobazam,CYP2C19
@@ -35,8 +36,12 @@ valbenazine,CYP2D6
 carvedilol,CYP2D6
 cevimeline,CYP2D6
 isoniazid,Nonspecific (NAT)
+lapatinib,HLA-DRB1
+lapatinib,HLA-DQA1
 mavacamten,CYP2C19
 nilotinib,UGT1A1
+pazopanib,HLA-B
+pazopanib,UGT1A1
 perphenazine,CYP2D6
 procainamide,Nonspecific (NAT)
 tolterodine,CYP2D6
