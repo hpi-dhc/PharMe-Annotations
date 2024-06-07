@@ -401,7 +401,7 @@
         "id": 1,
         "version": 1,
         "lookupkey": {
-            "CYP2C9": "0.5"
+            "CYP2C9": "0.0"
         }
     },
     {
@@ -423,29 +423,7 @@
         "id": 1,
         "version": 1,
         "lookupkey": {
-            "CYP2C9": "0.0"
-        }
-    },
-    {
-        "drugid": "RxNorm:10402",
-        "drug": {
-            "name": "dronabinol"
-        },
-        "phenotypes": {
-            "CYP2C9": "Intermediate Metabolizer"
-        },
-        "guideline": {
-            "name": "Table of Pharmacogenetic Associations (Section 1)",
-            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
-        },
-        "implications": {
-            "CYP2C9": "May result in higher systemic concentrations and higher adverse reaction risk. Monitor for adverse reactions."
-        },
-        "drugrecommendation": "Might be included in implication text (imported from FDA; source only states one text per guideline)",
-        "id": 1,
-        "version": 1,
-        "lookupkey": {
-            "CYP2C9": "1.5"
+            "CYP2C9": "0.5"
         }
     },
     {
@@ -468,6 +446,28 @@
         "version": 1,
         "lookupkey": {
             "CYP2C9": "1.0"
+        }
+    },
+    {
+        "drugid": "RxNorm:10402",
+        "drug": {
+            "name": "dronabinol"
+        },
+        "phenotypes": {
+            "CYP2C9": "Intermediate Metabolizer"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2C9": "May result in higher systemic concentrations and higher adverse reaction risk. Monitor for adverse reactions."
+        },
+        "drugrecommendation": "Might be included in implication text (imported from FDA; source only states one text per guideline)",
+        "id": 1,
+        "version": 1,
+        "lookupkey": {
+            "CYP2C9": "1.5"
         }
     },
     {
@@ -511,29 +511,7 @@
         "id": 1,
         "version": 1,
         "lookupkey": {
-            "CYP2D6": "1.0"
-        }
-    },
-    {
-        "drugid": "RxNorm:1547220",
-        "drug": {
-            "name": "eliglustat"
-        },
-        "phenotypes": {
-            "CYP2D6": "Intermediate Metabolizer"
-        },
-        "guideline": {
-            "name": "Table of Pharmacogenetic Associations (Section 1)",
-            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
-        },
-        "implications": {
-            "CYP2D6": "Alters systemic concentrations, effectiveness, and adverse reaction risk (QT prolongation). Indicated for normal, intermediate, and poor metabolizer patients. Ultrarapid metabolizers may not achieve adequate concentrations to achieve a therapeutic effect. The recommended dosages are based on CYP2D6 metabolizer status. Coadministration with strong CYP3A inhibitors is contraindicated in intermediate and poor CYP2D6 metabolizers. Refer to FDA labeling for specific dosing recommendations."
-        },
-        "drugrecommendation": "Might be included in implication text (imported from FDA; source only states one text per guideline)",
-        "id": 1,
-        "version": 1,
-        "lookupkey": {
-            "CYP2D6": "0.75"
+            "CYP2D6": "0.25"
         }
     },
     {
@@ -577,7 +555,29 @@
         "id": 1,
         "version": 1,
         "lookupkey": {
-            "CYP2D6": "0.25"
+            "CYP2D6": "0.75"
+        }
+    },
+    {
+        "drugid": "RxNorm:1547220",
+        "drug": {
+            "name": "eliglustat"
+        },
+        "phenotypes": {
+            "CYP2D6": "Intermediate Metabolizer"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2D6": "Alters systemic concentrations, effectiveness, and adverse reaction risk (QT prolongation). Indicated for normal, intermediate, and poor metabolizer patients. Ultrarapid metabolizers may not achieve adequate concentrations to achieve a therapeutic effect. The recommended dosages are based on CYP2D6 metabolizer status. Coadministration with strong CYP3A inhibitors is contraindicated in intermediate and poor CYP2D6 metabolizers. Refer to FDA labeling for specific dosing recommendations."
+        },
+        "drugrecommendation": "Might be included in implication text (imported from FDA; source only states one text per guideline)",
+        "id": 1,
+        "version": 1,
+        "lookupkey": {
+            "CYP2D6": "1.0"
         }
     },
     {
@@ -599,161 +599,7 @@
         "id": 1,
         "version": 1,
         "lookupkey": {
-            "CYP2D6": "\u22656.0"
-        }
-    },
-    {
-        "drugid": "RxNorm:1547220",
-        "drug": {
-            "name": "eliglustat"
-        },
-        "phenotypes": {
-            "CYP2D6": "Ultrarapid Metabolizer"
-        },
-        "guideline": {
-            "name": "Table of Pharmacogenetic Associations (Section 1)",
-            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
-        },
-        "implications": {
-            "CYP2D6": "Alters systemic concentrations, effectiveness, and adverse reaction risk (QT prolongation). Indicated for normal, intermediate, and poor metabolizer patients. Ultrarapid metabolizers may not achieve adequate concentrations to achieve a therapeutic effect. The recommended dosages are based on CYP2D6 metabolizer status. Coadministration with strong CYP3A inhibitors is contraindicated in intermediate and poor CYP2D6 metabolizers. Refer to FDA labeling for specific dosing recommendations."
-        },
-        "drugrecommendation": "Might be included in implication text (imported from FDA; source only states one text per guideline)",
-        "id": 1,
-        "version": 1,
-        "lookupkey": {
-            "CYP2D6": "\u22655.0"
-        }
-    },
-    {
-        "drugid": "RxNorm:1547220",
-        "drug": {
-            "name": "eliglustat"
-        },
-        "phenotypes": {
-            "CYP2D6": "Ultrarapid Metabolizer"
-        },
-        "guideline": {
-            "name": "Table of Pharmacogenetic Associations (Section 1)",
-            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
-        },
-        "implications": {
-            "CYP2D6": "Alters systemic concentrations, effectiveness, and adverse reaction risk (QT prolongation). Indicated for normal, intermediate, and poor metabolizer patients. Ultrarapid metabolizers may not achieve adequate concentrations to achieve a therapeutic effect. The recommended dosages are based on CYP2D6 metabolizer status. Coadministration with strong CYP3A inhibitors is contraindicated in intermediate and poor CYP2D6 metabolizers. Refer to FDA labeling for specific dosing recommendations."
-        },
-        "drugrecommendation": "Might be included in implication text (imported from FDA; source only states one text per guideline)",
-        "id": 1,
-        "version": 1,
-        "lookupkey": {
-            "CYP2D6": "\u22653.75"
-        }
-    },
-    {
-        "drugid": "RxNorm:1547220",
-        "drug": {
-            "name": "eliglustat"
-        },
-        "phenotypes": {
-            "CYP2D6": "Ultrarapid Metabolizer"
-        },
-        "guideline": {
-            "name": "Table of Pharmacogenetic Associations (Section 1)",
-            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
-        },
-        "implications": {
-            "CYP2D6": "Alters systemic concentrations, effectiveness, and adverse reaction risk (QT prolongation). Indicated for normal, intermediate, and poor metabolizer patients. Ultrarapid metabolizers may not achieve adequate concentrations to achieve a therapeutic effect. The recommended dosages are based on CYP2D6 metabolizer status. Coadministration with strong CYP3A inhibitors is contraindicated in intermediate and poor CYP2D6 metabolizers. Refer to FDA labeling for specific dosing recommendations."
-        },
-        "drugrecommendation": "Might be included in implication text (imported from FDA; source only states one text per guideline)",
-        "id": 1,
-        "version": 1,
-        "lookupkey": {
-            "CYP2D6": "\u22654.0"
-        }
-    },
-    {
-        "drugid": "RxNorm:1547220",
-        "drug": {
-            "name": "eliglustat"
-        },
-        "phenotypes": {
-            "CYP2D6": "Ultrarapid Metabolizer"
-        },
-        "guideline": {
-            "name": "Table of Pharmacogenetic Associations (Section 1)",
-            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
-        },
-        "implications": {
-            "CYP2D6": "Alters systemic concentrations, effectiveness, and adverse reaction risk (QT prolongation). Indicated for normal, intermediate, and poor metabolizer patients. Ultrarapid metabolizers may not achieve adequate concentrations to achieve a therapeutic effect. The recommended dosages are based on CYP2D6 metabolizer status. Coadministration with strong CYP3A inhibitors is contraindicated in intermediate and poor CYP2D6 metabolizers. Refer to FDA labeling for specific dosing recommendations."
-        },
-        "drugrecommendation": "Might be included in implication text (imported from FDA; source only states one text per guideline)",
-        "id": 1,
-        "version": 1,
-        "lookupkey": {
-            "CYP2D6": "\u22653.5"
-        }
-    },
-    {
-        "drugid": "RxNorm:1547220",
-        "drug": {
-            "name": "eliglustat"
-        },
-        "phenotypes": {
-            "CYP2D6": "Ultrarapid Metabolizer"
-        },
-        "guideline": {
-            "name": "Table of Pharmacogenetic Associations (Section 1)",
-            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
-        },
-        "implications": {
-            "CYP2D6": "Alters systemic concentrations, effectiveness, and adverse reaction risk (QT prolongation). Indicated for normal, intermediate, and poor metabolizer patients. Ultrarapid metabolizers may not achieve adequate concentrations to achieve a therapeutic effect. The recommended dosages are based on CYP2D6 metabolizer status. Coadministration with strong CYP3A inhibitors is contraindicated in intermediate and poor CYP2D6 metabolizers. Refer to FDA labeling for specific dosing recommendations."
-        },
-        "drugrecommendation": "Might be included in implication text (imported from FDA; source only states one text per guideline)",
-        "id": 1,
-        "version": 1,
-        "lookupkey": {
-            "CYP2D6": "\u22653.25"
-        }
-    },
-    {
-        "drugid": "RxNorm:1547220",
-        "drug": {
-            "name": "eliglustat"
-        },
-        "phenotypes": {
-            "CYP2D6": "Ultrarapid Metabolizer"
-        },
-        "guideline": {
-            "name": "Table of Pharmacogenetic Associations (Section 1)",
-            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
-        },
-        "implications": {
-            "CYP2D6": "Alters systemic concentrations, effectiveness, and adverse reaction risk (QT prolongation). Indicated for normal, intermediate, and poor metabolizer patients. Ultrarapid metabolizers may not achieve adequate concentrations to achieve a therapeutic effect. The recommended dosages are based on CYP2D6 metabolizer status. Coadministration with strong CYP3A inhibitors is contraindicated in intermediate and poor CYP2D6 metabolizers. Refer to FDA labeling for specific dosing recommendations."
-        },
-        "drugrecommendation": "Might be included in implication text (imported from FDA; source only states one text per guideline)",
-        "id": 1,
-        "version": 1,
-        "lookupkey": {
-            "CYP2D6": "\u22653.0"
-        }
-    },
-    {
-        "drugid": "RxNorm:1547220",
-        "drug": {
-            "name": "eliglustat"
-        },
-        "phenotypes": {
-            "CYP2D6": "Ultrarapid Metabolizer"
-        },
-        "guideline": {
-            "name": "Table of Pharmacogenetic Associations (Section 1)",
-            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
-        },
-        "implications": {
-            "CYP2D6": "Alters systemic concentrations, effectiveness, and adverse reaction risk (QT prolongation). Indicated for normal, intermediate, and poor metabolizer patients. Ultrarapid metabolizers may not achieve adequate concentrations to achieve a therapeutic effect. The recommended dosages are based on CYP2D6 metabolizer status. Coadministration with strong CYP3A inhibitors is contraindicated in intermediate and poor CYP2D6 metabolizers. Refer to FDA labeling for specific dosing recommendations."
-        },
-        "drugrecommendation": "Might be included in implication text (imported from FDA; source only states one text per guideline)",
-        "id": 1,
-        "version": 1,
-        "lookupkey": {
-            "CYP2D6": "4.0"
+            "CYP2D6": "2.5"
         }
     },
     {
@@ -819,7 +665,161 @@
         "id": 1,
         "version": 1,
         "lookupkey": {
-            "CYP2D6": "2.5"
+            "CYP2D6": "4.0"
+        }
+    },
+    {
+        "drugid": "RxNorm:1547220",
+        "drug": {
+            "name": "eliglustat"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2D6": "Alters systemic concentrations, effectiveness, and adverse reaction risk (QT prolongation). Indicated for normal, intermediate, and poor metabolizer patients. Ultrarapid metabolizers may not achieve adequate concentrations to achieve a therapeutic effect. The recommended dosages are based on CYP2D6 metabolizer status. Coadministration with strong CYP3A inhibitors is contraindicated in intermediate and poor CYP2D6 metabolizers. Refer to FDA labeling for specific dosing recommendations."
+        },
+        "drugrecommendation": "Might be included in implication text (imported from FDA; source only states one text per guideline)",
+        "id": 1,
+        "version": 1,
+        "lookupkey": {
+            "CYP2D6": "\u22653.0"
+        }
+    },
+    {
+        "drugid": "RxNorm:1547220",
+        "drug": {
+            "name": "eliglustat"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2D6": "Alters systemic concentrations, effectiveness, and adverse reaction risk (QT prolongation). Indicated for normal, intermediate, and poor metabolizer patients. Ultrarapid metabolizers may not achieve adequate concentrations to achieve a therapeutic effect. The recommended dosages are based on CYP2D6 metabolizer status. Coadministration with strong CYP3A inhibitors is contraindicated in intermediate and poor CYP2D6 metabolizers. Refer to FDA labeling for specific dosing recommendations."
+        },
+        "drugrecommendation": "Might be included in implication text (imported from FDA; source only states one text per guideline)",
+        "id": 1,
+        "version": 1,
+        "lookupkey": {
+            "CYP2D6": "\u22653.25"
+        }
+    },
+    {
+        "drugid": "RxNorm:1547220",
+        "drug": {
+            "name": "eliglustat"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2D6": "Alters systemic concentrations, effectiveness, and adverse reaction risk (QT prolongation). Indicated for normal, intermediate, and poor metabolizer patients. Ultrarapid metabolizers may not achieve adequate concentrations to achieve a therapeutic effect. The recommended dosages are based on CYP2D6 metabolizer status. Coadministration with strong CYP3A inhibitors is contraindicated in intermediate and poor CYP2D6 metabolizers. Refer to FDA labeling for specific dosing recommendations."
+        },
+        "drugrecommendation": "Might be included in implication text (imported from FDA; source only states one text per guideline)",
+        "id": 1,
+        "version": 1,
+        "lookupkey": {
+            "CYP2D6": "\u22653.5"
+        }
+    },
+    {
+        "drugid": "RxNorm:1547220",
+        "drug": {
+            "name": "eliglustat"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2D6": "Alters systemic concentrations, effectiveness, and adverse reaction risk (QT prolongation). Indicated for normal, intermediate, and poor metabolizer patients. Ultrarapid metabolizers may not achieve adequate concentrations to achieve a therapeutic effect. The recommended dosages are based on CYP2D6 metabolizer status. Coadministration with strong CYP3A inhibitors is contraindicated in intermediate and poor CYP2D6 metabolizers. Refer to FDA labeling for specific dosing recommendations."
+        },
+        "drugrecommendation": "Might be included in implication text (imported from FDA; source only states one text per guideline)",
+        "id": 1,
+        "version": 1,
+        "lookupkey": {
+            "CYP2D6": "\u22653.75"
+        }
+    },
+    {
+        "drugid": "RxNorm:1547220",
+        "drug": {
+            "name": "eliglustat"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2D6": "Alters systemic concentrations, effectiveness, and adverse reaction risk (QT prolongation). Indicated for normal, intermediate, and poor metabolizer patients. Ultrarapid metabolizers may not achieve adequate concentrations to achieve a therapeutic effect. The recommended dosages are based on CYP2D6 metabolizer status. Coadministration with strong CYP3A inhibitors is contraindicated in intermediate and poor CYP2D6 metabolizers. Refer to FDA labeling for specific dosing recommendations."
+        },
+        "drugrecommendation": "Might be included in implication text (imported from FDA; source only states one text per guideline)",
+        "id": 1,
+        "version": 1,
+        "lookupkey": {
+            "CYP2D6": "\u22654.0"
+        }
+    },
+    {
+        "drugid": "RxNorm:1547220",
+        "drug": {
+            "name": "eliglustat"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2D6": "Alters systemic concentrations, effectiveness, and adverse reaction risk (QT prolongation). Indicated for normal, intermediate, and poor metabolizer patients. Ultrarapid metabolizers may not achieve adequate concentrations to achieve a therapeutic effect. The recommended dosages are based on CYP2D6 metabolizer status. Coadministration with strong CYP3A inhibitors is contraindicated in intermediate and poor CYP2D6 metabolizers. Refer to FDA labeling for specific dosing recommendations."
+        },
+        "drugrecommendation": "Might be included in implication text (imported from FDA; source only states one text per guideline)",
+        "id": 1,
+        "version": 1,
+        "lookupkey": {
+            "CYP2D6": "\u22655.0"
+        }
+    },
+    {
+        "drugid": "RxNorm:1547220",
+        "drug": {
+            "name": "eliglustat"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2D6": "Alters systemic concentrations, effectiveness, and adverse reaction risk (QT prolongation). Indicated for normal, intermediate, and poor metabolizer patients. Ultrarapid metabolizers may not achieve adequate concentrations to achieve a therapeutic effect. The recommended dosages are based on CYP2D6 metabolizer status. Coadministration with strong CYP3A inhibitors is contraindicated in intermediate and poor CYP2D6 metabolizers. Refer to FDA labeling for specific dosing recommendations."
+        },
+        "drugrecommendation": "Might be included in implication text (imported from FDA; source only states one text per guideline)",
+        "id": 1,
+        "version": 1,
+        "lookupkey": {
+            "CYP2D6": "\u22656.0"
         }
     },
     {
@@ -841,29 +841,7 @@
         "id": 1,
         "version": 1,
         "lookupkey": {
-            "CYP2D6": "2.25"
-        }
-    },
-    {
-        "drugid": "RxNorm:1547220",
-        "drug": {
-            "name": "eliglustat"
-        },
-        "phenotypes": {
-            "CYP2D6": "Normal Metabolizer"
-        },
-        "guideline": {
-            "name": "Table of Pharmacogenetic Associations (Section 1)",
-            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
-        },
-        "implications": {
-            "CYP2D6": "Alters systemic concentrations, effectiveness, and adverse reaction risk (QT prolongation). Indicated for normal, intermediate, and poor metabolizer patients. Ultrarapid metabolizers may not achieve adequate concentrations to achieve a therapeutic effect. The recommended dosages are based on CYP2D6 metabolizer status. Coadministration with strong CYP3A inhibitors is contraindicated in intermediate and poor CYP2D6 metabolizers. Refer to FDA labeling for specific dosing recommendations."
-        },
-        "drugrecommendation": "Might be included in implication text (imported from FDA; source only states one text per guideline)",
-        "id": 1,
-        "version": 1,
-        "lookupkey": {
-            "CYP2D6": "2.0"
+            "CYP2D6": "1.25"
         }
     },
     {
@@ -929,29 +907,29 @@
         "id": 1,
         "version": 1,
         "lookupkey": {
-            "CYP2D6": "1.25"
+            "CYP2D6": "2.0"
         }
     },
     {
-        "drugid": "RxNorm:2123125",
+        "drugid": "RxNorm:1547220",
         "drug": {
-            "name": "erdafitinib"
+            "name": "eliglustat"
         },
         "phenotypes": {
-            "CYP2C9": "Poor Metabolizer"
+            "CYP2D6": "Normal Metabolizer"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 1)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
         },
         "implications": {
-            "CYP2C9": "May result in higher systemic concentrations and higher adverse reaction risk. Monitor for adverse reactions."
+            "CYP2D6": "Alters systemic concentrations, effectiveness, and adverse reaction risk (QT prolongation). Indicated for normal, intermediate, and poor metabolizer patients. Ultrarapid metabolizers may not achieve adequate concentrations to achieve a therapeutic effect. The recommended dosages are based on CYP2D6 metabolizer status. Coadministration with strong CYP3A inhibitors is contraindicated in intermediate and poor CYP2D6 metabolizers. Refer to FDA labeling for specific dosing recommendations."
         },
         "drugrecommendation": "Might be included in implication text (imported from FDA; source only states one text per guideline)",
         "id": 1,
         "version": 1,
         "lookupkey": {
-            "CYP2C9": "0.5"
+            "CYP2D6": "2.25"
         }
     },
     {
@@ -974,6 +952,28 @@
         "version": 1,
         "lookupkey": {
             "CYP2C9": "0.0"
+        }
+    },
+    {
+        "drugid": "RxNorm:2123125",
+        "drug": {
+            "name": "erdafitinib"
+        },
+        "phenotypes": {
+            "CYP2C9": "Poor Metabolizer"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2C9": "May result in higher systemic concentrations and higher adverse reaction risk. Monitor for adverse reactions."
+        },
+        "drugrecommendation": "Might be included in implication text (imported from FDA; source only states one text per guideline)",
+        "id": 1,
+        "version": 1,
+        "lookupkey": {
+            "CYP2C9": "0.5"
         }
     },
     {
@@ -1149,29 +1149,7 @@
         "id": 1,
         "version": 1,
         "lookupkey": {
-            "CYP2D6": "1.0"
-        }
-    },
-    {
-        "drugid": "RxNorm:6676",
-        "drug": {
-            "name": "meclizine"
-        },
-        "phenotypes": {
-            "CYP2D6": "Intermediate Metabolizer"
-        },
-        "guideline": {
-            "name": "Table of Pharmacogenetic Associations (Section 1)",
-            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
-        },
-        "implications": {
-            "CYP2D6": "May affect systemic concentrations. Monitor for adverse reactions and clinical effect."
-        },
-        "drugrecommendation": "Might be included in implication text (imported from FDA; source only states one text per guideline)",
-        "id": 1,
-        "version": 1,
-        "lookupkey": {
-            "CYP2D6": "0.75"
+            "CYP2D6": "0.25"
         }
     },
     {
@@ -1215,7 +1193,29 @@
         "id": 1,
         "version": 1,
         "lookupkey": {
-            "CYP2D6": "0.25"
+            "CYP2D6": "0.75"
+        }
+    },
+    {
+        "drugid": "RxNorm:6676",
+        "drug": {
+            "name": "meclizine"
+        },
+        "phenotypes": {
+            "CYP2D6": "Intermediate Metabolizer"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2D6": "May affect systemic concentrations. Monitor for adverse reactions and clinical effect."
+        },
+        "drugrecommendation": "Might be included in implication text (imported from FDA; source only states one text per guideline)",
+        "id": 1,
+        "version": 1,
+        "lookupkey": {
+            "CYP2D6": "1.0"
         }
     },
     {
@@ -1237,161 +1237,7 @@
         "id": 1,
         "version": 1,
         "lookupkey": {
-            "CYP2D6": "\u22656.0"
-        }
-    },
-    {
-        "drugid": "RxNorm:6676",
-        "drug": {
-            "name": "meclizine"
-        },
-        "phenotypes": {
-            "CYP2D6": "Ultrarapid Metabolizer"
-        },
-        "guideline": {
-            "name": "Table of Pharmacogenetic Associations (Section 1)",
-            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
-        },
-        "implications": {
-            "CYP2D6": "May affect systemic concentrations. Monitor for adverse reactions and clinical effect."
-        },
-        "drugrecommendation": "Might be included in implication text (imported from FDA; source only states one text per guideline)",
-        "id": 1,
-        "version": 1,
-        "lookupkey": {
-            "CYP2D6": "\u22655.0"
-        }
-    },
-    {
-        "drugid": "RxNorm:6676",
-        "drug": {
-            "name": "meclizine"
-        },
-        "phenotypes": {
-            "CYP2D6": "Ultrarapid Metabolizer"
-        },
-        "guideline": {
-            "name": "Table of Pharmacogenetic Associations (Section 1)",
-            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
-        },
-        "implications": {
-            "CYP2D6": "May affect systemic concentrations. Monitor for adverse reactions and clinical effect."
-        },
-        "drugrecommendation": "Might be included in implication text (imported from FDA; source only states one text per guideline)",
-        "id": 1,
-        "version": 1,
-        "lookupkey": {
-            "CYP2D6": "\u22653.75"
-        }
-    },
-    {
-        "drugid": "RxNorm:6676",
-        "drug": {
-            "name": "meclizine"
-        },
-        "phenotypes": {
-            "CYP2D6": "Ultrarapid Metabolizer"
-        },
-        "guideline": {
-            "name": "Table of Pharmacogenetic Associations (Section 1)",
-            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
-        },
-        "implications": {
-            "CYP2D6": "May affect systemic concentrations. Monitor for adverse reactions and clinical effect."
-        },
-        "drugrecommendation": "Might be included in implication text (imported from FDA; source only states one text per guideline)",
-        "id": 1,
-        "version": 1,
-        "lookupkey": {
-            "CYP2D6": "\u22654.0"
-        }
-    },
-    {
-        "drugid": "RxNorm:6676",
-        "drug": {
-            "name": "meclizine"
-        },
-        "phenotypes": {
-            "CYP2D6": "Ultrarapid Metabolizer"
-        },
-        "guideline": {
-            "name": "Table of Pharmacogenetic Associations (Section 1)",
-            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
-        },
-        "implications": {
-            "CYP2D6": "May affect systemic concentrations. Monitor for adverse reactions and clinical effect."
-        },
-        "drugrecommendation": "Might be included in implication text (imported from FDA; source only states one text per guideline)",
-        "id": 1,
-        "version": 1,
-        "lookupkey": {
-            "CYP2D6": "\u22653.5"
-        }
-    },
-    {
-        "drugid": "RxNorm:6676",
-        "drug": {
-            "name": "meclizine"
-        },
-        "phenotypes": {
-            "CYP2D6": "Ultrarapid Metabolizer"
-        },
-        "guideline": {
-            "name": "Table of Pharmacogenetic Associations (Section 1)",
-            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
-        },
-        "implications": {
-            "CYP2D6": "May affect systemic concentrations. Monitor for adverse reactions and clinical effect."
-        },
-        "drugrecommendation": "Might be included in implication text (imported from FDA; source only states one text per guideline)",
-        "id": 1,
-        "version": 1,
-        "lookupkey": {
-            "CYP2D6": "\u22653.25"
-        }
-    },
-    {
-        "drugid": "RxNorm:6676",
-        "drug": {
-            "name": "meclizine"
-        },
-        "phenotypes": {
-            "CYP2D6": "Ultrarapid Metabolizer"
-        },
-        "guideline": {
-            "name": "Table of Pharmacogenetic Associations (Section 1)",
-            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
-        },
-        "implications": {
-            "CYP2D6": "May affect systemic concentrations. Monitor for adverse reactions and clinical effect."
-        },
-        "drugrecommendation": "Might be included in implication text (imported from FDA; source only states one text per guideline)",
-        "id": 1,
-        "version": 1,
-        "lookupkey": {
-            "CYP2D6": "\u22653.0"
-        }
-    },
-    {
-        "drugid": "RxNorm:6676",
-        "drug": {
-            "name": "meclizine"
-        },
-        "phenotypes": {
-            "CYP2D6": "Ultrarapid Metabolizer"
-        },
-        "guideline": {
-            "name": "Table of Pharmacogenetic Associations (Section 1)",
-            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
-        },
-        "implications": {
-            "CYP2D6": "May affect systemic concentrations. Monitor for adverse reactions and clinical effect."
-        },
-        "drugrecommendation": "Might be included in implication text (imported from FDA; source only states one text per guideline)",
-        "id": 1,
-        "version": 1,
-        "lookupkey": {
-            "CYP2D6": "4.0"
+            "CYP2D6": "2.5"
         }
     },
     {
@@ -1457,7 +1303,161 @@
         "id": 1,
         "version": 1,
         "lookupkey": {
-            "CYP2D6": "2.5"
+            "CYP2D6": "4.0"
+        }
+    },
+    {
+        "drugid": "RxNorm:6676",
+        "drug": {
+            "name": "meclizine"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2D6": "May affect systemic concentrations. Monitor for adverse reactions and clinical effect."
+        },
+        "drugrecommendation": "Might be included in implication text (imported from FDA; source only states one text per guideline)",
+        "id": 1,
+        "version": 1,
+        "lookupkey": {
+            "CYP2D6": "\u22653.0"
+        }
+    },
+    {
+        "drugid": "RxNorm:6676",
+        "drug": {
+            "name": "meclizine"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2D6": "May affect systemic concentrations. Monitor for adverse reactions and clinical effect."
+        },
+        "drugrecommendation": "Might be included in implication text (imported from FDA; source only states one text per guideline)",
+        "id": 1,
+        "version": 1,
+        "lookupkey": {
+            "CYP2D6": "\u22653.25"
+        }
+    },
+    {
+        "drugid": "RxNorm:6676",
+        "drug": {
+            "name": "meclizine"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2D6": "May affect systemic concentrations. Monitor for adverse reactions and clinical effect."
+        },
+        "drugrecommendation": "Might be included in implication text (imported from FDA; source only states one text per guideline)",
+        "id": 1,
+        "version": 1,
+        "lookupkey": {
+            "CYP2D6": "\u22653.5"
+        }
+    },
+    {
+        "drugid": "RxNorm:6676",
+        "drug": {
+            "name": "meclizine"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2D6": "May affect systemic concentrations. Monitor for adverse reactions and clinical effect."
+        },
+        "drugrecommendation": "Might be included in implication text (imported from FDA; source only states one text per guideline)",
+        "id": 1,
+        "version": 1,
+        "lookupkey": {
+            "CYP2D6": "\u22653.75"
+        }
+    },
+    {
+        "drugid": "RxNorm:6676",
+        "drug": {
+            "name": "meclizine"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2D6": "May affect systemic concentrations. Monitor for adverse reactions and clinical effect."
+        },
+        "drugrecommendation": "Might be included in implication text (imported from FDA; source only states one text per guideline)",
+        "id": 1,
+        "version": 1,
+        "lookupkey": {
+            "CYP2D6": "\u22654.0"
+        }
+    },
+    {
+        "drugid": "RxNorm:6676",
+        "drug": {
+            "name": "meclizine"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2D6": "May affect systemic concentrations. Monitor for adverse reactions and clinical effect."
+        },
+        "drugrecommendation": "Might be included in implication text (imported from FDA; source only states one text per guideline)",
+        "id": 1,
+        "version": 1,
+        "lookupkey": {
+            "CYP2D6": "\u22655.0"
+        }
+    },
+    {
+        "drugid": "RxNorm:6676",
+        "drug": {
+            "name": "meclizine"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2D6": "May affect systemic concentrations. Monitor for adverse reactions and clinical effect."
+        },
+        "drugrecommendation": "Might be included in implication text (imported from FDA; source only states one text per guideline)",
+        "id": 1,
+        "version": 1,
+        "lookupkey": {
+            "CYP2D6": "\u22656.0"
         }
     },
     {
@@ -1545,7 +1545,7 @@
         "id": 1,
         "version": 1,
         "lookupkey": {
-            "CYP2C9": "0.5"
+            "CYP2C9": "0.0"
         }
     },
     {
@@ -1567,7 +1567,7 @@
         "id": 1,
         "version": 1,
         "lookupkey": {
-            "CYP2C9": "0.0"
+            "CYP2C9": "0.5"
         }
     },
     {
@@ -1699,7 +1699,7 @@
         "id": 1,
         "version": 1,
         "lookupkey": {
-            "CYP2C9": "0.5"
+            "CYP2C9": "0.0"
         }
     },
     {
@@ -1721,29 +1721,7 @@
         "id": 1,
         "version": 1,
         "lookupkey": {
-            "CYP2C9": "0.0"
-        }
-    },
-    {
-        "drugid": "RxNorm:2121085",
-        "drug": {
-            "name": "siponimod"
-        },
-        "phenotypes": {
-            "CYP2C9": "Intermediate Metabolizer"
-        },
-        "guideline": {
-            "name": "Table of Pharmacogenetic Associations (Section 1)",
-            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
-        },
-        "implications": {
-            "CYP2C9": "Results in higher systemic concentrations. Adjust dosage based on genotype. Do not use in patients with CYP2C9 *3/*3 genotype. Refer to FDA labeling for specific dosing recommendations."
-        },
-        "drugrecommendation": "Might be included in implication text (imported from FDA; source only states one text per guideline)",
-        "id": 1,
-        "version": 1,
-        "lookupkey": {
-            "CYP2C9": "1.5"
+            "CYP2C9": "0.5"
         }
     },
     {
@@ -1766,6 +1744,28 @@
         "version": 1,
         "lookupkey": {
             "CYP2C9": "1.0"
+        }
+    },
+    {
+        "drugid": "RxNorm:2121085",
+        "drug": {
+            "name": "siponimod"
+        },
+        "phenotypes": {
+            "CYP2C9": "Intermediate Metabolizer"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": {
+            "CYP2C9": "Results in higher systemic concentrations. Adjust dosage based on genotype. Do not use in patients with CYP2C9 *3/*3 genotype. Refer to FDA labeling for specific dosing recommendations."
+        },
+        "drugrecommendation": "Might be included in implication text (imported from FDA; source only states one text per guideline)",
+        "id": 1,
+        "version": 1,
+        "lookupkey": {
+            "CYP2C9": "1.5"
         }
     },
     {

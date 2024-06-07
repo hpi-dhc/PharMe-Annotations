@@ -15,6 +15,8 @@ DIPLOTYPE_ENDPOINT = 'https://api.cpicpgx.org/v1/diplotype'
 def lookupkeysPath():
     return os.path.join(TEMP_DIR, 'cpic-lookupkeys.json')
 
+# If lookupkeys were not cached initially, the list is being built up and stored
+# after the whole script is done
 def areLookupkeysCached():
     return os.path.isfile(lookupkeysPath())
 
@@ -42,6 +44,8 @@ def getLookupkeys(lookupkeyMap, gene, phenotype):
     for lookupkey in lookupkeys:
         if not str(lookupkey) in map(lambda key: str(key), uniqueLookupkeys):
             uniqueLookupkeys.append(lookupkey)
+    # Sort lookupkeys for robust order in resolved guidelines
+    uniqueLookupkeys.sort(key = lambda item: str(item))
     if not gene in lookupkeyMap:
         lookupkeyMap[gene] = {}
     lookupkeyMap[gene][phenotype] = uniqueLookupkeys

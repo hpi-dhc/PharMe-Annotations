@@ -24,7 +24,7 @@
         "id": 1,
         "version": 1,
         "lookupkey": {
-            "CYP2C9": "0.5",
+            "CYP2C9": "0.0",
             "VKORC1": "-1639G>A variant carriers",
             "CYP4F2": "rs2108622 T carriers",
             "CYP2C": "rs12777823 A carriers"
@@ -55,7 +55,7 @@
         "id": 1,
         "version": 1,
         "lookupkey": {
-            "CYP2C9": "0.0",
+            "CYP2C9": "0.5",
             "VKORC1": "-1639G>A variant carriers",
             "CYP4F2": "rs2108622 T carriers",
             "CYP2C": "rs12777823 A carriers"
