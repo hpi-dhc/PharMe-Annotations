@@ -130,7 +130,7 @@ def main():
     includedSections = { 'section1': 'Section 1', 'section2': 'Section 2' }
     cpicDrugs = getCpicDrugs()
     fdaAssociations = {}
-    skippedRows = set()
+    multipleRows = set()
     with open(FDA_INFO_FILE, 'w') as fdaInfoFile:
         fdaInfoFile.write('')
     for sectionId, sectionName in includedSections.items():
@@ -156,7 +156,7 @@ def main():
                 addToFdaInfoFile(drug, gene, sectionName)
 
             if drug in fdaAssociations:
-                skippedRows.add(drug)
+                multipleRows.add(drug)
                 continue
 
             phenotypes = cpicFormatFdaPhenotypes(cells[2].text)
@@ -179,9 +179,10 @@ def main():
                 }
             }
 
-    for drug in skippedRows:
+    for drug in multipleRows:
         del fdaAssociations[drug]
-        print(f'[INFO] Skipping {drug} (multiple rows)')
+        print(f'[INFO] Skipping {drug} (multiple rows); ' \
+              'consider adding manually')
 
     rxCuis = getRxCuis()
     fdaAnnotations = []
