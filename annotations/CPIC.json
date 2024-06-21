@@ -1,6 +1,5 @@
 [
     {
-        "drugid": "RxNorm:11289",
         "drug": {
             "name": "warfarin"
         },
@@ -11,18 +10,19 @@
             "CYP2C": "rs12777823 A carriers"
         },
         "guideline": {
-            "name": "CYP2C9, VKORC1, CYP4F2 and Warfarin",
+            "name": "CPIC\u00ae Guideline for Pharmacogenetics-Guided Warfarin Dosing",
             "url": "https://cpicpgx.org/guidelines/guideline-for-warfarin-and-cyp2c9-and-vkorc1/"
         },
-        "implications": {
-            "CYP2C9": "Poor Metabolizer",
-            "VKORC1": "-1639G>A variant carriers",
-            "CYP4F2": "rs2108622 T carriers",
-            "CYP2C": "rs12777823 A carriers"
-        },
-        "drugrecommendation": "none",
         "id": 1,
         "version": 1,
+        "drugid": "RxNorm:11289",
+        "implications": {
+            "CYP2C9": "No implication",
+            "VKORC1": "No implication",
+            "CYP4F2": "No implication",
+            "CYP2C": "No implication"
+        },
+        "recommendation": "No recommendation",
         "lookupkey": {
             "CYP2C9": "0.0",
             "VKORC1": "-1639G>A variant carriers",
@@ -31,7 +31,6 @@
         }
     },
     {
-        "drugid": "RxNorm:11289",
         "drug": {
             "name": "warfarin"
         },
@@ -42,23 +41,624 @@
             "CYP2C": "rs12777823 A carriers"
         },
         "guideline": {
-            "name": "CYP2C9, VKORC1, CYP4F2 and Warfarin",
+            "name": "CPIC\u00ae Guideline for Pharmacogenetics-Guided Warfarin Dosing",
             "url": "https://cpicpgx.org/guidelines/guideline-for-warfarin-and-cyp2c9-and-vkorc1/"
         },
-        "implications": {
-            "CYP2C9": "Poor Metabolizer",
-            "VKORC1": "-1639G>A variant carriers",
-            "CYP4F2": "rs2108622 T carriers",
-            "CYP2C": "rs12777823 A carriers"
-        },
-        "drugrecommendation": "none",
         "id": 1,
         "version": 1,
+        "drugid": "RxNorm:11289",
+        "implications": {
+            "CYP2C9": "No implication",
+            "VKORC1": "No implication",
+            "CYP4F2": "No implication",
+            "CYP2C": "No implication"
+        },
+        "recommendation": "No recommendation",
         "lookupkey": {
             "CYP2C9": "0.5",
             "VKORC1": "-1639G>A variant carriers",
             "CYP4F2": "rs2108622 T carriers",
             "CYP2C": "rs12777823 A carriers"
+        }
+    },
+    {
+        "drug": {
+            "name": "aceclofenac"
+        },
+        "guideline": {
+            "name": "CPIC\u00ae Guideline for NSAIDs based on CYP2C9 genotype",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-nsaids-based-on-cyp2c9-genotype/"
+        },
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:16689",
+        "phenotypes": {
+            "CYP2C9": "All"
+        },
+        "implications": {
+            "CYP2C9": "No implication"
+        },
+        "recommendation": "No recommendation",
+        "lookupkey": {
+            "CYP2C9": "All"
+        }
+    },
+    {
+        "drug": {
+            "name": "chlorpropamide"
+        },
+        "guideline": {
+            "name": "CPIC\u00ae Guideline for G6PD",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-g6pd/"
+        },
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:2404",
+        "phenotypes": {
+            "G6PD": "All"
+        },
+        "implications": {
+            "G6PD": "No implication"
+        },
+        "recommendation": "No recommendation",
+        "lookupkey": {
+            "G6PD": "All"
+        }
+    },
+    {
+        "drug": {
+            "name": "dabrafenib"
+        },
+        "guideline": {
+            "name": "CPIC\u00ae Guideline for G6PD",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-g6pd/"
+        },
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:1424911",
+        "phenotypes": {
+            "G6PD": "All"
+        },
+        "implications": {
+            "G6PD": "No implication"
+        },
+        "recommendation": "No recommendation",
+        "lookupkey": {
+            "G6PD": "All"
+        }
+    },
+    {
+        "drug": {
+            "name": "diclofenac"
+        },
+        "guideline": {
+            "name": "CPIC\u00ae Guideline for NSAIDs based on CYP2C9 genotype",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-nsaids-based-on-cyp2c9-genotype/"
+        },
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:3355",
+        "phenotypes": {
+            "CYP2C9": "All"
+        },
+        "implications": {
+            "CYP2C9": "No implication"
+        },
+        "recommendation": "No recommendation",
+        "lookupkey": {
+            "CYP2C9": "All"
+        }
+    },
+    {
+        "drug": {
+            "name": "duloxetine"
+        },
+        "guideline": {
+            "name": "CPIC\u00ae Guideline for Serotonin Reuptake Inhibitor Antidepressants and CYP2D6, CYP2C19, CYP2B6, SLC6A4, and HTR2A",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-ssri-and-snri-antidepressants/"
+        },
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:72625",
+        "phenotypes": {
+            "CYP2C19": "All",
+            "CYP2D6": "All"
+        },
+        "implications": {
+            "CYP2C19": "No implication",
+            "CYP2D6": "No implication"
+        },
+        "recommendation": "No recommendation",
+        "lookupkey": {
+            "CYP2C19": "All",
+            "CYP2D6": "All"
+        }
+    },
+    {
+        "drug": {
+            "name": "esomeprazole"
+        },
+        "guideline": {
+            "name": "CPIC\u00ae Guideline for Proton Pump Inhibitors and CYP2C19",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-proton-pump-inhibitors-and-cyp2c19/"
+        },
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:283742",
+        "phenotypes": {
+            "CYP2C19": "All"
+        },
+        "implications": {
+            "CYP2C19": "No implication"
+        },
+        "recommendation": "No recommendation",
+        "lookupkey": {
+            "CYP2C19": "All"
+        }
+    },
+    {
+        "drug": {
+            "name": "fluoxetine"
+        },
+        "guideline": {
+            "name": "CPIC\u00ae Guideline for Serotonin Reuptake Inhibitor Antidepressants and CYP2D6, CYP2C19, CYP2B6, SLC6A4, and HTR2A",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-ssri-and-snri-antidepressants/"
+        },
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:4493",
+        "phenotypes": {
+            "CYP2C19": "All",
+            "CYP2D6": "All"
+        },
+        "implications": {
+            "CYP2C19": "No implication",
+            "CYP2D6": "No implication"
+        },
+        "recommendation": "No recommendation",
+        "lookupkey": {
+            "CYP2C19": "All",
+            "CYP2D6": "All"
+        }
+    },
+    {
+        "drug": {
+            "name": "gliclazide"
+        },
+        "guideline": {
+            "name": "CPIC\u00ae Guideline for G6PD",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-g6pd/"
+        },
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:4816",
+        "phenotypes": {
+            "G6PD": "All"
+        },
+        "implications": {
+            "G6PD": "No implication"
+        },
+        "recommendation": "No recommendation",
+        "lookupkey": {
+            "G6PD": "All"
+        }
+    },
+    {
+        "drug": {
+            "name": "glimepiride"
+        },
+        "guideline": {
+            "name": "CPIC\u00ae Guideline for G6PD",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-g6pd/"
+        },
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:25789",
+        "phenotypes": {
+            "G6PD": "All"
+        },
+        "implications": {
+            "G6PD": "No implication"
+        },
+        "recommendation": "No recommendation",
+        "lookupkey": {
+            "G6PD": "All"
+        }
+    },
+    {
+        "drug": {
+            "name": "glipizide"
+        },
+        "guideline": {
+            "name": "CPIC\u00ae Guideline for G6PD",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-g6pd/"
+        },
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:4821",
+        "phenotypes": {
+            "G6PD": "All"
+        },
+        "implications": {
+            "G6PD": "No implication"
+        },
+        "recommendation": "No recommendation",
+        "lookupkey": {
+            "G6PD": "All"
+        }
+    },
+    {
+        "drug": {
+            "name": "indomethacin"
+        },
+        "guideline": {
+            "name": "CPIC\u00ae Guideline for NSAIDs based on CYP2C9 genotype",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-nsaids-based-on-cyp2c9-genotype/"
+        },
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:5781",
+        "phenotypes": {
+            "CYP2C9": "All"
+        },
+        "implications": {
+            "CYP2C9": "No implication"
+        },
+        "recommendation": "No recommendation",
+        "lookupkey": {
+            "CYP2C9": "All"
+        }
+    },
+    {
+        "drug": {
+            "name": "mepacrine"
+        },
+        "guideline": {
+            "name": "CPIC\u00ae Guideline for G6PD",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-g6pd/"
+        },
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:9061",
+        "phenotypes": {
+            "G6PD": "All"
+        },
+        "implications": {
+            "G6PD": "No implication"
+        },
+        "recommendation": "No recommendation",
+        "lookupkey": {
+            "G6PD": "All"
+        }
+    },
+    {
+        "drug": {
+            "name": "mesalazine"
+        },
+        "guideline": {
+            "name": "CPIC\u00ae Guideline for G6PD",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-g6pd/"
+        },
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:52582",
+        "phenotypes": {
+            "G6PD": "All"
+        },
+        "implications": {
+            "G6PD": "No implication"
+        },
+        "recommendation": "No recommendation",
+        "lookupkey": {
+            "G6PD": "All"
+        }
+    },
+    {
+        "drug": {
+            "name": "methadone"
+        },
+        "guideline": {
+            "name": "CPIC\u00ae Guideline for Opioids and CYP2D6, OPRM1, and COMT",
+            "url": "https://cpicpgx.org/guidelines/guideline-for-codeine-and-cyp2d6/"
+        },
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:6813",
+        "phenotypes": {
+            "CYP2D6": "All"
+        },
+        "implications": {
+            "CYP2D6": "No implication"
+        },
+        "recommendation": "No recommendation",
+        "lookupkey": {
+            "CYP2D6": "All"
+        }
+    },
+    {
+        "drug": {
+            "name": "moxifloxacin"
+        },
+        "guideline": {
+            "name": "CPIC\u00ae Guideline for G6PD",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-g6pd/"
+        },
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:139462",
+        "phenotypes": {
+            "G6PD": "All"
+        },
+        "implications": {
+            "G6PD": "No implication"
+        },
+        "recommendation": "No recommendation",
+        "lookupkey": {
+            "G6PD": "All"
+        }
+    },
+    {
+        "drug": {
+            "name": "nabumetone"
+        },
+        "guideline": {
+            "name": "CPIC\u00ae Guideline for NSAIDs based on CYP2C9 genotype",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-nsaids-based-on-cyp2c9-genotype/"
+        },
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:31448",
+        "phenotypes": {
+            "CYP2C9": "All"
+        },
+        "implications": {
+            "CYP2C9": "No implication"
+        },
+        "recommendation": "No recommendation",
+        "lookupkey": {
+            "CYP2C9": "All"
+        }
+    },
+    {
+        "drug": {
+            "name": "naproxen"
+        },
+        "guideline": {
+            "name": "CPIC\u00ae Guideline for NSAIDs based on CYP2C9 genotype",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-nsaids-based-on-cyp2c9-genotype/"
+        },
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:7258",
+        "phenotypes": {
+            "CYP2C9": "All"
+        },
+        "implications": {
+            "CYP2C9": "No implication"
+        },
+        "recommendation": "No recommendation",
+        "lookupkey": {
+            "CYP2C9": "All"
+        }
+    },
+    {
+        "drug": {
+            "name": "nicorandil"
+        },
+        "guideline": {
+            "name": "CPIC\u00ae Guideline for G6PD",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-g6pd/"
+        },
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:31748",
+        "phenotypes": {
+            "G6PD": "All"
+        },
+        "implications": {
+            "G6PD": "No implication"
+        },
+        "recommendation": "No recommendation",
+        "lookupkey": {
+            "G6PD": "All"
+        }
+    },
+    {
+        "drug": {
+            "name": "nitrofural"
+        },
+        "guideline": {
+            "name": "CPIC\u00ae Guideline for G6PD",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-g6pd/"
+        },
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:7455",
+        "phenotypes": {
+            "G6PD": "All"
+        },
+        "implications": {
+            "G6PD": "No implication"
+        },
+        "recommendation": "No recommendation",
+        "lookupkey": {
+            "G6PD": "All"
+        }
+    },
+    {
+        "drug": {
+            "name": "oxycodone"
+        },
+        "guideline": {
+            "name": "CPIC\u00ae Guideline for Opioids and CYP2D6, OPRM1, and COMT",
+            "url": "https://cpicpgx.org/guidelines/guideline-for-codeine-and-cyp2d6/"
+        },
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:7804",
+        "phenotypes": {
+            "CYP2D6": "All"
+        },
+        "implications": {
+            "CYP2D6": "No implication"
+        },
+        "recommendation": "No recommendation",
+        "lookupkey": {
+            "CYP2D6": "All"
+        }
+    },
+    {
+        "drug": {
+            "name": "probenecid"
+        },
+        "guideline": {
+            "name": "CPIC\u00ae Guideline for G6PD",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-g6pd/"
+        },
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:8698",
+        "phenotypes": {
+            "G6PD": "All"
+        },
+        "implications": {
+            "G6PD": "No implication"
+        },
+        "recommendation": "No recommendation",
+        "lookupkey": {
+            "G6PD": "All"
+        }
+    },
+    {
+        "drug": {
+            "name": "rabeprazole"
+        },
+        "guideline": {
+            "name": "CPIC\u00ae Guideline for Proton Pump Inhibitors and CYP2C19",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-proton-pump-inhibitors-and-cyp2c19/"
+        },
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:114979",
+        "phenotypes": {
+            "CYP2C19": "All"
+        },
+        "implications": {
+            "CYP2C19": "No implication"
+        },
+        "recommendation": "No recommendation",
+        "lookupkey": {
+            "CYP2C19": "All"
+        }
+    },
+    {
+        "drug": {
+            "name": "sodium nitrite"
+        },
+        "guideline": {
+            "name": "CPIC\u00ae Guideline for G6PD",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-g6pd/"
+        },
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:9894",
+        "phenotypes": {
+            "G6PD": "All"
+        },
+        "implications": {
+            "G6PD": "No implication"
+        },
+        "recommendation": "No recommendation",
+        "lookupkey": {
+            "G6PD": "All"
+        }
+    },
+    {
+        "drug": {
+            "name": "sulfacetamide"
+        },
+        "guideline": {
+            "name": "CPIC\u00ae Guideline for G6PD",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-g6pd/"
+        },
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:10169",
+        "phenotypes": {
+            "G6PD": "All"
+        },
+        "implications": {
+            "G6PD": "No implication"
+        },
+        "recommendation": "No recommendation",
+        "lookupkey": {
+            "G6PD": "All"
+        }
+    },
+    {
+        "drug": {
+            "name": "tegafur"
+        },
+        "guideline": {
+            "name": "CPIC\u00ae Guideline for Fluoropyrimidines and DPYD",
+            "url": "https://cpicpgx.org/guidelines/guideline-for-fluoropyrimidines-and-dpyd/"
+        },
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:4582",
+        "phenotypes": {
+            "DPYD": "All"
+        },
+        "implications": {
+            "DPYD": "No implication"
+        },
+        "recommendation": "No recommendation",
+        "lookupkey": {
+            "DPYD": "All"
+        }
+    },
+    {
+        "drug": {
+            "name": "tolazamide"
+        },
+        "guideline": {
+            "name": "CPIC\u00ae Guideline for G6PD",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-g6pd/"
+        },
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:10633",
+        "phenotypes": {
+            "G6PD": "All"
+        },
+        "implications": {
+            "G6PD": "No implication"
+        },
+        "recommendation": "No recommendation",
+        "lookupkey": {
+            "G6PD": "All"
+        }
+    },
+    {
+        "drug": {
+            "name": "trametinib"
+        },
+        "guideline": {
+            "name": "CPIC\u00ae Guideline for G6PD",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-g6pd/"
+        },
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:1425099",
+        "phenotypes": {
+            "G6PD": "All"
+        },
+        "implications": {
+            "G6PD": "No implication"
+        },
+        "recommendation": "No recommendation",
+        "lookupkey": {
+            "G6PD": "All"
         }
     }
 ]

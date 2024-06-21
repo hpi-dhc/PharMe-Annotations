@@ -9,6 +9,9 @@ if not os.path.isdir(TEMP_DIR):
 
 DEFAULT_ID_AND_VERSION = 1
 
+MANUAL_PREFIX = 'manual_'
+RECOMMENDATIONLESS_PREFIX = 'recommendationless_'
+
 class CacheMissError(Exception):
     def __init__(self, key, path):
         message = f'[ERROR] Cache miss in {path} for {key}; ' \

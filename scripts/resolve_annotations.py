@@ -5,10 +5,10 @@ import os
 import requests
 
 from constants import UNRESOLVED_DIR, RESOLVED_DIR, TEMP_DIR, \
-    DEFAULT_ID_AND_VERSION
+    DEFAULT_ID_AND_VERSION, RECOMMENDATIONLESS_PREFIX, MANUAL_PREFIX
 from constants import CacheMissError
 
-from crawl_fda import getRxCuiForDrug, formatRxCui
+from crawl_fda import NoRxCuiFoundError, getRxCuiForDrug, formatRxCui
 
 DIPLOTYPE_ENDPOINT = 'https://api.cpicpgx.org/v1/diplotype'
 
@@ -66,7 +66,12 @@ def resolveDrug(drug):
 
 def main():
     lookupkeyMap = getLookupkeyMap()
+    for fileName in os.listdir(RESOLVED_DIR):
+        os.remove(os.path.join(RESOLVED_DIR, fileName))
     for fileName in os.listdir(UNRESOLVED_DIR):
+        # Skip until open questions are clarified
+        if fileName.startswith('manual_FDA'):
+            continue
         with open(os.path.join(UNRESOLVED_DIR, fileName), 'r') as unresolvedFile:
             unresolvedContent = json.load(unresolvedFile)
             resolvedContent = []
@@ -79,12 +84,35 @@ def main():
                     unresolvedGuideline['id'] = DEFAULT_ID_AND_VERSION
                 if not 'version' in unresolvedGuideline:
                     unresolvedGuideline['version'] = DEFAULT_ID_AND_VERSION
+                if not 'drugid' in unresolvedGuideline:
+                    try:
+                        rxCui = getRxCuiForDrug(unresolvedGuideline['drug']['name'])
+                    except NoRxCuiFoundError as e:
+                        print(f'{str(e)}; skipping guideline')
+                        continue
+                    else:
+                        unresolvedGuideline['drugid'] = formatRxCui(rxCui)
+                if (fileName.startswith(RECOMMENDATIONLESS_PREFIX)):
+                    if not 'phenotypes' in unresolvedGuideline:
+                        unresolvedGuideline['phenotypes'] = {}
+                    unresolvedGuideline['implications'] = {}                        
+                    genes = unresolvedGuideline['genes'] \
+                        if 'genes' in unresolvedGuideline \
+                        else unresolvedGuideline['phenotypes'].keys()
+                    for gene in genes:
+                        if not gene in unresolvedGuideline['phenotypes']:
+                            unresolvedGuideline['phenotypes'][gene] = "All"
+                        unresolvedGuideline['implications'][gene] = \
+                            "No implication"
+                    unresolvedGuideline['recommendation'] = "No recommendation"
+                    if 'genes' in unresolvedGuideline:
+                        del unresolvedGuideline['genes']
                 for gene, phenotype in unresolvedGuideline['phenotypes'].items():
                     lookupkeys = getLookupkeys(lookupkeyMap, gene, phenotype)
                     if len(lookupkeys) == 0:
                         print('[WARNING] No CPIC guideline for ' \
                             f'({unresolvedGuideline["drug"]["name"]}, {gene}, ' \
-                                f'{phenotype}); using FDA phenotype "{phenotype}"')
+                                f'{phenotype}); using phenotype "{phenotype}"')
                         lookupkeys = [{gene: phenotype}]
                     unresolvedLookupkeys[gene] = lookupkeys
                 lookupkeyCombinations = list(itertools.product(*unresolvedLookupkeys.values()))
@@ -95,7 +123,17 @@ def main():
                     resolvedGuideline = copy.deepcopy(unresolvedGuideline)
                     resolvedGuideline['lookupkey'] = lookupkey
                     resolvedContent.append(resolvedGuideline)
-            with open(os.path.join(RESOLVED_DIR, fileName), 'w') as resolvedFile:
+            resolvedFileName = fileName
+            if fileName.startswith(RECOMMENDATIONLESS_PREFIX):
+                resolvedFileName = fileName.removeprefix(RECOMMENDATIONLESS_PREFIX)
+            if fileName.startswith(MANUAL_PREFIX):
+                resolvedFileName = fileName.removeprefix(MANUAL_PREFIX)
+            resolvedFilePath = os.path.join(RESOLVED_DIR, resolvedFileName)
+            if os.path.exists(resolvedFilePath):
+                with open(resolvedFilePath, 'r') as resolvedFile:
+                    presentResolvedContent = json.load(resolvedFile)
+                    resolvedContent.extend(presentResolvedContent)
+            with open(resolvedFilePath, 'w') as resolvedFile:
                 json.dump(resolvedContent, resolvedFile, indent=4)
 
     if not areLookupkeysCached():

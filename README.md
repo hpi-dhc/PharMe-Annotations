@@ -71,10 +71,23 @@ only in `unresolved-annotations/` without running the script, they will not
 be adopted. (And yes, this could be automated with a workflow, but I currently
 don't have time for this.)_
 
-_Special case: `additional_drugs.json`_. These are drugs without guidelines
+The file `additional_drugs.json` defines drugs without guidelines
 that are needed in PharMe, e.g., for drug-drug interactions. Empty annotations
-will be created to comply with the `CpicRecommendation` in Anni. RxCUIs will be
-added using the Rx API.
+will be created to comply with the `CpicRecommendation` in Anni.
+
+RxCUIs for all manual additions will be added using the Rx API.
+
+Manual additions to CPIC guidelines – for medications that explicitly have no
+recommendations or recommendations that cannot be processed in PharMe – can be
+made by adding to the `recommendationless_CPIC.json`.
+In the app, the standard "more data is needed" message will be shown, however,
+in contrast to additional drugs an empty recommendation **with a source URL**
+will be created.
+Either phenotypes and implications can be given or a list of genes that will be
+used to create "All" phenotypes and empty implications.
+
+Manual additions to the crawled FDA content (e.g., for guidelines with multiple
+rows) can be made by adding to the `manual_FDA.json` file.
 
 ### Crawl FDA Associations
 

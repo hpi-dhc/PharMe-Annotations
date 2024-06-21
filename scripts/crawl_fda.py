@@ -18,6 +18,11 @@ class UnexpectedWebpageFormatError(Exception):
             message += f': {reason}'
         super().__init__(message)
 
+class NoRxCuiFoundError(Exception):
+    def __init__(self, drugName):
+        message = f'[ERROR] No RxCui found for {drugName}'
+        super().__init__(message)
+
 def getFdaContent():
     fdaFileName = 'fda-content.html'
     fdaFilePath = os.path.join(TEMP_DIR, fdaFileName)
@@ -82,6 +87,9 @@ def getRxCuis():
 
 def getRxCuiForDrug(drug):
     rxUrl = f'https://rxnav.nlm.nih.gov/REST/rxcui.json?name={drug}'
+    rxNormResponse = requests.get(rxUrl).json()['idGroup']
+    if not 'rxnormId' in rxNormResponse:
+        raise NoRxCuiFoundError(drugName=drug)
     rxNorms = requests.get(rxUrl).json()['idGroup']['rxnormId']
     if len(rxNorms) != 1:
         raise Exception('[ERROR] Expecting Rx response of length 1')

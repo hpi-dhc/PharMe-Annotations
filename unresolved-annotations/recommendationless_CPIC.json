@@ -1,0 +1,298 @@
+[
+    {
+        "drug": {
+            "name": "warfarin"
+        },
+        "phenotypes": {
+            "CYP2C9": "Poor Metabolizer",
+            "VKORC1": "-1639G>A variant carriers",
+            "CYP4F2": "rs2108622 T carriers",
+            "CYP2C": "rs12777823 A carriers"
+
+        },
+        "guideline": {
+            "name": "CPIC® Guideline for Pharmacogenetics-Guided Warfarin Dosing",
+            "url": "https://cpicpgx.org/guidelines/guideline-for-warfarin-and-cyp2c9-and-vkorc1/"
+        }
+    },
+    {
+        "drug": {
+            "name": "aceclofenac"
+        },
+        "genes": ["CYP2C9"],
+        "guideline": {
+            "name": "CPIC® Guideline for NSAIDs based on CYP2C9 genotype",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-nsaids-based-on-cyp2c9-genotype/"
+        }
+    },
+    {
+        "drug": {
+            "name": "chlorpropamide"
+        },
+        "genes": ["G6PD"],
+        "guideline": {
+            "name": "CPIC® Guideline for G6PD",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-g6pd/"
+        }
+    },
+    {
+        "drug": {
+            "name": "dabrafenib"
+        },
+        "genes": ["G6PD"],
+        "guideline": {
+            "name": "CPIC® Guideline for G6PD",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-g6pd/"
+        }
+    },
+    {
+        "drug": {
+            "name": "diclofenac"
+        },
+        "genes": ["CYP2C9"],
+        "guideline": {
+            "name": "CPIC® Guideline for NSAIDs based on CYP2C9 genotype",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-nsaids-based-on-cyp2c9-genotype/"
+        }
+    },
+    {
+        "drug": {
+            "name": "duloxetine"
+        },
+        "genes": ["CYP2C19", "CYP2D6"],
+        "guideline": {
+            "name": "CPIC® Guideline for Serotonin Reuptake Inhibitor Antidepressants and CYP2D6, CYP2C19, CYP2B6, SLC6A4, and HTR2A",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-ssri-and-snri-antidepressants/"
+        }
+    },
+    {
+        "drug": {
+            "name": "esomeprazole"
+        },
+        "genes": ["CYP2C19"],
+        "guideline": {
+            "name": "CPIC® Guideline for Proton Pump Inhibitors and CYP2C19",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-proton-pump-inhibitors-and-cyp2c19/"
+        }
+    },
+    {
+        "drug": {
+            "name": "fluoxetine"
+        },
+        "genes": ["CYP2C19", "CYP2D6"],
+        "guideline": {
+            "name": "CPIC® Guideline for Serotonin Reuptake Inhibitor Antidepressants and CYP2D6, CYP2C19, CYP2B6, SLC6A4, and HTR2A",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-ssri-and-snri-antidepressants/"
+        }
+    },
+    {
+        "drug": {
+            "name": "gliclazide"
+        },
+        "genes": ["G6PD"],
+        "guideline": {
+            "name": "CPIC® Guideline for G6PD",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-g6pd/"
+        }
+    },
+    {
+        "drug": {
+            "name": "glimepiride"
+        },
+        "genes": ["G6PD"],
+        "guideline": {
+            "name": "CPIC® Guideline for G6PD",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-g6pd/"
+        }
+    },
+    {
+        "drug": {
+            "name": "glipizide"
+        },
+        "genes": ["G6PD"],
+        "guideline": {
+            "name": "CPIC® Guideline for G6PD",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-g6pd/"
+        }
+    },
+    {
+        "drug": {
+            "name": "indomethacin"
+        },
+        "genes": ["CYP2C9"],
+        "guideline": {
+            "name": "CPIC® Guideline for NSAIDs based on CYP2C9 genotype",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-nsaids-based-on-cyp2c9-genotype/"
+        }
+    },
+    {
+        "drug": {
+            "name": "lumiracoxib"
+        },
+        "genes": ["CYP2C9"],
+        "guideline": {
+            "name": "CPIC® Guideline for NSAIDs based on CYP2C9 genotype",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-nsaids-based-on-cyp2c9-genotype/"
+        }
+    },
+    {
+        "drug": {
+            "name": "mepacrine"
+        },
+        "genes": ["G6PD"],
+        "guideline": {
+            "name": "CPIC® Guideline for G6PD",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-g6pd/"
+        }
+    },
+    {
+        "drug": {
+            "name": "mesalazine"
+        },
+        "genes": ["G6PD"],
+        "guideline": {
+            "name": "CPIC® Guideline for G6PD",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-g6pd/"
+        }
+    },
+    {
+        "drug": {
+            "name": "methadone"
+        },
+        "genes": ["CYP2D6"],
+        "guideline": {
+            "name": "CPIC® Guideline for Opioids and CYP2D6, OPRM1, and COMT",
+            "url": "https://cpicpgx.org/guidelines/guideline-for-codeine-and-cyp2d6/"
+        }
+    },
+    {
+        "drug": {
+            "name": "moxifloxacin"
+        },
+        "genes": ["G6PD"],
+        "guideline": {
+            "name": "CPIC® Guideline for G6PD",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-g6pd/"
+        }
+    },
+    {
+        "drug": {
+            "name": "nabumetone"
+        },
+        "genes": ["CYP2C9"],
+        "guideline": {
+            "name": "CPIC® Guideline for NSAIDs based on CYP2C9 genotype",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-nsaids-based-on-cyp2c9-genotype/"
+        }
+    },
+    {
+        "drug": {
+            "name": "naproxen"
+        },
+        "genes": ["CYP2C9"],
+        "guideline": {
+            "name": "CPIC® Guideline for NSAIDs based on CYP2C9 genotype",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-nsaids-based-on-cyp2c9-genotype/"
+        }
+    },
+    {
+        "drug": {
+            "name": "nicorandil"
+        },
+        "genes": ["G6PD"],
+        "guideline": {
+            "name": "CPIC® Guideline for G6PD",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-g6pd/"
+        }
+    },
+    {
+        "drug": {
+            "name": "nitrofural"
+        },
+        "genes": ["G6PD"],
+        "guideline": {
+            "name": "CPIC® Guideline for G6PD",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-g6pd/"
+        }
+    },
+    {
+        "drug": {
+            "name": "oxycodone"
+        },
+        "genes": ["CYP2D6"],
+        "guideline": {
+            "name": "CPIC® Guideline for Opioids and CYP2D6, OPRM1, and COMT",
+            "url": "https://cpicpgx.org/guidelines/guideline-for-codeine-and-cyp2d6/"
+        }
+    },
+    {
+        "drug": {
+            "name": "probenecid"
+        },
+        "genes": ["G6PD"],
+        "guideline": {
+            "name": "CPIC® Guideline for G6PD",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-g6pd/"
+        }
+    },
+    {
+        "drug": {
+            "name": "rabeprazole"
+        },
+        "genes": ["CYP2C19"],
+        "guideline": {
+            "name": "CPIC® Guideline for Proton Pump Inhibitors and CYP2C19",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-proton-pump-inhibitors-and-cyp2c19/"
+        }
+    },
+    {
+        "drug": {
+            "name": "sodium nitrite"
+        },
+        "genes": ["G6PD"],
+        "guideline": {
+            "name": "CPIC® Guideline for G6PD",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-g6pd/"
+        }
+    },
+    {
+        "drug": {
+            "name": "sulfacetamide"
+        },
+        "genes": ["G6PD"],
+        "guideline": {
+            "name": "CPIC® Guideline for G6PD",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-g6pd/"
+        }
+    },
+    {
+        "drug": {
+            "name": "tegafur"
+        },
+        "genes": ["DPYD"],
+        "guideline": {
+            "name": "CPIC® Guideline for Fluoropyrimidines and DPYD",
+            "url": "https://cpicpgx.org/guidelines/guideline-for-fluoropyrimidines-and-dpyd/"
+        }
+    },
+    {
+        "drug": {
+            "name": "tolazamide"
+        },
+        "genes": ["G6PD"],
+        "guideline": {
+            "name": "CPIC® Guideline for G6PD",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-g6pd/"
+        }
+    },
+    {
+        "drug": {
+            "name": "trametinib"
+        },
+        "genes": ["G6PD"],
+        "guideline": {
+            "name": "CPIC® Guideline for G6PD",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-g6pd/"
+        }
+    }
+]
