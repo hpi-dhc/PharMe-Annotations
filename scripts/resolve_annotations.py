@@ -4,34 +4,21 @@ import json
 import os
 import requests
 
-from constants import UNRESOLVED_DIR, RESOLVED_DIR, TEMP_DIR, \
-    DEFAULT_ID_AND_VERSION, RECOMMENDATIONLESS_PREFIX, MANUAL_PREFIX
-from constants import CacheMissError
+from constants import FDA_RECOMMENDATION, UNRESOLVED_DIR, RESOLVED_DIR, \
+    TEMP_DIR, DEFAULT_ID_AND_VERSION, RECOMMENDATIONLESS_PREFIX, MANUAL_PREFIX
 
 from crawl_fda import NoRxCuiFoundError, getRxCuiForDrug, formatRxCui
 
 DIPLOTYPE_ENDPOINT = 'https://api.cpicpgx.org/v1/diplotype'
 
-def lookupkeysPath():
-    return os.path.join(TEMP_DIR, 'cpic-lookupkeys.json')
-
-# If lookupkeys were not cached initially, the list is being built up and stored
-# after the whole script is done
-def areLookupkeysCached():
-    return os.path.isfile(lookupkeysPath())
-
-def getLookupkeyMap():
+def getLookupkeys(gene, phenotype):
+    lookupkeysPath = os.path.join(TEMP_DIR, 'cpic-lookupkeys.json')
     lookupkeyMap = {}
-    if areLookupkeysCached():
-        with open(lookupkeysPath(), 'r')  as lookupkeysFile:
+    if os.path.isfile(lookupkeysPath):
+        with open(lookupkeysPath, 'r')  as lookupkeysFile:
             lookupkeyMap = json.load(lookupkeysFile)
-    return lookupkeyMap
-
-def getLookupkeys(lookupkeyMap, gene, phenotype):
-    if areLookupkeysCached():
-        if gene not in lookupkeyMap or phenotype not in lookupkeyMap[gene]:
-            raise CacheMissError(f'({gene}, {phenotype})', lookupkeysPath())
-        return lookupkeyMap[gene][phenotype]
+    if gene in lookupkeyMap and phenotype in lookupkeyMap[gene]:
+        return lookupkeyMap[gene][phenotype] 
     params = {
         'genesymbol': f'eq.{gene}',
         'generesult': f'eq.{phenotype}',
@@ -49,6 +36,8 @@ def getLookupkeys(lookupkeyMap, gene, phenotype):
     if not gene in lookupkeyMap:
         lookupkeyMap[gene] = {}
     lookupkeyMap[gene][phenotype] = uniqueLookupkeys
+    with open(lookupkeysPath, 'w')  as lookupkeysFile:
+        json.dump(lookupkeyMap, lookupkeysFile, indent=4)
     return uniqueLookupkeys
 
 def resolveDrug(drug):
@@ -65,13 +54,9 @@ def resolveDrug(drug):
     }
 
 def main():
-    lookupkeyMap = getLookupkeyMap()
     for fileName in os.listdir(RESOLVED_DIR):
         os.remove(os.path.join(RESOLVED_DIR, fileName))
     for fileName in os.listdir(UNRESOLVED_DIR):
-        # Skip until open questions are clarified
-        if fileName.startswith('manual_FDA'):
-            continue
         with open(os.path.join(UNRESOLVED_DIR, fileName), 'r') as unresolvedFile:
             unresolvedContent = json.load(unresolvedFile)
             resolvedContent = []
@@ -101,14 +86,16 @@ def main():
                         else unresolvedGuideline['phenotypes'].keys()
                     for gene in genes:
                         if not gene in unresolvedGuideline['phenotypes']:
-                            unresolvedGuideline['phenotypes'][gene] = "All"
+                            unresolvedGuideline['phenotypes'][gene] = 'All'
                         unresolvedGuideline['implications'][gene] = \
-                            "No implication"
-                    unresolvedGuideline['recommendation'] = "No recommendation"
+                            'No implication'
+                    unresolvedGuideline['recommendation'] = 'No recommendation'
                     if 'genes' in unresolvedGuideline:
                         del unresolvedGuideline['genes']
+                if 'FDA' in fileName:
+                    unresolvedGuideline['recommendation'] = FDA_RECOMMENDATION
                 for gene, phenotype in unresolvedGuideline['phenotypes'].items():
-                    lookupkeys = getLookupkeys(lookupkeyMap, gene, phenotype)
+                    lookupkeys = getLookupkeys(gene, phenotype)
                     if len(lookupkeys) == 0:
                         print('[WARNING] No CPIC guideline for ' \
                             f'({unresolvedGuideline["drug"]["name"]}, {gene}, ' \
@@ -134,11 +121,7 @@ def main():
                     presentResolvedContent = json.load(resolvedFile)
                     resolvedContent.extend(presentResolvedContent)
             with open(resolvedFilePath, 'w') as resolvedFile:
-                json.dump(resolvedContent, resolvedFile, indent=4)
-
-    if not areLookupkeysCached():
-        with open(lookupkeysPath(), 'w')  as lookupkeysFile:
-            json.dump(lookupkeyMap, lookupkeysFile, indent=4)
+                json.dump(resolvedContent, resolvedFile, indent=4)        
 
 if __name__ == '__main__':
     main()

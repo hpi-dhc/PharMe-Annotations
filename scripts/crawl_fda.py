@@ -5,7 +5,8 @@ import os
 import requests
 from bs4 import BeautifulSoup
 
-from constants import TEMP_DIR, UNRESOLVED_DIR
+from constants import FDA_RECOMMENDATION, RECOMMENDATIONLESS_PREFIX, TEMP_DIR, \
+    UNRESOLVED_DIR
 from constants import CacheMissError
 
 FDA_URL = 'https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations'
@@ -58,7 +59,10 @@ def getCpicDrugs():
     cpicDrugs = set()
     for recommendation in cpicRecommendations:
         cpicDrugs.add(recommendation['drug']['name'])
-    with open(os.path.join(UNRESOLVED_DIR, 'CPIC.json')) as manualCpicFile:
+    with open(
+        os.path.join(UNRESOLVED_DIR, f'{RECOMMENDATIONLESS_PREFIX}CPIC.json'),
+        'r',
+    ) as manualCpicFile:
         manualCpicGuidelines = json.load(manualCpicFile)
         for entry in manualCpicGuidelines:
             cpicDrugs.add(entry['drug']['name'])
@@ -96,6 +100,8 @@ def getRxCuiForDrug(drug):
     rxCui = rxNorms[0]
     return rxCui
 
+# TODO: refactor to build up cache with each call, no need to get whole map in
+# the beginning and write in the end (as done for lookups)
 def getRxCui(rxCuis, drug):
     if areRxCuisCached():
         if drug not in rxCuis:
@@ -237,8 +243,6 @@ def main():
                 'phenotypes': genePhenotypeCombination,
                 'guideline': guideline,
                 'implications': geneImplications,
-                'drugrecommendation': 'Might be included in implication text ' \
-                    '(imported from FDA; source only states one text per guideline)'
             })
 
     if not areRxCuisCached():

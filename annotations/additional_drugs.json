@@ -23,28 +23,6 @@
     },
     {
         "id": 1,
-        "drugid": "RxNorm:4493",
-        "version": 1,
-        "drug": {
-            "name": "fluoxetine"
-        },
-        "lookupkey": {
-            "foo": "bar"
-        },
-        "phenotypes": {
-            "foo": "bar"
-        },
-        "guideline": {
-            "name": "foo",
-            "url": "foo.bar"
-        },
-        "implications": {
-            "foo": "bar"
-        },
-        "drugrecommendation": "foobar"
-    },
-    {
-        "id": 1,
         "drugid": "RxNorm:9068",
         "version": 1,
         "drug": {
@@ -115,28 +93,6 @@
         "version": 1,
         "drug": {
             "name": "cinacalcet"
-        },
-        "lookupkey": {
-            "foo": "bar"
-        },
-        "phenotypes": {
-            "foo": "bar"
-        },
-        "guideline": {
-            "name": "foo",
-            "url": "foo.bar"
-        },
-        "implications": {
-            "foo": "bar"
-        },
-        "drugrecommendation": "foobar"
-    },
-    {
-        "id": 1,
-        "drugid": "RxNorm:72625",
-        "version": 1,
-        "drug": {
-            "name": "duloxetine"
         },
         "lookupkey": {
             "foo": "bar"

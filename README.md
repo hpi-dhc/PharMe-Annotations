@@ -77,6 +77,10 @@ will be created to comply with the `CpicRecommendation` in Anni.
 
 RxCUIs for all manual additions will be added using the Rx API.
 
+For FDA guidelines, recommendations and implications are given as one text;
+thus, a standard text that refers to the implication text is added as a
+recommendation when resolving.
+
 Manual additions to CPIC guidelines – for medications that explicitly have no
 recommendations or recommendations that cannot be processed in PharMe – can be
 made by adding to the `recommendationless_CPIC.json`.
