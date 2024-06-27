@@ -103,7 +103,8 @@ Uses the CPIC API to skip drugs already included in CPIC and the Rx API to
 get RxCUIs.
 
 ⚠️ _Potentially confusing behavior_: when multiple genes are stated in the table
-with "and/or", combinations with "Indeterminate" phenotype will be created.
+with "and/or", combinations with "Any not handled in guideline" phenotype will
+be created.
 
 🚨 **Known problem**: if associations for one drug and multiple genes are not
 contained in one row, one guideline will be created per gene instead of having

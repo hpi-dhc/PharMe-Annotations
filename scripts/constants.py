@@ -13,9 +13,15 @@ MANUAL_PREFIX = 'manual_'
 RECOMMENDATIONLESS_PREFIX = 'recommendationless_'
 
 ANY_OTHER_PHENOTYPE = 'Any not handled in guideline'
+ALL_PHENOTYPES = 'All'
+SPECIAL_PHENOTYPES = [ ANY_OTHER_PHENOTYPE, ALL_PHENOTYPES ]
 
-FDA_RECOMMENDATION = 'Might be included in implication text (imported from ' \
-    'FDA; source only states one text per guideline)'
+FDA_EXCUSE = '(imported from FDA, source only states one text per guideline)'
+def fdaFurtherGenesImplication(genes):
+    return f'Might be included in {genes[0]} implication {FDA_EXCUSE}; ' \
+        f'joint implication does not apply for this gene in case the ' \
+        f'phenotype is "{ANY_OTHER_PHENOTYPE}"'
+FDA_RECOMMENDATION = f'Might be included in implication text {FDA_EXCUSE}'
 
 class CacheMissError(Exception):
     def __init__(self, key, path):

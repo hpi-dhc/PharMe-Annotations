@@ -4,7 +4,7 @@ import json
 import os
 import requests
 
-from constants import FDA_RECOMMENDATION, UNRESOLVED_DIR, RESOLVED_DIR, \
+from constants import ALL_PHENOTYPES, FDA_RECOMMENDATION, SPECIAL_PHENOTYPES, UNRESOLVED_DIR, RESOLVED_DIR, \
     TEMP_DIR, DEFAULT_ID_AND_VERSION, RECOMMENDATIONLESS_PREFIX, MANUAL_PREFIX
 
 from crawl_fda import NoRxCuiFoundError, getRxCuiForDrug, formatRxCui
@@ -86,7 +86,7 @@ def main():
                         else unresolvedGuideline['phenotypes'].keys()
                     for gene in genes:
                         if not gene in unresolvedGuideline['phenotypes']:
-                            unresolvedGuideline['phenotypes'][gene] = 'All'
+                            unresolvedGuideline['phenotypes'][gene] = ALL_PHENOTYPES
                         unresolvedGuideline['implications'][gene] = \
                             'No implication'
                     unresolvedGuideline['recommendation'] = 'No recommendation'
@@ -97,9 +97,10 @@ def main():
                 for gene, phenotype in unresolvedGuideline['phenotypes'].items():
                     lookupkeys = getLookupkeys(gene, phenotype)
                     if len(lookupkeys) == 0:
-                        print('[WARNING] No CPIC guideline for ' \
-                            f'({unresolvedGuideline["drug"]["name"]}, {gene}, ' \
-                                f'{phenotype}); using phenotype "{phenotype}"')
+                        if not phenotype in SPECIAL_PHENOTYPES:
+                            print('[WARNING] No CPIC lookup for ' \
+                                f'({unresolvedGuideline["drug"]["name"]}, {gene}, ' \
+                                    f'{phenotype}); using phenotype "{phenotype}"')
                         lookupkeys = [{gene: phenotype}]
                     unresolvedLookupkeys[gene] = lookupkeys
                 lookupkeyCombinations = list(itertools.product(*unresolvedLookupkeys.values()))

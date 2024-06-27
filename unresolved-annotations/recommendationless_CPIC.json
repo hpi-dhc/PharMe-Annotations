@@ -3,13 +3,7 @@
         "drug": {
             "name": "warfarin"
         },
-        "phenotypes": {
-            "CYP2C9": "Poor Metabolizer",
-            "VKORC1": "-1639G>A variant carriers",
-            "CYP4F2": "rs2108622 T carriers",
-            "CYP2C": "rs12777823 A carriers"
-
-        },
+        "genes": ["CYP2C9", "VKORC1", "CYP4F2", "CYP2C"],
         "guideline": {
             "name": "CPIC® Guideline for Pharmacogenetics-Guided Warfarin Dosing",
             "url": "https://cpicpgx.org/guidelines/guideline-for-warfarin-and-cyp2c9-and-vkorc1/"

@@ -4,8 +4,8 @@
             "name": "pazopanib"
         },
         "phenotypes": {
-            "HLA-B": "*57:01 allele positive",
-            "UGT1A1": "Poor metabolizer"
+            "HLA-B": "*57:01 positive",
+            "UGT1A1": "Poor Metabolizer"
 
         },
         "guideline": {
@@ -23,8 +23,8 @@
             "name": "pazopanib"
         },
         "phenotypes": {
-            "HLA-B": "Indeterminate",
-            "UGT1A1": "Poor metabolizer"
+            "HLA-B": "Any not handled in guideline",
+            "UGT1A1": "Poor Metabolizer"
 
         },
         "guideline": {
@@ -41,8 +41,8 @@
             "name": "pazopanib"
         },
         "phenotypes": {
-            "HLA-B": "*57:01 allele positive",
-            "UGT1A1": "Indeterminate"
+            "HLA-B": "*57:01 positive",
+            "UGT1A1": "Any not handled in guideline"
 
         },
         "guideline": {

@@ -3,12 +3,6 @@
         "drug": {
             "name": "warfarin"
         },
-        "phenotypes": {
-            "CYP2C9": "Poor Metabolizer",
-            "VKORC1": "-1639G>A variant carriers",
-            "CYP4F2": "rs2108622 T carriers",
-            "CYP2C": "rs12777823 A carriers"
-        },
         "guideline": {
             "name": "CPIC\u00ae Guideline for Pharmacogenetics-Guided Warfarin Dosing",
             "url": "https://cpicpgx.org/guidelines/guideline-for-warfarin-and-cyp2c9-and-vkorc1/"
@@ -16,6 +10,12 @@
         "id": 1,
         "version": 1,
         "drugid": "RxNorm:11289",
+        "phenotypes": {
+            "CYP2C9": "All",
+            "VKORC1": "All",
+            "CYP4F2": "All",
+            "CYP2C": "All"
+        },
         "implications": {
             "CYP2C9": "No implication",
             "VKORC1": "No implication",
@@ -24,41 +24,10 @@
         },
         "recommendation": "No recommendation",
         "lookupkey": {
-            "CYP2C9": "0.0",
-            "VKORC1": "-1639G>A variant carriers",
-            "CYP4F2": "rs2108622 T carriers",
-            "CYP2C": "rs12777823 A carriers"
-        }
-    },
-    {
-        "drug": {
-            "name": "warfarin"
-        },
-        "phenotypes": {
-            "CYP2C9": "Poor Metabolizer",
-            "VKORC1": "-1639G>A variant carriers",
-            "CYP4F2": "rs2108622 T carriers",
-            "CYP2C": "rs12777823 A carriers"
-        },
-        "guideline": {
-            "name": "CPIC\u00ae Guideline for Pharmacogenetics-Guided Warfarin Dosing",
-            "url": "https://cpicpgx.org/guidelines/guideline-for-warfarin-and-cyp2c9-and-vkorc1/"
-        },
-        "id": 1,
-        "version": 1,
-        "drugid": "RxNorm:11289",
-        "implications": {
-            "CYP2C9": "No implication",
-            "VKORC1": "No implication",
-            "CYP4F2": "No implication",
-            "CYP2C": "No implication"
-        },
-        "recommendation": "No recommendation",
-        "lookupkey": {
-            "CYP2C9": "0.5",
-            "VKORC1": "-1639G>A variant carriers",
-            "CYP4F2": "rs2108622 T carriers",
-            "CYP2C": "rs12777823 A carriers"
+            "CYP2C9": "All",
+            "VKORC1": "All",
+            "CYP4F2": "All",
+            "CYP2C": "All"
         }
     },
     {
