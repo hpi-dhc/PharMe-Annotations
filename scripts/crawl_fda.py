@@ -7,7 +7,6 @@ from bs4 import BeautifulSoup
 
 from constants import ANY_OTHER_PHENOTYPE, RECOMMENDATIONLESS_PREFIX, \
     TEMP_DIR, UNRESOLVED_DIR, fdaFurtherGenesImplication
-from constants import CacheMissError
 
 FDA_URL = 'https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations'
 FDA_INFO_FILE = 'FDA_info.csv'
@@ -76,20 +75,14 @@ def addToFdaInfoFile(drug, gene, section):
         writer = csv.writer(infoFile)
         writer.writerow([drug, gene, section])
 
-def rxCuiPath():
-    return os.path.join(TEMP_DIR, 'rx-cuis.json')
-
-def areRxCuisCached():
-    return os.path.isfile(rxCuiPath())
-
-def getRxCuis():
+def getRxCui(drug):
     rxCuis = {}
-    if areRxCuisCached():
-        with open(rxCuiPath(), 'r')  as rxCuiFile:
+    rxCuiPath = os.path.join(TEMP_DIR, 'rx-cuis.json')
+    if os.path.isfile(rxCuiPath):
+        with open(rxCuiPath, 'r')  as rxCuiFile:
             rxCuis = json.load(rxCuiFile)
-    return rxCuis
-
-def getRxCuiForDrug(drug):
+    if drug in rxCuis:
+        return rxCuis[drug]
     rxUrl = f'https://rxnav.nlm.nih.gov/REST/rxcui.json?name={drug}'
     rxNormResponse = requests.get(rxUrl).json()['idGroup']
     if not 'rxnormId' in rxNormResponse:
@@ -98,19 +91,10 @@ def getRxCuiForDrug(drug):
     if len(rxNorms) != 1:
         raise Exception('[ERROR] Expecting Rx response of length 1')
     rxCui = rxNorms[0]
+    rxCuis[drug] = rxCui
+    with open(rxCuiPath, 'w') as rxCuiFile:
+        json.dump(rxCuis, rxCuiFile, indent=4)
     return rxCui
-
-# TODO: refactor to build up cache with each call, no need to get whole map in
-# the beginning and write in the end (as done for lookups)
-def getRxCui(rxCuis, drug):
-    if areRxCuisCached():
-        if drug not in rxCuis:
-            raise CacheMissError(drug, rxCuiPath())
-        return rxCuis[drug]
-    else:
-        rxCui = getRxCuiForDrug(drug)
-        rxCuis[drug] = rxCui
-        return rxCui
 
 def formatRxCui(rxCui):
     return f'RxNorm:{rxCui}'
@@ -198,10 +182,9 @@ def main():
         print(f'[INFO] Skipping {drug} (multiple rows); ' \
               'consider adding manually')
 
-    rxCuis = getRxCuis()
     fdaAnnotations = []
     for drug, fdaAssociation in fdaAssociations.items():
-        rxCui = getRxCui(rxCuis, drug)
+        rxCui = getRxCui(drug)
         genes = fdaAssociation['genes']
         phenotypes = fdaAssociation['phenotypes']
         description = fdaAssociation['description']
@@ -240,11 +223,6 @@ def main():
                 'guideline': guideline,
                 'implications': geneImplications,
             })
-
-    if not areRxCuisCached():
-        with open(rxCuiPath(), 'w') as rxCuiFile:
-            json.dump(rxCuis, rxCuiFile, indent=4)
-
     with open(os.path.join(UNRESOLVED_DIR, 'FDA.json'), 'w') as unresolvedFile:
         json.dump(fdaAnnotations, unresolvedFile, indent=4)
 

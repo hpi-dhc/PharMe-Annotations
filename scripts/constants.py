@@ -22,9 +22,3 @@ def fdaFurtherGenesImplication(genes):
         f'joint implication does not apply for this gene in case the ' \
         f'phenotype is "{ANY_OTHER_PHENOTYPE}"'
 FDA_RECOMMENDATION = f'Might be included in implication text {FDA_EXCUSE}'
-
-class CacheMissError(Exception):
-    def __init__(self, key, path):
-        message = f'[ERROR] Cache miss in {path} for {key}; ' \
-            'please remove cache file and try again'
-        super().__init__(message)

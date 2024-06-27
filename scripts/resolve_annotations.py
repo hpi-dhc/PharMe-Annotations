@@ -7,7 +7,7 @@ import requests
 from constants import ALL_PHENOTYPES, FDA_RECOMMENDATION, SPECIAL_PHENOTYPES, UNRESOLVED_DIR, RESOLVED_DIR, \
     TEMP_DIR, DEFAULT_ID_AND_VERSION, RECOMMENDATIONLESS_PREFIX, MANUAL_PREFIX
 
-from crawl_fda import NoRxCuiFoundError, getRxCuiForDrug, formatRxCui
+from crawl_fda import NoRxCuiFoundError, getRxCui, formatRxCui
 
 DIPLOTYPE_ENDPOINT = 'https://api.cpicpgx.org/v1/diplotype'
 
@@ -43,7 +43,7 @@ def getLookupkeys(gene, phenotype):
 def resolveDrug(drug):
     return {
         'id': DEFAULT_ID_AND_VERSION,
-        'drugid': formatRxCui(getRxCuiForDrug(drug)),
+        'drugid': formatRxCui(getRxCui(drug)),
         'version': DEFAULT_ID_AND_VERSION,
         'drug': { 'name': drug },
         'lookupkey': { 'foo': 'bar' },
@@ -71,7 +71,7 @@ def main():
                     unresolvedGuideline['version'] = DEFAULT_ID_AND_VERSION
                 if not 'drugid' in unresolvedGuideline:
                     try:
-                        rxCui = getRxCuiForDrug(unresolvedGuideline['drug']['name'])
+                        rxCui = getRxCui(unresolvedGuideline['drug']['name'])
                     except NoRxCuiFoundError as e:
                         print(f'{str(e)}; skipping guideline')
                         continue
