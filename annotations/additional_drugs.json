@@ -6,20 +6,11 @@
         "drug": {
             "name": "bupropion"
         },
-        "lookupkey": {
-            "foo": "bar"
-        },
-        "phenotypes": {
-            "foo": "bar"
-        },
-        "guideline": {
-            "name": "foo",
-            "url": "foo.bar"
-        },
-        "implications": {
-            "foo": "bar"
-        },
-        "drugrecommendation": "foobar"
+        "lookupkey": {},
+        "phenotypes": {},
+        "guideline": {},
+        "implications": {},
+        "recommendation": ""
     },
     {
         "id": 1,
@@ -28,20 +19,11 @@
         "drug": {
             "name": "quinidine"
         },
-        "lookupkey": {
-            "foo": "bar"
-        },
-        "phenotypes": {
-            "foo": "bar"
-        },
-        "guideline": {
-            "name": "foo",
-            "url": "foo.bar"
-        },
-        "implications": {
-            "foo": "bar"
-        },
-        "drugrecommendation": "foobar"
+        "lookupkey": {},
+        "phenotypes": {},
+        "guideline": {},
+        "implications": {},
+        "recommendation": ""
     },
     {
         "id": 1,
@@ -50,20 +32,11 @@
         "drug": {
             "name": "terbinafine"
         },
-        "lookupkey": {
-            "foo": "bar"
-        },
-        "phenotypes": {
-            "foo": "bar"
-        },
-        "guideline": {
-            "name": "foo",
-            "url": "foo.bar"
-        },
-        "implications": {
-            "foo": "bar"
-        },
-        "drugrecommendation": "foobar"
+        "lookupkey": {},
+        "phenotypes": {},
+        "guideline": {},
+        "implications": {},
+        "recommendation": ""
     },
     {
         "id": 1,
@@ -72,20 +45,11 @@
         "drug": {
             "name": "abiraterone"
         },
-        "lookupkey": {
-            "foo": "bar"
-        },
-        "phenotypes": {
-            "foo": "bar"
-        },
-        "guideline": {
-            "name": "foo",
-            "url": "foo.bar"
-        },
-        "implications": {
-            "foo": "bar"
-        },
-        "drugrecommendation": "foobar"
+        "lookupkey": {},
+        "phenotypes": {},
+        "guideline": {},
+        "implications": {},
+        "recommendation": ""
     },
     {
         "id": 1,
@@ -94,20 +58,11 @@
         "drug": {
             "name": "cinacalcet"
         },
-        "lookupkey": {
-            "foo": "bar"
-        },
-        "phenotypes": {
-            "foo": "bar"
-        },
-        "guideline": {
-            "name": "foo",
-            "url": "foo.bar"
-        },
-        "implications": {
-            "foo": "bar"
-        },
-        "drugrecommendation": "foobar"
+        "lookupkey": {},
+        "phenotypes": {},
+        "guideline": {},
+        "implications": {},
+        "recommendation": ""
     },
     {
         "id": 1,
@@ -116,20 +71,11 @@
         "drug": {
             "name": "lorcaserin"
         },
-        "lookupkey": {
-            "foo": "bar"
-        },
-        "phenotypes": {
-            "foo": "bar"
-        },
-        "guideline": {
-            "name": "foo",
-            "url": "foo.bar"
-        },
-        "implications": {
-            "foo": "bar"
-        },
-        "drugrecommendation": "foobar"
+        "lookupkey": {},
+        "phenotypes": {},
+        "guideline": {},
+        "implications": {},
+        "recommendation": ""
     },
     {
         "id": 1,
@@ -138,19 +84,10 @@
         "drug": {
             "name": "mirabegron"
         },
-        "lookupkey": {
-            "foo": "bar"
-        },
-        "phenotypes": {
-            "foo": "bar"
-        },
-        "guideline": {
-            "name": "foo",
-            "url": "foo.bar"
-        },
-        "implications": {
-            "foo": "bar"
-        },
-        "drugrecommendation": "foobar"
+        "lookupkey": {},
+        "phenotypes": {},
+        "guideline": {},
+        "implications": {},
+        "recommendation": ""
     }
 ]

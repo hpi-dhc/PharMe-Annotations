@@ -46,11 +46,11 @@ def resolveDrug(drug):
         'drugid': formatRxCui(getRxCui(drug)),
         'version': DEFAULT_ID_AND_VERSION,
         'drug': { 'name': drug },
-        'lookupkey': { 'foo': 'bar' },
-        'phenotypes': { 'foo': 'bar' },
-        'guideline': { 'name': 'foo', 'url': 'foo.bar' },
-        'implications': { 'foo': 'bar' },
-        'drugrecommendation': 'foobar',
+        'lookupkey': {},
+        'phenotypes': {},
+        'guideline': {},
+        'implications': {},
+        'recommendation': '',
     }
 
 def main():
