@@ -50,7 +50,7 @@ def resolveDrug(drug):
         'phenotypes': {},
         'guideline': {},
         'implications': {},
-        'recommendation': '',
+        'drugrecommendation': '',
     }
 
 def main():
@@ -89,11 +89,11 @@ def main():
                             unresolvedGuideline['phenotypes'][gene] = ALL_PHENOTYPES
                         unresolvedGuideline['implications'][gene] = \
                             'No implication'
-                    unresolvedGuideline['recommendation'] = 'No recommendation'
+                    unresolvedGuideline['drugrecommendation'] = 'No recommendation'
                     if 'genes' in unresolvedGuideline:
                         del unresolvedGuideline['genes']
                 if 'FDA' in fileName:
-                    unresolvedGuideline['recommendation'] = FDA_RECOMMENDATION
+                    unresolvedGuideline['drugrecommendation'] = FDA_RECOMMENDATION
                 for gene, phenotype in unresolvedGuideline['phenotypes'].items():
                     lookupkeys = getLookupkeys(gene, phenotype)
                     if len(lookupkeys) == 0:
