@@ -22,6 +22,26 @@
         }
     },
     {
+        "drugid": "RxNorm:2591476",
+        "drug": {
+            "name": "abrocitinib"
+        },
+        "phenotypes": {
+            "CYP2C19": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "CYP2C19": "~"
+        }
+    },
+    {
         "drugid": "RxNorm:2106338",
         "drug": {
             "name": "amifampridine"
@@ -41,6 +61,26 @@
         "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
         "lookupkey": {
             "NAT2": "Poor Metabolizer"
+        }
+    },
+    {
+        "drugid": "RxNorm:2106338",
+        "drug": {
+            "name": "amifampridine"
+        },
+        "phenotypes": {
+            "NAT2": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "NAT2": "~"
         }
     },
     {
@@ -66,6 +106,26 @@
         }
     },
     {
+        "drugid": "RxNorm:2106337",
+        "drug": {
+            "name": "amifampridine phosphate"
+        },
+        "phenotypes": {
+            "NAT2": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "NAT2": "~"
+        }
+    },
+    {
         "drugid": "RxNorm:725",
         "drug": {
             "name": "amphetamine"
@@ -85,6 +145,26 @@
         "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
         "lookupkey": {
             "CYP2D6": "0.0"
+        }
+    },
+    {
+        "drugid": "RxNorm:725",
+        "drug": {
+            "name": "amphetamine"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "CYP2D6": "~"
         }
     },
     {
@@ -110,6 +190,26 @@
         }
     },
     {
+        "drugid": "RxNorm:89013",
+        "drug": {
+            "name": "aripiprazole"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "CYP2D6": "~"
+        }
+    },
+    {
         "drugid": "RxNorm:1673265",
         "drug": {
             "name": "aripiprazole lauroxil"
@@ -132,6 +232,26 @@
         }
     },
     {
+        "drugid": "RxNorm:1673265",
+        "drug": {
+            "name": "aripiprazole lauroxil"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "CYP2D6": "~"
+        }
+    },
+    {
         "drugid": "RxNorm:1543543",
         "drug": {
             "name": "belinostat"
@@ -151,6 +271,26 @@
         "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
         "lookupkey": {
             "UGT1A1": "Poor Metabolizer"
+        }
+    },
+    {
+        "drugid": "RxNorm:1543543",
+        "drug": {
+            "name": "belinostat"
+        },
+        "phenotypes": {
+            "UGT1A1": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "UGT1A1": "~"
         }
     },
     {
@@ -229,6 +369,28 @@
         }
     },
     {
+        "drugid": "RxNorm:2567226",
+        "drug": {
+            "name": "belzutifan"
+        },
+        "phenotypes": {
+            "CYP2C19": "Any not handled in guideline",
+            "UGT2B17": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "CYP2C19": "~",
+            "UGT2B17": "~"
+        }
+    },
+    {
         "drugid": "RxNorm:1658314",
         "drug": {
             "name": "brexpiprazole"
@@ -251,6 +413,26 @@
         }
     },
     {
+        "drugid": "RxNorm:1658314",
+        "drug": {
+            "name": "brexpiprazole"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "CYP2D6": "~"
+        }
+    },
+    {
         "drugid": "RxNorm:1739745",
         "drug": {
             "name": "brivaracetam"
@@ -278,6 +460,26 @@
             "name": "brivaracetam"
         },
         "phenotypes": {
+            "CYP2C19": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "CYP2C19": "~"
+        }
+    },
+    {
+        "drugid": "RxNorm:1739745",
+        "drug": {
+            "name": "brivaracetam"
+        },
+        "phenotypes": {
             "CYP2C19": "Intermediate Metabolizer"
         },
         "guideline": {
@@ -292,6 +494,26 @@
         "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
         "lookupkey": {
             "CYP2C19": "Intermediate Metabolizer"
+        }
+    },
+    {
+        "drugid": "RxNorm:1739745",
+        "drug": {
+            "name": "brivaracetam"
+        },
+        "phenotypes": {
+            "CYP2C19": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "CYP2C19": "~"
         }
     },
     {
@@ -322,6 +544,26 @@
             "name": "clobazam"
         },
         "phenotypes": {
+            "CYP2C19": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "CYP2C19": "~"
+        }
+    },
+    {
+        "drugid": "RxNorm:21241",
+        "drug": {
+            "name": "clobazam"
+        },
+        "phenotypes": {
             "CYP2C19": "Intermediate Metabolizer"
         },
         "guideline": {
@@ -336,6 +578,26 @@
         "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
         "lookupkey": {
             "CYP2C19": "Intermediate Metabolizer"
+        }
+    },
+    {
+        "drugid": "RxNorm:21241",
+        "drug": {
+            "name": "clobazam"
+        },
+        "phenotypes": {
+            "CYP2C19": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "CYP2C19": "~"
         }
     },
     {
@@ -361,6 +623,26 @@
         }
     },
     {
+        "drugid": "RxNorm:2626",
+        "drug": {
+            "name": "clozapine"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "CYP2D6": "~"
+        }
+    },
+    {
         "drugid": "RxNorm:1876905",
         "drug": {
             "name": "deutetrabenazine"
@@ -380,6 +662,26 @@
         "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
         "lookupkey": {
             "CYP2D6": "0.0"
+        }
+    },
+    {
+        "drugid": "RxNorm:1876905",
+        "drug": {
+            "name": "deutetrabenazine"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "CYP2D6": "~"
         }
     },
     {
@@ -432,6 +734,26 @@
             "name": "dronabinol"
         },
         "phenotypes": {
+            "CYP2C9": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "CYP2C9": "~"
+        }
+    },
+    {
+        "drugid": "RxNorm:10402",
+        "drug": {
+            "name": "dronabinol"
+        },
+        "phenotypes": {
             "CYP2C9": "Intermediate Metabolizer"
         },
         "guideline": {
@@ -471,6 +793,26 @@
         }
     },
     {
+        "drugid": "RxNorm:10402",
+        "drug": {
+            "name": "dronabinol"
+        },
+        "phenotypes": {
+            "CYP2C9": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "CYP2C9": "~"
+        }
+    },
+    {
         "drugid": "RxNorm:1547220",
         "drug": {
             "name": "eliglustat"
@@ -490,6 +832,26 @@
         "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
         "lookupkey": {
             "CYP2D6": "0.0"
+        }
+    },
+    {
+        "drugid": "RxNorm:1547220",
+        "drug": {
+            "name": "eliglustat"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "CYP2D6": "~"
         }
     },
     {
@@ -578,6 +940,26 @@
         "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
         "lookupkey": {
             "CYP2D6": "1.0"
+        }
+    },
+    {
+        "drugid": "RxNorm:1547220",
+        "drug": {
+            "name": "eliglustat"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "CYP2D6": "~"
         }
     },
     {
@@ -820,6 +1202,26 @@
         "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
         "lookupkey": {
             "CYP2D6": "\u22656.0"
+        }
+    },
+    {
+        "drugid": "RxNorm:1547220",
+        "drug": {
+            "name": "eliglustat"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "CYP2D6": "~"
         }
     },
     {
@@ -933,6 +1335,26 @@
         }
     },
     {
+        "drugid": "RxNorm:1547220",
+        "drug": {
+            "name": "eliglustat"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "CYP2D6": "~"
+        }
+    },
+    {
         "drugid": "RxNorm:2123125",
         "drug": {
             "name": "erdafitinib"
@@ -977,6 +1399,26 @@
         }
     },
     {
+        "drugid": "RxNorm:2123125",
+        "drug": {
+            "name": "erdafitinib"
+        },
+        "phenotypes": {
+            "CYP2C9": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "CYP2C9": "~"
+        }
+    },
+    {
         "drugid": "RxNorm:1665509",
         "drug": {
             "name": "flibanserin"
@@ -996,6 +1438,26 @@
         "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
         "lookupkey": {
             "CYP2C19": "Poor Metabolizer"
+        }
+    },
+    {
+        "drugid": "RxNorm:1665509",
+        "drug": {
+            "name": "flibanserin"
+        },
+        "phenotypes": {
+            "CYP2C19": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "CYP2C19": "~"
         }
     },
     {
@@ -1021,6 +1483,26 @@
         }
     },
     {
+        "drugid": "RxNorm:328134",
+        "drug": {
+            "name": "gefitinib"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "CYP2D6": "~"
+        }
+    },
+    {
         "drugid": "RxNorm:73178",
         "drug": {
             "name": "iloperidone"
@@ -1043,6 +1525,26 @@
         }
     },
     {
+        "drugid": "RxNorm:73178",
+        "drug": {
+            "name": "iloperidone"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "CYP2D6": "~"
+        }
+    },
+    {
         "drugid": "RxNorm:51499",
         "drug": {
             "name": "irinotecan"
@@ -1070,6 +1572,26 @@
             "name": "irinotecan"
         },
         "phenotypes": {
+            "UGT1A1": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "UGT1A1": "~"
+        }
+    },
+    {
+        "drugid": "RxNorm:51499",
+        "drug": {
+            "name": "irinotecan"
+        },
+        "phenotypes": {
             "UGT1A1": "Intermediate Metabolizer"
         },
         "guideline": {
@@ -1084,6 +1606,26 @@
         "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
         "lookupkey": {
             "UGT1A1": "Intermediate Metabolizer"
+        }
+    },
+    {
+        "drugid": "RxNorm:51499",
+        "drug": {
+            "name": "irinotecan"
+        },
+        "phenotypes": {
+            "UGT1A1": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "UGT1A1": "~"
         }
     },
     {
@@ -1109,6 +1651,26 @@
         }
     },
     {
+        "drugid": "RxNorm:28863",
+        "drug": {
+            "name": "lofexidine"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "CYP2D6": "~"
+        }
+    },
+    {
         "drugid": "RxNorm:6676",
         "drug": {
             "name": "meclizine"
@@ -1128,6 +1690,26 @@
         "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
         "lookupkey": {
             "CYP2D6": "0.0"
+        }
+    },
+    {
+        "drugid": "RxNorm:6676",
+        "drug": {
+            "name": "meclizine"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "CYP2D6": "~"
         }
     },
     {
@@ -1216,6 +1798,26 @@
         "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
         "lookupkey": {
             "CYP2D6": "1.0"
+        }
+    },
+    {
+        "drugid": "RxNorm:6676",
+        "drug": {
+            "name": "meclizine"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "CYP2D6": "~"
         }
     },
     {
@@ -1461,6 +2063,26 @@
         }
     },
     {
+        "drugid": "RxNorm:6676",
+        "drug": {
+            "name": "meclizine"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "CYP2D6": "~"
+        }
+    },
+    {
         "drugid": "RxNorm:6915",
         "drug": {
             "name": "metoclopramide"
@@ -1483,6 +2105,26 @@
         }
     },
     {
+        "drugid": "RxNorm:6915",
+        "drug": {
+            "name": "metoclopramide"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "CYP2D6": "~"
+        }
+    },
+    {
         "drugid": "RxNorm:30077",
         "drug": {
             "name": "mivacurium"
@@ -1510,6 +2152,26 @@
             "name": "mivacurium"
         },
         "phenotypes": {
+            "BCHE": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "BCHE": "~"
+        }
+    },
+    {
+        "drugid": "RxNorm:30077",
+        "drug": {
+            "name": "mivacurium"
+        },
+        "phenotypes": {
             "BCHE": "Intermediate Metabolizer"
         },
         "guideline": {
@@ -1524,6 +2186,26 @@
         "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
         "lookupkey": {
             "BCHE": "Intermediate Metabolizer"
+        }
+    },
+    {
+        "drugid": "RxNorm:30077",
+        "drug": {
+            "name": "mivacurium"
+        },
+        "phenotypes": {
+            "BCHE": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "BCHE": "~"
         }
     },
     {
@@ -1568,6 +2250,26 @@
         "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
         "lookupkey": {
             "CYP2C9": "0.5"
+        }
+    },
+    {
+        "drugid": "RxNorm:274332",
+        "drug": {
+            "name": "nateglinide"
+        },
+        "phenotypes": {
+            "CYP2C9": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "CYP2C9": "~"
         }
     },
     {
@@ -1593,6 +2295,26 @@
         }
     },
     {
+        "drugid": "RxNorm:2392230",
+        "drug": {
+            "name": "oliceridine"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "CYP2D6": "~"
+        }
+    },
+    {
         "drugid": "RxNorm:8331",
         "drug": {
             "name": "pimozide"
@@ -1612,6 +2334,26 @@
         "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
         "lookupkey": {
             "CYP2D6": "0.0"
+        }
+    },
+    {
+        "drugid": "RxNorm:8331",
+        "drug": {
+            "name": "pimozide"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "CYP2D6": "~"
         }
     },
     {
@@ -1637,6 +2379,26 @@
         }
     },
     {
+        "drugid": "RxNorm:2197878",
+        "drug": {
+            "name": "pitolisant"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "CYP2D6": "~"
+        }
+    },
+    {
         "drugid": "RxNorm:8754",
         "drug": {
             "name": "propafenone"
@@ -1659,6 +2421,26 @@
         }
     },
     {
+        "drugid": "RxNorm:8754",
+        "drug": {
+            "name": "propafenone"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "CYP2D6": "~"
+        }
+    },
+    {
         "drugid": "RxNorm:2360530",
         "drug": {
             "name": "sacituzumab govitecan-hziy"
@@ -1678,6 +2460,26 @@
         "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
         "lookupkey": {
             "UGT1A1": "Poor Metabolizer"
+        }
+    },
+    {
+        "drugid": "RxNorm:2360530",
+        "drug": {
+            "name": "sacituzumab govitecan-hziy"
+        },
+        "phenotypes": {
+            "UGT1A1": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "UGT1A1": "~"
         }
     },
     {
@@ -1722,6 +2524,26 @@
         "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
         "lookupkey": {
             "CYP2C9": "0.5"
+        }
+    },
+    {
+        "drugid": "RxNorm:2121085",
+        "drug": {
+            "name": "siponimod"
+        },
+        "phenotypes": {
+            "CYP2C9": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "CYP2C9": "~"
         }
     },
     {
@@ -1769,6 +2591,26 @@
         }
     },
     {
+        "drugid": "RxNorm:2121085",
+        "drug": {
+            "name": "siponimod"
+        },
+        "phenotypes": {
+            "CYP2C9": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "CYP2C9": "~"
+        }
+    },
+    {
         "drugid": "RxNorm:10390",
         "drug": {
             "name": "tetrabenazine"
@@ -1788,6 +2630,26 @@
         "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
         "lookupkey": {
             "CYP2D6": "0.0"
+        }
+    },
+    {
+        "drugid": "RxNorm:10390",
+        "drug": {
+            "name": "tetrabenazine"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "CYP2D6": "~"
         }
     },
     {
@@ -1813,6 +2675,26 @@
         }
     },
     {
+        "drugid": "RxNorm:10502",
+        "drug": {
+            "name": "thioridazine"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "CYP2D6": "~"
+        }
+    },
+    {
         "drugid": "RxNorm:1918219",
         "drug": {
             "name": "valbenazine"
@@ -1832,6 +2714,26 @@
         "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
         "lookupkey": {
             "CYP2D6": "0.0"
+        }
+    },
+    {
+        "drugid": "RxNorm:1918219",
+        "drug": {
+            "name": "valbenazine"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "CYP2D6": "~"
         }
     },
     {
@@ -1857,6 +2759,26 @@
         }
     },
     {
+        "drugid": "RxNorm:20352",
+        "drug": {
+            "name": "carvedilol"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 2)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "CYP2D6": "~"
+        }
+    },
+    {
         "drugid": "RxNorm:44281",
         "drug": {
             "name": "cevimeline"
@@ -1876,6 +2798,26 @@
         "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
         "lookupkey": {
             "CYP2D6": "0.0"
+        }
+    },
+    {
+        "drugid": "RxNorm:44281",
+        "drug": {
+            "name": "cevimeline"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 2)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "CYP2D6": "~"
         }
     },
     {
@@ -1901,6 +2843,26 @@
         }
     },
     {
+        "drugid": "RxNorm:6038",
+        "drug": {
+            "name": "isoniazid"
+        },
+        "phenotypes": {
+            "Nonspecific (NAT)": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 2)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "Nonspecific (NAT)": "~"
+        }
+    },
+    {
         "drugid": "RxNorm:2600867",
         "drug": {
             "name": "mavacamten"
@@ -1928,6 +2890,26 @@
             "name": "mavacamten"
         },
         "phenotypes": {
+            "CYP2C19": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 2)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "CYP2C19": "~"
+        }
+    },
+    {
+        "drugid": "RxNorm:2600867",
+        "drug": {
+            "name": "mavacamten"
+        },
+        "phenotypes": {
             "CYP2C19": "Intermediate Metabolizer"
         },
         "guideline": {
@@ -1942,6 +2924,26 @@
         "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
         "lookupkey": {
             "CYP2C19": "Intermediate Metabolizer"
+        }
+    },
+    {
+        "drugid": "RxNorm:2600867",
+        "drug": {
+            "name": "mavacamten"
+        },
+        "phenotypes": {
+            "CYP2C19": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 2)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "CYP2C19": "~"
         }
     },
     {
@@ -1967,6 +2969,26 @@
         }
     },
     {
+        "drugid": "RxNorm:662281",
+        "drug": {
+            "name": "nilotinib"
+        },
+        "phenotypes": {
+            "UGT1A1": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 2)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "UGT1A1": "~"
+        }
+    },
+    {
         "drugid": "RxNorm:8076",
         "drug": {
             "name": "perphenazine"
@@ -1986,6 +3008,26 @@
         "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
         "lookupkey": {
             "CYP2D6": "0.0"
+        }
+    },
+    {
+        "drugid": "RxNorm:8076",
+        "drug": {
+            "name": "perphenazine"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 2)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "CYP2D6": "~"
         }
     },
     {
@@ -2011,6 +3053,26 @@
         }
     },
     {
+        "drugid": "RxNorm:8700",
+        "drug": {
+            "name": "procainamide"
+        },
+        "phenotypes": {
+            "Nonspecific (NAT)": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 2)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "Nonspecific (NAT)": "~"
+        }
+    },
+    {
         "drugid": "RxNorm:119565",
         "drug": {
             "name": "tolterodine"
@@ -2030,6 +3092,26 @@
         "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
         "lookupkey": {
             "CYP2D6": "0.0"
+        }
+    },
+    {
+        "drugid": "RxNorm:119565",
+        "drug": {
+            "name": "tolterodine"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 2)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
+        },
+        "implications": "Standard procedure",
+        "id": 1,
+        "version": 1,
+        "drugrecommendation": "Might be included in implication text (imported from FDA, source only states one text per guideline)",
+        "lookupkey": {
+            "CYP2D6": "~"
         }
     },
     {
