@@ -15,8 +15,7 @@
         "implications": {
             "HLA-B": "May result in higher adverse reaction risk (liver enzyme elevations). Monitor liver function tests regardless of genotype.",
             "UGT1A1": "Results in higher adverse reaction risk (hyperbilirubinemia)."
-        },
-        "drugrecommendation": "Might be included in implication text (imported from FDA; source only states one text per guideline)"
+        }
     },
     {
         "drug": {
@@ -32,7 +31,7 @@
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
         },
         "implications": {
-            "HLA-B": "n/a",
+            "HLA-B": "Standard procedure",
             "UGT1A1": "Results in higher adverse reaction risk (hyperbilirubinemia)."
         }
     },
@@ -51,7 +50,25 @@
         },
         "implications": {
             "HLA-B": "May result in higher adverse reaction risk (liver enzyme elevations). Monitor liver function tests regardless of genotype.",
-            "UGT1A1": "n/a"
+            "UGT1A1": "Standard procedure"
+        }
+    },
+    {
+        "drug": {
+            "name": "pazopanib"
+        },
+        "phenotypes": {
+            "HLA-B": "Any not handled in guideline",
+            "UGT1A1": "Any not handled in guideline"
+
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 2)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
+        },
+        "implications": {
+            "HLA-B": "Standard procedure",
+            "UGT1A1": "Standard procedure"
         }
     }
 ]

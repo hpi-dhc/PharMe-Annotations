@@ -15,6 +15,10 @@ RECOMMENDATIONLESS_PREFIX = 'recommendationless_'
 ANY_OTHER_PHENOTYPE = 'Any not handled in guideline'
 ALL_PHENOTYPES = 'All'
 SPECIAL_PHENOTYPES = [ ANY_OTHER_PHENOTYPE, ALL_PHENOTYPES ]
+SPECIAL_LOOKUP_KEYS = {
+    ALL_PHENOTYPES: '*',
+    ANY_OTHER_PHENOTYPE: '~',
+}
 
 FDA_EXCUSE = '(imported from FDA, source only states one text per guideline)'
 def fdaFurtherGenesImplication(genes):

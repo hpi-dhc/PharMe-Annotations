@@ -4,14 +4,17 @@ import json
 import os
 import requests
 
-from constants import ALL_PHENOTYPES, FDA_RECOMMENDATION, SPECIAL_PHENOTYPES, UNRESOLVED_DIR, RESOLVED_DIR, \
-    TEMP_DIR, DEFAULT_ID_AND_VERSION, RECOMMENDATIONLESS_PREFIX, MANUAL_PREFIX
+from constants import ALL_PHENOTYPES, FDA_RECOMMENDATION, SPECIAL_LOOKUP_KEYS, \
+    SPECIAL_PHENOTYPES, UNRESOLVED_DIR, RESOLVED_DIR, TEMP_DIR, \
+    DEFAULT_ID_AND_VERSION, RECOMMENDATIONLESS_PREFIX, MANUAL_PREFIX
 
 from crawl_fda import NoRxCuiFoundError, getRxCui, formatRxCui
 
 DIPLOTYPE_ENDPOINT = 'https://api.cpicpgx.org/v1/diplotype'
 
 def getLookupkeys(gene, phenotype):
+    if phenotype in SPECIAL_PHENOTYPES:
+        return [{ gene: SPECIAL_LOOKUP_KEYS[phenotype] }]
     lookupkeysPath = os.path.join(TEMP_DIR, 'cpic-lookupkeys.json')
     lookupkeyMap = {}
     if os.path.isfile(lookupkeysPath):
@@ -97,10 +100,9 @@ def main():
                 for gene, phenotype in unresolvedGuideline['phenotypes'].items():
                     lookupkeys = getLookupkeys(gene, phenotype)
                     if len(lookupkeys) == 0:
-                        if not phenotype in SPECIAL_PHENOTYPES:
-                            print('[WARNING] No CPIC lookup for ' \
-                                f'({unresolvedGuideline["drug"]["name"]}, {gene}, ' \
-                                    f'{phenotype}); using phenotype "{phenotype}"')
+                        print('[WARNING] No CPIC or special lookup for ' \
+                            f'({unresolvedGuideline["drug"]["name"]}, {gene}, ' \
+                                f'{phenotype}); using phenotype "{phenotype}"')
                         lookupkeys = [{gene: phenotype}]
                     unresolvedLookupkeys[gene] = lookupkeys
                 lookupkeyCombinations = list(itertools.product(*unresolvedLookupkeys.values()))

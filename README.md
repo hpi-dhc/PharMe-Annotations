@@ -111,3 +111,13 @@ contained in one row, one guideline will be created per gene instead of having
 combined guidelines. Need to clarify how to deal with these, as we want to show
 users one combined guideline. Currently ignoring these cases, could add later
 manually.
+
+### Special Phenotypes
+
+In these scrips the "All" phenotype (guidelines without recommendations) and
+the "Any not handled in guideline" phenotype (for FDA guidelines) are
+introduced.
+
+The lookupkey for "All" is `*`, for "Any not handled in guideline" `~`
+(these are used to match user's genotypes to guidelines in the app, next to CPIC
+lookups).

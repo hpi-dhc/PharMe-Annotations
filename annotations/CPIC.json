@@ -24,10 +24,10 @@
         },
         "drugrecommendation": "No recommendation",
         "lookupkey": {
-            "CYP2C9": "All",
-            "VKORC1": "All",
-            "CYP4F2": "All",
-            "CYP2C": "All"
+            "CYP2C9": "*",
+            "VKORC1": "*",
+            "CYP4F2": "*",
+            "CYP2C": "*"
         }
     },
     {
@@ -49,7 +49,7 @@
         },
         "drugrecommendation": "No recommendation",
         "lookupkey": {
-            "CYP2C9": "All"
+            "CYP2C9": "*"
         }
     },
     {
@@ -71,7 +71,7 @@
         },
         "drugrecommendation": "No recommendation",
         "lookupkey": {
-            "G6PD": "All"
+            "G6PD": "*"
         }
     },
     {
@@ -93,7 +93,7 @@
         },
         "drugrecommendation": "No recommendation",
         "lookupkey": {
-            "G6PD": "All"
+            "G6PD": "*"
         }
     },
     {
@@ -115,7 +115,7 @@
         },
         "drugrecommendation": "No recommendation",
         "lookupkey": {
-            "CYP2C9": "All"
+            "CYP2C9": "*"
         }
     },
     {
@@ -139,8 +139,8 @@
         },
         "drugrecommendation": "No recommendation",
         "lookupkey": {
-            "CYP2C19": "All",
-            "CYP2D6": "All"
+            "CYP2C19": "*",
+            "CYP2D6": "*"
         }
     },
     {
@@ -162,7 +162,7 @@
         },
         "drugrecommendation": "No recommendation",
         "lookupkey": {
-            "CYP2C19": "All"
+            "CYP2C19": "*"
         }
     },
     {
@@ -186,8 +186,8 @@
         },
         "drugrecommendation": "No recommendation",
         "lookupkey": {
-            "CYP2C19": "All",
-            "CYP2D6": "All"
+            "CYP2C19": "*",
+            "CYP2D6": "*"
         }
     },
     {
@@ -209,7 +209,7 @@
         },
         "drugrecommendation": "No recommendation",
         "lookupkey": {
-            "G6PD": "All"
+            "G6PD": "*"
         }
     },
     {
@@ -231,7 +231,7 @@
         },
         "drugrecommendation": "No recommendation",
         "lookupkey": {
-            "G6PD": "All"
+            "G6PD": "*"
         }
     },
     {
@@ -253,7 +253,7 @@
         },
         "drugrecommendation": "No recommendation",
         "lookupkey": {
-            "G6PD": "All"
+            "G6PD": "*"
         }
     },
     {
@@ -275,7 +275,7 @@
         },
         "drugrecommendation": "No recommendation",
         "lookupkey": {
-            "CYP2C9": "All"
+            "CYP2C9": "*"
         }
     },
     {
@@ -297,7 +297,7 @@
         },
         "drugrecommendation": "No recommendation",
         "lookupkey": {
-            "G6PD": "All"
+            "G6PD": "*"
         }
     },
     {
@@ -319,7 +319,7 @@
         },
         "drugrecommendation": "No recommendation",
         "lookupkey": {
-            "G6PD": "All"
+            "G6PD": "*"
         }
     },
     {
@@ -341,7 +341,7 @@
         },
         "drugrecommendation": "No recommendation",
         "lookupkey": {
-            "CYP2D6": "All"
+            "CYP2D6": "*"
         }
     },
     {
@@ -363,7 +363,7 @@
         },
         "drugrecommendation": "No recommendation",
         "lookupkey": {
-            "G6PD": "All"
+            "G6PD": "*"
         }
     },
     {
@@ -385,7 +385,7 @@
         },
         "drugrecommendation": "No recommendation",
         "lookupkey": {
-            "CYP2C9": "All"
+            "CYP2C9": "*"
         }
     },
     {
@@ -407,7 +407,7 @@
         },
         "drugrecommendation": "No recommendation",
         "lookupkey": {
-            "CYP2C9": "All"
+            "CYP2C9": "*"
         }
     },
     {
@@ -429,7 +429,7 @@
         },
         "drugrecommendation": "No recommendation",
         "lookupkey": {
-            "G6PD": "All"
+            "G6PD": "*"
         }
     },
     {
@@ -451,7 +451,7 @@
         },
         "drugrecommendation": "No recommendation",
         "lookupkey": {
-            "G6PD": "All"
+            "G6PD": "*"
         }
     },
     {
@@ -473,7 +473,7 @@
         },
         "drugrecommendation": "No recommendation",
         "lookupkey": {
-            "CYP2D6": "All"
+            "CYP2D6": "*"
         }
     },
     {
@@ -495,7 +495,7 @@
         },
         "drugrecommendation": "No recommendation",
         "lookupkey": {
-            "G6PD": "All"
+            "G6PD": "*"
         }
     },
     {
@@ -517,7 +517,7 @@
         },
         "drugrecommendation": "No recommendation",
         "lookupkey": {
-            "CYP2C19": "All"
+            "CYP2C19": "*"
         }
     },
     {
@@ -539,7 +539,7 @@
         },
         "drugrecommendation": "No recommendation",
         "lookupkey": {
-            "G6PD": "All"
+            "G6PD": "*"
         }
     },
     {
@@ -561,7 +561,7 @@
         },
         "drugrecommendation": "No recommendation",
         "lookupkey": {
-            "G6PD": "All"
+            "G6PD": "*"
         }
     },
     {
@@ -583,7 +583,7 @@
         },
         "drugrecommendation": "No recommendation",
         "lookupkey": {
-            "DPYD": "All"
+            "DPYD": "*"
         }
     },
     {
@@ -605,7 +605,7 @@
         },
         "drugrecommendation": "No recommendation",
         "lookupkey": {
-            "G6PD": "All"
+            "G6PD": "*"
         }
     },
     {
@@ -627,7 +627,7 @@
         },
         "drugrecommendation": "No recommendation",
         "lookupkey": {
-            "G6PD": "All"
+            "G6PD": "*"
         }
     }
 ]
