@@ -1,47 +1,48 @@
-abrocitinib,CYP2C19,Section 1
-amifampridine,NAT2,Section 1
-amifampridine phosphate,NAT2,Section 1
-amphetamine,CYP2D6,Section 1
-aripiprazole,CYP2D6,Section 1
-aripiprazole lauroxil,CYP2D6,Section 1
-belinostat,UGT1A1,Section 1
-belzutifan,CYP2C19,Section 1
-belzutifan,UGT2B17,Section 1
-brexpiprazole,CYP2D6,Section 1
-brivaracetam,CYP2C19,Section 1
-clobazam,CYP2C19,Section 1
-clozapine,CYP2D6,Section 1
-deutetrabenazine,CYP2D6,Section 1
-dronabinol,CYP2C9,Section 1
-eliglustat,CYP2D6,Section 1
-erdafitinib,CYP2C9,Section 1
-flibanserin,CYP2C19,Section 1
-gefitinib,CYP2D6,Section 1
-iloperidone,CYP2D6,Section 1
-irinotecan,UGT1A1,Section 1
-lofexidine,CYP2D6,Section 1
-meclizine,CYP2D6,Section 1
-metoclopramide,CYP2D6,Section 1
-mivacurium,BCHE,Section 1
-nateglinide,CYP2C9,Section 1
-oliceridine,CYP2D6,Section 1
-pimozide,CYP2D6,Section 1
-pitolisant,CYP2D6,Section 1
-propafenone,CYP2D6,Section 1
-sacituzumab govitecan-hziy,UGT1A1,Section 1
-siponimod,CYP2C9,Section 1
-tetrabenazine,CYP2D6,Section 1
-thioridazine,CYP2D6,Section 1
-valbenazine,CYP2D6,Section 1
-carvedilol,CYP2D6,Section 2
-cevimeline,CYP2D6,Section 2
-isoniazid,Nonspecific (NAT),Section 2
-lapatinib,HLA-DRB1,Section 2
-lapatinib,HLA-DQA1,Section 2
-mavacamten,CYP2C19,Section 2
-nilotinib,UGT1A1,Section 2
-pazopanib,HLA-B,Section 2
-pazopanib,UGT1A1,Section 2
-perphenazine,CYP2D6,Section 2
-procainamide,Nonspecific (NAT),Section 2
-tolterodine,CYP2D6,Section 2
+drug,gene,section,in_cpic_lookups
+abrocitinib,CYP2C19,Section 1,True
+amifampridine,NAT2,Section 1,False
+amifampridine phosphate,NAT2,Section 1,False
+amphetamine,CYP2D6,Section 1,True
+aripiprazole,CYP2D6,Section 1,True
+aripiprazole lauroxil,CYP2D6,Section 1,True
+belinostat,UGT1A1,Section 1,True
+belzutifan,CYP2C19,Section 1,True
+belzutifan,UGT2B17,Section 1,False
+brexpiprazole,CYP2D6,Section 1,True
+brivaracetam,CYP2C19,Section 1,True
+clobazam,CYP2C19,Section 1,True
+clozapine,CYP2D6,Section 1,True
+deutetrabenazine,CYP2D6,Section 1,True
+dronabinol,CYP2C9,Section 1,True
+eliglustat,CYP2D6,Section 1,True
+erdafitinib,CYP2C9,Section 1,True
+flibanserin,CYP2C19,Section 1,True
+gefitinib,CYP2D6,Section 1,True
+iloperidone,CYP2D6,Section 1,True
+irinotecan,UGT1A1,Section 1,True
+lofexidine,CYP2D6,Section 1,True
+meclizine,CYP2D6,Section 1,True
+metoclopramide,CYP2D6,Section 1,True
+mivacurium,BCHE,Section 1,False
+nateglinide,CYP2C9,Section 1,True
+oliceridine,CYP2D6,Section 1,True
+pimozide,CYP2D6,Section 1,True
+pitolisant,CYP2D6,Section 1,True
+propafenone,CYP2D6,Section 1,True
+sacituzumab govitecan-hziy,UGT1A1,Section 1,True
+siponimod,CYP2C9,Section 1,True
+tetrabenazine,CYP2D6,Section 1,True
+thioridazine,CYP2D6,Section 1,True
+valbenazine,CYP2D6,Section 1,True
+carvedilol,CYP2D6,Section 2,True
+cevimeline,CYP2D6,Section 2,True
+isoniazid,Nonspecific (NAT),Section 2,False
+lapatinib,HLA-DRB1,Section 2,False
+lapatinib,HLA-DQA1,Section 2,False
+mavacamten,CYP2C19,Section 2,True
+nilotinib,UGT1A1,Section 2,True
+pazopanib,HLA-B,Section 2,True
+pazopanib,UGT1A1,Section 2,True
+perphenazine,CYP2D6,Section 2,True
+procainamide,Nonspecific (NAT),Section 2,False
+tolterodine,CYP2D6,Section 2,True

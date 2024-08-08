@@ -6,8 +6,8 @@ import requests
 from bs4 import BeautifulSoup
 
 from constants import ANY_OTHER_PHENOTYPE, FDA_STANDARD, \
-    RECOMMENDATIONLESS_PREFIX, TEMP_DIR, UNRESOLVED_DIR, \
-    fdaFurtherGenesImplication
+    IGNORE_GENES_NOT_IN_CPIC_LOOKUPS, RECOMMENDATIONLESS_PREFIX, TEMP_DIR, \
+    UNRESOLVED_DIR, fdaFurtherGenesImplication
 
 FDA_URL = 'https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations'
 FDA_INFO_FILE = 'FDA_info.csv'
@@ -48,33 +48,53 @@ def getTable(soup, id):
         raise UnexpectedWebpageFormatError(f'no table after link with id {id}')
     return table
 
-def getCpicDrugs():
-    cpicUrl = 'https://api.cpicpgx.org/v1/recommendation'
-    params = { 'select': 'drug(name)' }
-    cpicRecommendationsPath = os.path.join(TEMP_DIR, 'cpic-drugs.json')
-    if os.path.isfile(cpicRecommendationsPath):
-        with open(cpicRecommendationsPath, 'r') as cpicFile:
+def _getCpicInformation(urlResource, params, fileName, responseHandler):
+    cpicUrl = f'https://api.cpicpgx.org/v1/{urlResource}'
+    cpicFilePath = os.path.join(TEMP_DIR, fileName)
+    if os.path.isfile(cpicFilePath):
+        with open(cpicFilePath, 'r') as cpicFile:
             return  json.load(cpicFile)
-    cpicRecommendations = requests.get(cpicUrl, params=params).json()
-    cpicDrugs = set()
-    for recommendation in cpicRecommendations:
-        cpicDrugs.add(recommendation['drug']['name'])
-    with open(
-        os.path.join(UNRESOLVED_DIR, f'{RECOMMENDATIONLESS_PREFIX}CPIC.json'),
-        'r',
-    ) as manualCpicFile:
-        manualCpicGuidelines = json.load(manualCpicFile)
-        for entry in manualCpicGuidelines:
-            cpicDrugs.add(entry['drug']['name'])
-    cpicDrugs = list(cpicDrugs)
-    with open(cpicRecommendationsPath, 'w') as cpicFile:
-        json.dump(cpicDrugs, cpicFile, indent=4)
-    return cpicDrugs
+    cpicInformation = \
+        responseHandler(requests.get(cpicUrl, params=params).json())
+    with open(cpicFilePath, 'w') as cpicFile:
+        json.dump(cpicInformation, cpicFile, indent=4)
+    return cpicInformation
 
-def addToFdaInfoFile(drug, gene, section):
+def getCpicDrugs():
+    def responseHandler(cpicRecommendations):
+        cpicDrugs = set()
+        for recommendation in cpicRecommendations:
+            cpicDrugs.add(recommendation['drug']['name'])
+        with open(
+            os.path.join(UNRESOLVED_DIR, f'{RECOMMENDATIONLESS_PREFIX}CPIC.json'),
+            'r',
+        ) as manualCpicFile:
+            manualCpicGuidelines = json.load(manualCpicFile)
+            for entry in manualCpicGuidelines:
+                cpicDrugs.add(entry['drug']['name'])
+        cpicDrugs = list(cpicDrugs)
+    return _getCpicInformation(
+        'recommendation',
+        { 'select': 'drug(name)' },
+        'cpic-drugs.json',
+        responseHandler,
+    )
+
+def getGenesInCpicLookups():
+    def responseHandler(cpicGenes):
+        return list(set(map(lambda geneInfo: geneInfo['genesymbol'], cpicGenes)))
+        
+    return _getCpicInformation(
+        'diplotype',
+        { 'select': 'genesymbol' },
+        'cpic-genes.json',
+        responseHandler,
+    )
+
+def addToFdaInfoFile(drug, gene, section, in_cpic_lookups):
     with open(FDA_INFO_FILE, 'a') as infoFile:
         writer = csv.writer(infoFile)
-        writer.writerow([drug, gene, section])
+        writer.writerow([drug, gene, section, in_cpic_lookups])
 
 def getRxCui(drug):
     rxCuis = {}
@@ -136,7 +156,7 @@ def main():
     fdaAssociations = {}
     multipleRows = set()
     with open(FDA_INFO_FILE, 'w') as fdaInfoFile:
-        fdaInfoFile.write('')
+        fdaInfoFile.write('drug,gene,section,in_cpic_lookups\n')
     for sectionId, sectionName in includedSections.items():
         sectionTable = getTable(soup, sectionId)
         sectionSourceName = f'Table of Pharmacogenetic Associations ({sectionName})'
@@ -155,28 +175,51 @@ def main():
                 continue
 
             genes = cpicFormatFdaGenes(cells[1].text)
+            cpicGenes = getGenesInCpicLookups()
 
             for gene in genes:
-                addToFdaInfoFile(drug, gene, sectionName)
+                addToFdaInfoFile(drug, gene, sectionName, gene in cpicGenes)
+
+            includedGenes = []
+            if IGNORE_GENES_NOT_IN_CPIC_LOOKUPS:
+                includedGenes = list(filter(
+                    lambda gene: gene in cpicGenes,
+                    genes,
+                ))
+            else:
+                includedGenes = genes
+            
+            if len(includedGenes) == 0:
+                print(f'[INFO] Skipping {drug} ({", ".join(genes)} not in CPIC lookups)')
+                continue
 
             if drug in fdaAssociations:
                 multipleRows.add(drug)
                 continue
+            
+            skippedGenes = list(filter(lambda gene: not gene in includedGenes, genes))
+            print(f'[INFO] Skipping {", ".join(skippedGenes)} for {drug} (not in CPIC lookups)')
 
             phenotypes = cpicFormatFdaPhenotypes(cells[2].text)
+            description = cells[3].text
+            if len(skippedGenes) > 0:
+                description = f'{description} ({", ".join(skippedGenes)} ' \
+                    'also included in FDA guideline but not in CPIC lookups ' \
+                        'and therefore not shown in PharMe)'
 
             # Only case with multiple genes in FDA and not in CPIC is Belzutifan,
-            # which has only one phenotype, so not implemented multiple phenotypes
-            # (would need to implement combinations of multiple phenotypes, too).
-            if len(genes) > 1 and  len(phenotypes) > 1:
+            # which has only one phenotype (and second gene is potentially
+            # ignored anyways), so not implemented multiple phenotypes (would
+            # need to implement combinations of multiple phenotypes, too).
+            if len(includedGenes) > 1 and  len(phenotypes) > 1:
                 print(f'[WARNING] Skipping {drug} (multiple genes and phenotypes ' \
                         'not implemented yet, will lack phenotype combinations)')
                 continue
 
             fdaAssociations[drug] = {
-                'genes': genes,
+                'genes': includedGenes,
                 'phenotypes': phenotypes,
-                'description': cells[3].text,
+                'description': description,
                 'guideline': {
                     'name': sectionSourceName,
                     'url': sectionSourceUrl

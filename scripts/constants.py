@@ -1,5 +1,7 @@
 import os
 
+IGNORE_GENES_NOT_IN_CPIC_LOOKUPS = True
+
 UNRESOLVED_DIR = 'unresolved-annotations'
 RESOLVED_DIR = 'annotations'
 

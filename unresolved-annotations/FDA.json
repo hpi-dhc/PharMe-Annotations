@@ -30,66 +30,6 @@
         "implications": "Standard procedure"
     },
     {
-        "drugid": "RxNorm:2106338",
-        "drug": {
-            "name": "amifampridine"
-        },
-        "phenotypes": {
-            "NAT2": "Poor Metabolizer"
-        },
-        "guideline": {
-            "name": "Table of Pharmacogenetic Associations (Section 1)",
-            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
-        },
-        "implications": {
-            "NAT2": "Results in higher systemic concentrations and higher adverse reaction risk. Use lowest recommended starting dosage and monitor for adverse reactions. Refer to FDA labeling for specific dosing recommendations."
-        }
-    },
-    {
-        "drugid": "RxNorm:2106338",
-        "drug": {
-            "name": "amifampridine"
-        },
-        "phenotypes": {
-            "NAT2": "Any not handled in guideline"
-        },
-        "guideline": {
-            "name": "Table of Pharmacogenetic Associations (Section 1)",
-            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
-        },
-        "implications": "Standard procedure"
-    },
-    {
-        "drugid": "RxNorm:2106337",
-        "drug": {
-            "name": "amifampridine phosphate"
-        },
-        "phenotypes": {
-            "NAT2": "Poor Metabolizer"
-        },
-        "guideline": {
-            "name": "Table of Pharmacogenetic Associations (Section 1)",
-            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
-        },
-        "implications": {
-            "NAT2": "Results in higher systemic concentrations. Use lowest recommended starting dosage (15 mg/day) and monitor for adverse reactions."
-        }
-    },
-    {
-        "drugid": "RxNorm:2106337",
-        "drug": {
-            "name": "amifampridine phosphate"
-        },
-        "phenotypes": {
-            "NAT2": "Any not handled in guideline"
-        },
-        "guideline": {
-            "name": "Table of Pharmacogenetic Associations (Section 1)",
-            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
-        },
-        "implications": "Standard procedure"
-    },
-    {
         "drugid": "RxNorm:725",
         "drug": {
             "name": "amphetamine"
@@ -215,16 +155,14 @@
             "name": "belzutifan"
         },
         "phenotypes": {
-            "CYP2C19": "Poor Metabolizer",
-            "UGT2B17": "Poor Metabolizer"
+            "CYP2C19": "Poor Metabolizer"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 1)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
         },
         "implications": {
-            "CYP2C19": "Results in higher systemic concentrations and may result in higher adverse reaction risk (anemia, hypoxia). Monitor patients who are poor metabolizers for both genes for adverse reactions.",
-            "UGT2B17": "Might be included in CYP2C19 implication (imported from FDA, source only states one text per guideline); joint implication does not apply for this gene in case the phenotype is \"Any not handled in guideline\""
+            "CYP2C19": "Results in higher systemic concentrations and may result in higher adverse reaction risk (anemia, hypoxia). Monitor patients who are poor metabolizers for both genes for adverse reactions. (UGT2B17 also included in FDA guideline but not in CPIC lookups and therefore not shown in PharMe)"
         }
     },
     {
@@ -233,44 +171,7 @@
             "name": "belzutifan"
         },
         "phenotypes": {
-            "CYP2C19": "Any not handled in guideline",
-            "UGT2B17": "Poor Metabolizer"
-        },
-        "guideline": {
-            "name": "Table of Pharmacogenetic Associations (Section 1)",
-            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
-        },
-        "implications": {
-            "CYP2C19": "Results in higher systemic concentrations and may result in higher adverse reaction risk (anemia, hypoxia). Monitor patients who are poor metabolizers for both genes for adverse reactions.",
-            "UGT2B17": "Might be included in CYP2C19 implication (imported from FDA, source only states one text per guideline); joint implication does not apply for this gene in case the phenotype is \"Any not handled in guideline\""
-        }
-    },
-    {
-        "drugid": "RxNorm:2567226",
-        "drug": {
-            "name": "belzutifan"
-        },
-        "phenotypes": {
-            "CYP2C19": "Poor Metabolizer",
-            "UGT2B17": "Any not handled in guideline"
-        },
-        "guideline": {
-            "name": "Table of Pharmacogenetic Associations (Section 1)",
-            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
-        },
-        "implications": {
-            "CYP2C19": "Results in higher systemic concentrations and may result in higher adverse reaction risk (anemia, hypoxia). Monitor patients who are poor metabolizers for both genes for adverse reactions.",
-            "UGT2B17": "Might be included in CYP2C19 implication (imported from FDA, source only states one text per guideline); joint implication does not apply for this gene in case the phenotype is \"Any not handled in guideline\""
-        }
-    },
-    {
-        "drugid": "RxNorm:2567226",
-        "drug": {
-            "name": "belzutifan"
-        },
-        "phenotypes": {
-            "CYP2C19": "Any not handled in guideline",
-            "UGT2B17": "Any not handled in guideline"
+            "CYP2C19": "Any not handled in guideline"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 1)",
@@ -999,66 +900,6 @@
         "implications": "Standard procedure"
     },
     {
-        "drugid": "RxNorm:30077",
-        "drug": {
-            "name": "mivacurium"
-        },
-        "phenotypes": {
-            "BCHE": "Poor Metabolizer"
-        },
-        "guideline": {
-            "name": "Table of Pharmacogenetic Associations (Section 1)",
-            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
-        },
-        "implications": {
-            "BCHE": "Results in higher systemic concentrations and higher adverse reaction risk (prolonged neuromuscular blockade). Avoid use in poor metabolizers."
-        }
-    },
-    {
-        "drugid": "RxNorm:30077",
-        "drug": {
-            "name": "mivacurium"
-        },
-        "phenotypes": {
-            "BCHE": "Any not handled in guideline"
-        },
-        "guideline": {
-            "name": "Table of Pharmacogenetic Associations (Section 1)",
-            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
-        },
-        "implications": "Standard procedure"
-    },
-    {
-        "drugid": "RxNorm:30077",
-        "drug": {
-            "name": "mivacurium"
-        },
-        "phenotypes": {
-            "BCHE": "Intermediate Metabolizer"
-        },
-        "guideline": {
-            "name": "Table of Pharmacogenetic Associations (Section 1)",
-            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
-        },
-        "implications": {
-            "BCHE": "Results in higher systemic concentrations and higher adverse reaction risk (prolonged neuromuscular blockade). Avoid use in poor metabolizers."
-        }
-    },
-    {
-        "drugid": "RxNorm:30077",
-        "drug": {
-            "name": "mivacurium"
-        },
-        "phenotypes": {
-            "BCHE": "Any not handled in guideline"
-        },
-        "guideline": {
-            "name": "Table of Pharmacogenetic Associations (Section 1)",
-            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
-        },
-        "implications": "Standard procedure"
-    },
-    {
         "drugid": "RxNorm:274332",
         "drug": {
             "name": "nateglinide"
@@ -1449,36 +1290,6 @@
         "implications": "Standard procedure"
     },
     {
-        "drugid": "RxNorm:6038",
-        "drug": {
-            "name": "isoniazid"
-        },
-        "phenotypes": {
-            "Nonspecific (NAT)": "Poor Metabolizer"
-        },
-        "guideline": {
-            "name": "Table of Pharmacogenetic Associations (Section 2)",
-            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
-        },
-        "implications": {
-            "Nonspecific (NAT)": "May result in higher systemic concentrations and adverse reaction risk."
-        }
-    },
-    {
-        "drugid": "RxNorm:6038",
-        "drug": {
-            "name": "isoniazid"
-        },
-        "phenotypes": {
-            "Nonspecific (NAT)": "Any not handled in guideline"
-        },
-        "guideline": {
-            "name": "Table of Pharmacogenetic Associations (Section 2)",
-            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
-        },
-        "implications": "Standard procedure"
-    },
-    {
         "drugid": "RxNorm:2600867",
         "drug": {
             "name": "mavacamten"
@@ -1591,36 +1402,6 @@
         },
         "phenotypes": {
             "CYP2D6": "Any not handled in guideline"
-        },
-        "guideline": {
-            "name": "Table of Pharmacogenetic Associations (Section 2)",
-            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
-        },
-        "implications": "Standard procedure"
-    },
-    {
-        "drugid": "RxNorm:8700",
-        "drug": {
-            "name": "procainamide"
-        },
-        "phenotypes": {
-            "Nonspecific (NAT)": "Poor Metabolizer"
-        },
-        "guideline": {
-            "name": "Table of Pharmacogenetic Associations (Section 2)",
-            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
-        },
-        "implications": {
-            "Nonspecific (NAT)": "Alters systemic parent drug and metabolite concentrations. May result in higher adverse reaction risk."
-        }
-    },
-    {
-        "drugid": "RxNorm:8700",
-        "drug": {
-            "name": "procainamide"
-        },
-        "phenotypes": {
-            "Nonspecific (NAT)": "Any not handled in guideline"
         },
         "guideline": {
             "name": "Table of Pharmacogenetic Associations (Section 2)",
