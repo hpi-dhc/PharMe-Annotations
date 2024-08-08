@@ -27,7 +27,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 1)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "CYP2C19": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:725",
@@ -57,7 +59,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 1)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "CYP2D6": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:89013",
@@ -87,7 +91,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 1)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "CYP2D6": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:1673265",
@@ -117,7 +123,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 1)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "CYP2D6": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:1543543",
@@ -147,7 +155,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 1)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "UGT1A1": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:2567226",
@@ -177,7 +187,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 1)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "CYP2C19": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:1658314",
@@ -207,7 +219,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 1)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "CYP2D6": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:1739745",
@@ -237,7 +251,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 1)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "CYP2C19": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:1739745",
@@ -267,7 +283,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 1)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "CYP2C19": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:21241",
@@ -297,7 +315,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 1)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "CYP2C19": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:21241",
@@ -327,7 +347,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 1)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "CYP2C19": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:2626",
@@ -357,7 +379,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 1)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "CYP2D6": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:1876905",
@@ -387,7 +411,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 1)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "CYP2D6": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:10402",
@@ -417,7 +443,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 1)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "CYP2C9": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:10402",
@@ -447,7 +475,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 1)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "CYP2C9": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:1547220",
@@ -477,7 +507,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 1)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "CYP2D6": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:1547220",
@@ -507,7 +539,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 1)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "CYP2D6": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:1547220",
@@ -537,7 +571,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 1)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "CYP2D6": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:1547220",
@@ -567,7 +603,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 1)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "CYP2D6": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:2123125",
@@ -597,7 +635,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 1)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "CYP2C9": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:1665509",
@@ -627,7 +667,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 1)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "CYP2C19": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:328134",
@@ -657,7 +699,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 1)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "CYP2D6": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:73178",
@@ -687,7 +731,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 1)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "CYP2D6": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:51499",
@@ -717,7 +763,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 1)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "UGT1A1": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:51499",
@@ -747,7 +795,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 1)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "UGT1A1": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:28863",
@@ -777,7 +827,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 1)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "CYP2D6": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:6676",
@@ -807,7 +859,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 1)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "CYP2D6": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:6676",
@@ -837,7 +891,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 1)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "CYP2D6": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:6676",
@@ -867,7 +923,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 1)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "CYP2D6": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:6915",
@@ -897,7 +955,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 1)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "CYP2D6": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:274332",
@@ -927,7 +987,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 1)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "CYP2C9": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:2392230",
@@ -957,7 +1019,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 1)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "CYP2D6": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:8331",
@@ -987,7 +1051,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 1)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "CYP2D6": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:2197878",
@@ -1017,7 +1083,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 1)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "CYP2D6": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:8754",
@@ -1047,7 +1115,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 1)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "CYP2D6": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:2360530",
@@ -1077,7 +1147,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 1)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "UGT1A1": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:2121085",
@@ -1107,7 +1179,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 1)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "CYP2C9": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:2121085",
@@ -1137,7 +1211,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 1)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "CYP2C9": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:10390",
@@ -1167,7 +1243,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 1)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "CYP2D6": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:10502",
@@ -1197,7 +1275,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 1)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "CYP2D6": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:1918219",
@@ -1227,7 +1307,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 1)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "CYP2D6": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:20352",
@@ -1257,7 +1339,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 2)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "CYP2D6": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:44281",
@@ -1287,7 +1371,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 2)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "CYP2D6": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:2600867",
@@ -1317,7 +1403,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 2)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "CYP2C19": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:2600867",
@@ -1347,7 +1435,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 2)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "CYP2C19": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:662281",
@@ -1377,7 +1467,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 2)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "UGT1A1": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:8076",
@@ -1407,7 +1499,9 @@
             "name": "Table of Pharmacogenetic Associations (Section 2)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "CYP2D6": "Standard procedure"
+        }
     },
     {
         "drugid": "RxNorm:119565",
@@ -1437,6 +1531,8 @@
             "name": "Table of Pharmacogenetic Associations (Section 2)",
             "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
         },
-        "implications": "Standard procedure"
+        "implications": {
+            "CYP2D6": "Standard procedure"
+        }
     }
 ]

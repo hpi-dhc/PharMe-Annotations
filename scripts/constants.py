@@ -28,4 +28,4 @@ def fdaFurtherGenesImplication(genes):
         f'joint implication does not apply for this gene in case the ' \
         f'phenotype is "{ANY_OTHER_PHENOTYPE}"'
 FDA_RECOMMENDATION = f'Might be included in implication text {FDA_EXCUSE}'
-FDA_STANDARD = 'Standard procedure'
+FDA_STANDARD_PROCEDURE = 'Standard procedure'

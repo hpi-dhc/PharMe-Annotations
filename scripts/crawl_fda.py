@@ -5,7 +5,7 @@ import os
 import requests
 from bs4 import BeautifulSoup
 
-from constants import ANY_OTHER_PHENOTYPE, FDA_STANDARD, \
+from constants import ANY_OTHER_PHENOTYPE, FDA_STANDARD_PROCEDURE, \
     IGNORE_GENES_NOT_IN_CPIC_LOOKUPS, RECOMMENDATIONLESS_PREFIX, TEMP_DIR, \
     UNRESOLVED_DIR, fdaFurtherGenesImplication
 
@@ -198,7 +198,8 @@ def main():
                 continue
             
             skippedGenes = list(filter(lambda gene: not gene in includedGenes, genes))
-            print(f'[INFO] Skipping {", ".join(skippedGenes)} for {drug} (not in CPIC lookups)')
+            if len(skippedGenes) > 0:
+                print(f'[INFO] Skipping {", ".join(skippedGenes)} for {drug} (not in CPIC lookups)')
 
             phenotypes = cpicFormatFdaPhenotypes(cells[2].text)
             description = cells[3].text
@@ -240,7 +241,9 @@ def main():
         guideline = fdaAssociation['guideline']
 
         geneImplications = {}
+        fallbackGeneImplications = {}
         for index, gene in enumerate(genes):
+            fallbackGeneImplications[gene] = FDA_STANDARD_PROCEDURE
             if index == 0:
                 geneImplications[gene] = description
             else:
@@ -270,7 +273,8 @@ def main():
                 lambda phenotype: phenotype == ANY_OTHER_PHENOTYPE,
                 genePhenotypeCombination.values(),
             ))
-            implications = geneImplications if not isFallback else FDA_STANDARD
+            implications = geneImplications if not isFallback \
+                else fallbackGeneImplications
             fdaAnnotations.append({
                 'drugid': rxCui,
                 'drug': {
