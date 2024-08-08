@@ -81,19 +81,24 @@ def getRxCui(drug):
     if os.path.isfile(rxCuiPath):
         with open(rxCuiPath, 'r')  as rxCuiFile:
             rxCuis = json.load(rxCuiFile)
+    rxCui = None
     if drug in rxCuis:
-        return rxCuis[drug]
-    rxUrl = f'https://rxnav.nlm.nih.gov/REST/rxcui.json?name={drug}'
-    rxNormResponse = requests.get(rxUrl).json()['idGroup']
-    if not 'rxnormId' in rxNormResponse:
+        rxCui = rxCuis[drug]
+    else:
+        rxUrl = f'https://rxnav.nlm.nih.gov/REST/rxcui.json?name={drug}'
+        rxNormResponse = requests.get(rxUrl).json()['idGroup']
+        if 'rxnormId' in rxNormResponse:
+            rxNorms = rxNormResponse['rxnormId']
+            if len(rxNorms) != 1:
+                raise Exception('[ERROR] Expecting Rx response of length 1')
+            rxCui = rxNorms[0]
+        rxCuis[drug] = rxCui
+        with open(rxCuiPath, 'w') as rxCuiFile:
+            json.dump(rxCuis, rxCuiFile, indent=4)
+    # Keep a record that no rxCui exists in "cache" but throw exception to be
+    # handled elsewhere
+    if rxCui is None:
         raise NoRxCuiFoundError(drugName=drug)
-    rxNorms = requests.get(rxUrl).json()['idGroup']['rxnormId']
-    if len(rxNorms) != 1:
-        raise Exception('[ERROR] Expecting Rx response of length 1')
-    rxCui = rxNorms[0]
-    rxCuis[drug] = rxCui
-    with open(rxCuiPath, 'w') as rxCuiFile:
-        json.dump(rxCuis, rxCuiFile, indent=4)
     return rxCui
 
 def formatRxCui(rxCui):
