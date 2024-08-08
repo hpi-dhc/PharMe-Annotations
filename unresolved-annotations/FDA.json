@@ -16,6 +16,20 @@
         }
     },
     {
+        "drugid": "RxNorm:2591476",
+        "drug": {
+            "name": "abrocitinib"
+        },
+        "phenotypes": {
+            "CYP2C19": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure"
+    },
+    {
         "drugid": "RxNorm:2106338",
         "drug": {
             "name": "amifampridine"
@@ -30,6 +44,20 @@
         "implications": {
             "NAT2": "Results in higher systemic concentrations and higher adverse reaction risk. Use lowest recommended starting dosage and monitor for adverse reactions. Refer to FDA labeling for specific dosing recommendations."
         }
+    },
+    {
+        "drugid": "RxNorm:2106338",
+        "drug": {
+            "name": "amifampridine"
+        },
+        "phenotypes": {
+            "NAT2": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure"
     },
     {
         "drugid": "RxNorm:2106337",
@@ -48,6 +76,20 @@
         }
     },
     {
+        "drugid": "RxNorm:2106337",
+        "drug": {
+            "name": "amifampridine phosphate"
+        },
+        "phenotypes": {
+            "NAT2": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure"
+    },
+    {
         "drugid": "RxNorm:725",
         "drug": {
             "name": "amphetamine"
@@ -62,6 +104,20 @@
         "implications": {
             "CYP2D6": "May affect systemic concentrations and adverse reaction risk. Consider lower starting dosage or use alternative agent."
         }
+    },
+    {
+        "drugid": "RxNorm:725",
+        "drug": {
+            "name": "amphetamine"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure"
     },
     {
         "drugid": "RxNorm:89013",
@@ -80,6 +136,20 @@
         }
     },
     {
+        "drugid": "RxNorm:89013",
+        "drug": {
+            "name": "aripiprazole"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure"
+    },
+    {
         "drugid": "RxNorm:1673265",
         "drug": {
             "name": "aripiprazole lauroxil"
@@ -96,6 +166,20 @@
         }
     },
     {
+        "drugid": "RxNorm:1673265",
+        "drug": {
+            "name": "aripiprazole lauroxil"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure"
+    },
+    {
         "drugid": "RxNorm:1543543",
         "drug": {
             "name": "belinostat"
@@ -110,6 +194,20 @@
         "implications": {
             "UGT1A1": "May result in higher systemic concentrations and higher adverse reaction risk. Reduce starting dose to 750 mg/m2 in poor metabolizers."
         }
+    },
+    {
+        "drugid": "RxNorm:1543543",
+        "drug": {
+            "name": "belinostat"
+        },
+        "phenotypes": {
+            "UGT1A1": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure"
     },
     {
         "drugid": "RxNorm:2567226",
@@ -166,6 +264,21 @@
         }
     },
     {
+        "drugid": "RxNorm:2567226",
+        "drug": {
+            "name": "belzutifan"
+        },
+        "phenotypes": {
+            "CYP2C19": "Any not handled in guideline",
+            "UGT2B17": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure"
+    },
+    {
         "drugid": "RxNorm:1658314",
         "drug": {
             "name": "brexpiprazole"
@@ -182,6 +295,20 @@
         }
     },
     {
+        "drugid": "RxNorm:1658314",
+        "drug": {
+            "name": "brexpiprazole"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure"
+    },
+    {
         "drugid": "RxNorm:1739745",
         "drug": {
             "name": "brivaracetam"
@@ -203,6 +330,20 @@
             "name": "brivaracetam"
         },
         "phenotypes": {
+            "CYP2C19": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure"
+    },
+    {
+        "drugid": "RxNorm:1739745",
+        "drug": {
+            "name": "brivaracetam"
+        },
+        "phenotypes": {
             "CYP2C19": "Intermediate Metabolizer"
         },
         "guideline": {
@@ -212,6 +353,20 @@
         "implications": {
             "CYP2C19": "Results in higher systemic concentrations and higher adverse reaction risk. Consider dosage reductions in poor metabolizers."
         }
+    },
+    {
+        "drugid": "RxNorm:1739745",
+        "drug": {
+            "name": "brivaracetam"
+        },
+        "phenotypes": {
+            "CYP2C19": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure"
     },
     {
         "drugid": "RxNorm:21241",
@@ -235,6 +390,20 @@
             "name": "clobazam"
         },
         "phenotypes": {
+            "CYP2C19": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure"
+    },
+    {
+        "drugid": "RxNorm:21241",
+        "drug": {
+            "name": "clobazam"
+        },
+        "phenotypes": {
             "CYP2C19": "Intermediate Metabolizer"
         },
         "guideline": {
@@ -244,6 +413,20 @@
         "implications": {
             "CYP2C19": "Results in higher systemic active metabolite concentrations. Poor metabolism results in higher adverse reaction risk. Dosage adjustment is recommended. Refer to FDA labeling for specific dosing recommendations."
         }
+    },
+    {
+        "drugid": "RxNorm:21241",
+        "drug": {
+            "name": "clobazam"
+        },
+        "phenotypes": {
+            "CYP2C19": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure"
     },
     {
         "drugid": "RxNorm:2626",
@@ -262,6 +445,20 @@
         }
     },
     {
+        "drugid": "RxNorm:2626",
+        "drug": {
+            "name": "clozapine"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure"
+    },
+    {
         "drugid": "RxNorm:1876905",
         "drug": {
             "name": "deutetrabenazine"
@@ -276,6 +473,20 @@
         "implications": {
             "CYP2D6": "Results in higher systemic concentrations and adverse reaction risk (QT prolongation). The maximum recommended dosage should not exceed 36 mg (maximum single dose of 18 mg)."
         }
+    },
+    {
+        "drugid": "RxNorm:1876905",
+        "drug": {
+            "name": "deutetrabenazine"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure"
     },
     {
         "drugid": "RxNorm:10402",
@@ -299,6 +510,20 @@
             "name": "dronabinol"
         },
         "phenotypes": {
+            "CYP2C9": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure"
+    },
+    {
+        "drugid": "RxNorm:10402",
+        "drug": {
+            "name": "dronabinol"
+        },
+        "phenotypes": {
             "CYP2C9": "Intermediate Metabolizer"
         },
         "guideline": {
@@ -308,6 +533,20 @@
         "implications": {
             "CYP2C9": "May result in higher systemic concentrations and higher adverse reaction risk. Monitor for adverse reactions."
         }
+    },
+    {
+        "drugid": "RxNorm:10402",
+        "drug": {
+            "name": "dronabinol"
+        },
+        "phenotypes": {
+            "CYP2C9": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure"
     },
     {
         "drugid": "RxNorm:1547220",
@@ -324,6 +563,20 @@
         "implications": {
             "CYP2D6": "Alters systemic concentrations, effectiveness, and adverse reaction risk (QT prolongation). Indicated for normal, intermediate, and poor metabolizer patients. Ultrarapid metabolizers may not achieve adequate concentrations to achieve a therapeutic effect. The recommended dosages are based on CYP2D6 metabolizer status. Coadministration with strong CYP3A inhibitors is contraindicated in intermediate and poor CYP2D6 metabolizers. Refer to FDA labeling for specific dosing recommendations."
         }
+    },
+    {
+        "drugid": "RxNorm:1547220",
+        "drug": {
+            "name": "eliglustat"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure"
     },
     {
         "drugid": "RxNorm:1547220",
@@ -347,6 +600,20 @@
             "name": "eliglustat"
         },
         "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure"
+    },
+    {
+        "drugid": "RxNorm:1547220",
+        "drug": {
+            "name": "eliglustat"
+        },
+        "phenotypes": {
             "CYP2D6": "Ultrarapid Metabolizer"
         },
         "guideline": {
@@ -356,6 +623,20 @@
         "implications": {
             "CYP2D6": "Alters systemic concentrations, effectiveness, and adverse reaction risk (QT prolongation). Indicated for normal, intermediate, and poor metabolizer patients. Ultrarapid metabolizers may not achieve adequate concentrations to achieve a therapeutic effect. The recommended dosages are based on CYP2D6 metabolizer status. Coadministration with strong CYP3A inhibitors is contraindicated in intermediate and poor CYP2D6 metabolizers. Refer to FDA labeling for specific dosing recommendations."
         }
+    },
+    {
+        "drugid": "RxNorm:1547220",
+        "drug": {
+            "name": "eliglustat"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure"
     },
     {
         "drugid": "RxNorm:1547220",
@@ -374,6 +655,20 @@
         }
     },
     {
+        "drugid": "RxNorm:1547220",
+        "drug": {
+            "name": "eliglustat"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure"
+    },
+    {
         "drugid": "RxNorm:2123125",
         "drug": {
             "name": "erdafitinib"
@@ -388,6 +683,20 @@
         "implications": {
             "CYP2C9": "May result in higher systemic concentrations and higher adverse reaction risk. Monitor for adverse reactions."
         }
+    },
+    {
+        "drugid": "RxNorm:2123125",
+        "drug": {
+            "name": "erdafitinib"
+        },
+        "phenotypes": {
+            "CYP2C9": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure"
     },
     {
         "drugid": "RxNorm:1665509",
@@ -406,6 +715,20 @@
         }
     },
     {
+        "drugid": "RxNorm:1665509",
+        "drug": {
+            "name": "flibanserin"
+        },
+        "phenotypes": {
+            "CYP2C19": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure"
+    },
+    {
         "drugid": "RxNorm:328134",
         "drug": {
             "name": "gefitinib"
@@ -422,6 +745,20 @@
         }
     },
     {
+        "drugid": "RxNorm:328134",
+        "drug": {
+            "name": "gefitinib"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure"
+    },
+    {
         "drugid": "RxNorm:73178",
         "drug": {
             "name": "iloperidone"
@@ -436,6 +773,20 @@
         "implications": {
             "CYP2D6": "Results in higher systemic concentrations and higher adverse reaction risk (QT prolongation). Reduce dosage by 50%."
         }
+    },
+    {
+        "drugid": "RxNorm:73178",
+        "drug": {
+            "name": "iloperidone"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure"
     },
     {
         "drugid": "RxNorm:51499",
@@ -459,6 +810,20 @@
             "name": "irinotecan"
         },
         "phenotypes": {
+            "UGT1A1": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure"
+    },
+    {
+        "drugid": "RxNorm:51499",
+        "drug": {
+            "name": "irinotecan"
+        },
+        "phenotypes": {
             "UGT1A1": "Intermediate Metabolizer"
         },
         "guideline": {
@@ -468,6 +833,20 @@
         "implications": {
             "UGT1A1": "Results in higher systemic active metabolite concentrations and higher adverse reaction risk (severe or life-threatening neutropenia, severe diarrhea). Closely monitor for neutropenia during and after treatment. Consider reducing the starting dosage by at least one level in poor metabolizers and modify the dosage based on individual patient tolerance. Refer to FDA labeling for specific dosing recommendations."
         }
+    },
+    {
+        "drugid": "RxNorm:51499",
+        "drug": {
+            "name": "irinotecan"
+        },
+        "phenotypes": {
+            "UGT1A1": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure"
     },
     {
         "drugid": "RxNorm:28863",
@@ -486,6 +865,20 @@
         }
     },
     {
+        "drugid": "RxNorm:28863",
+        "drug": {
+            "name": "lofexidine"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure"
+    },
+    {
         "drugid": "RxNorm:6676",
         "drug": {
             "name": "meclizine"
@@ -500,6 +893,20 @@
         "implications": {
             "CYP2D6": "May affect systemic concentrations. Monitor for adverse reactions and clinical effect."
         }
+    },
+    {
+        "drugid": "RxNorm:6676",
+        "drug": {
+            "name": "meclizine"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure"
     },
     {
         "drugid": "RxNorm:6676",
@@ -523,6 +930,20 @@
             "name": "meclizine"
         },
         "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure"
+    },
+    {
+        "drugid": "RxNorm:6676",
+        "drug": {
+            "name": "meclizine"
+        },
+        "phenotypes": {
             "CYP2D6": "Ultrarapid Metabolizer"
         },
         "guideline": {
@@ -532,6 +953,20 @@
         "implications": {
             "CYP2D6": "May affect systemic concentrations. Monitor for adverse reactions and clinical effect."
         }
+    },
+    {
+        "drugid": "RxNorm:6676",
+        "drug": {
+            "name": "meclizine"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure"
     },
     {
         "drugid": "RxNorm:6915",
@@ -548,6 +983,20 @@
         "implications": {
             "CYP2D6": "Results in higher systemic concentrations and higher adverse reaction risk. The recommended dosage is lower. Refer to FDA labeling for specific dosing recommendations."
         }
+    },
+    {
+        "drugid": "RxNorm:6915",
+        "drug": {
+            "name": "metoclopramide"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure"
     },
     {
         "drugid": "RxNorm:30077",
@@ -571,6 +1020,20 @@
             "name": "mivacurium"
         },
         "phenotypes": {
+            "BCHE": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure"
+    },
+    {
+        "drugid": "RxNorm:30077",
+        "drug": {
+            "name": "mivacurium"
+        },
+        "phenotypes": {
             "BCHE": "Intermediate Metabolizer"
         },
         "guideline": {
@@ -580,6 +1043,20 @@
         "implications": {
             "BCHE": "Results in higher systemic concentrations and higher adverse reaction risk (prolonged neuromuscular blockade). Avoid use in poor metabolizers."
         }
+    },
+    {
+        "drugid": "RxNorm:30077",
+        "drug": {
+            "name": "mivacurium"
+        },
+        "phenotypes": {
+            "BCHE": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure"
     },
     {
         "drugid": "RxNorm:274332",
@@ -598,6 +1075,20 @@
         }
     },
     {
+        "drugid": "RxNorm:274332",
+        "drug": {
+            "name": "nateglinide"
+        },
+        "phenotypes": {
+            "CYP2C9": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure"
+    },
+    {
         "drugid": "RxNorm:2392230",
         "drug": {
             "name": "oliceridine"
@@ -612,6 +1103,20 @@
         "implications": {
             "CYP2D6": "Results in higher systemic concentrations and higher adverse reaction risk (respiratory depression and sedation). May require less frequent dosing."
         }
+    },
+    {
+        "drugid": "RxNorm:2392230",
+        "drug": {
+            "name": "oliceridine"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure"
     },
     {
         "drugid": "RxNorm:8331",
@@ -630,6 +1135,20 @@
         }
     },
     {
+        "drugid": "RxNorm:8331",
+        "drug": {
+            "name": "pimozide"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure"
+    },
+    {
         "drugid": "RxNorm:2197878",
         "drug": {
             "name": "pitolisant"
@@ -644,6 +1163,20 @@
         "implications": {
             "CYP2D6": "Results in higher systemic concentrations. Use lowest recommended starting dosage. Refer to FDA labeling for specific dosing recommendations."
         }
+    },
+    {
+        "drugid": "RxNorm:2197878",
+        "drug": {
+            "name": "pitolisant"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure"
     },
     {
         "drugid": "RxNorm:8754",
@@ -662,6 +1195,20 @@
         }
     },
     {
+        "drugid": "RxNorm:8754",
+        "drug": {
+            "name": "propafenone"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure"
+    },
+    {
         "drugid": "RxNorm:2360530",
         "drug": {
             "name": "sacituzumab govitecan-hziy"
@@ -676,6 +1223,20 @@
         "implications": {
             "UGT1A1": "May result in higher systemic concentrations and adverse reaction risk (neutropenia). Monitor for adverse reactions and tolerance to treatment."
         }
+    },
+    {
+        "drugid": "RxNorm:2360530",
+        "drug": {
+            "name": "sacituzumab govitecan-hziy"
+        },
+        "phenotypes": {
+            "UGT1A1": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure"
     },
     {
         "drugid": "RxNorm:2121085",
@@ -699,6 +1260,20 @@
             "name": "siponimod"
         },
         "phenotypes": {
+            "CYP2C9": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure"
+    },
+    {
+        "drugid": "RxNorm:2121085",
+        "drug": {
+            "name": "siponimod"
+        },
+        "phenotypes": {
             "CYP2C9": "Intermediate Metabolizer"
         },
         "guideline": {
@@ -708,6 +1283,20 @@
         "implications": {
             "CYP2C9": "Results in higher systemic concentrations. Adjust dosage based on genotype. Do not use in patients with CYP2C9 *3/*3 genotype. Refer to FDA labeling for specific dosing recommendations."
         }
+    },
+    {
+        "drugid": "RxNorm:2121085",
+        "drug": {
+            "name": "siponimod"
+        },
+        "phenotypes": {
+            "CYP2C9": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure"
     },
     {
         "drugid": "RxNorm:10390",
@@ -726,6 +1315,20 @@
         }
     },
     {
+        "drugid": "RxNorm:10390",
+        "drug": {
+            "name": "tetrabenazine"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure"
+    },
+    {
         "drugid": "RxNorm:10502",
         "drug": {
             "name": "thioridazine"
@@ -740,6 +1343,20 @@
         "implications": {
             "CYP2D6": "Results in higher systemic concentrations and higher adverse reaction risk (QT prolongation). Predicted effect based on experience with CYP2D6 inhibitors. Contraindicated in poor metabolizers."
         }
+    },
+    {
+        "drugid": "RxNorm:10502",
+        "drug": {
+            "name": "thioridazine"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure"
     },
     {
         "drugid": "RxNorm:1918219",
@@ -758,6 +1375,20 @@
         }
     },
     {
+        "drugid": "RxNorm:1918219",
+        "drug": {
+            "name": "valbenazine"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 1)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section1"
+        },
+        "implications": "Standard procedure"
+    },
+    {
         "drugid": "RxNorm:20352",
         "drug": {
             "name": "carvedilol"
@@ -772,6 +1403,20 @@
         "implications": {
             "CYP2D6": "Results in higher systemic concentrations and higher adverse reaction risk (dizziness)."
         }
+    },
+    {
+        "drugid": "RxNorm:20352",
+        "drug": {
+            "name": "carvedilol"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 2)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
+        },
+        "implications": "Standard procedure"
     },
     {
         "drugid": "RxNorm:44281",
@@ -790,6 +1435,20 @@
         }
     },
     {
+        "drugid": "RxNorm:44281",
+        "drug": {
+            "name": "cevimeline"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 2)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
+        },
+        "implications": "Standard procedure"
+    },
+    {
         "drugid": "RxNorm:6038",
         "drug": {
             "name": "isoniazid"
@@ -804,6 +1463,20 @@
         "implications": {
             "Nonspecific (NAT)": "May result in higher systemic concentrations and adverse reaction risk."
         }
+    },
+    {
+        "drugid": "RxNorm:6038",
+        "drug": {
+            "name": "isoniazid"
+        },
+        "phenotypes": {
+            "Nonspecific (NAT)": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 2)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
+        },
+        "implications": "Standard procedure"
     },
     {
         "drugid": "RxNorm:2600867",
@@ -827,6 +1500,20 @@
             "name": "mavacamten"
         },
         "phenotypes": {
+            "CYP2C19": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 2)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
+        },
+        "implications": "Standard procedure"
+    },
+    {
+        "drugid": "RxNorm:2600867",
+        "drug": {
+            "name": "mavacamten"
+        },
+        "phenotypes": {
             "CYP2C19": "Intermediate Metabolizer"
         },
         "guideline": {
@@ -836,6 +1523,20 @@
         "implications": {
             "CYP2C19": "Results in higher systemic concentrations and may have higher adverse reaction risk (heart failure). Dosage is based on individual response. The dose titration and monitoring schedule accounts for differences due to CYP2C19 genetic variation, so adjustments based on CYP2C19 genotype are not necessary. Refer to FDA labeling for specific dosing recommendations and monitoring."
         }
+    },
+    {
+        "drugid": "RxNorm:2600867",
+        "drug": {
+            "name": "mavacamten"
+        },
+        "phenotypes": {
+            "CYP2C19": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 2)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
+        },
+        "implications": "Standard procedure"
     },
     {
         "drugid": "RxNorm:662281",
@@ -854,6 +1555,20 @@
         }
     },
     {
+        "drugid": "RxNorm:662281",
+        "drug": {
+            "name": "nilotinib"
+        },
+        "phenotypes": {
+            "UGT1A1": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 2)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
+        },
+        "implications": "Standard procedure"
+    },
+    {
         "drugid": "RxNorm:8076",
         "drug": {
             "name": "perphenazine"
@@ -868,6 +1583,20 @@
         "implications": {
             "CYP2D6": "Results in higher systemic concentrations and higher adverse reaction risk."
         }
+    },
+    {
+        "drugid": "RxNorm:8076",
+        "drug": {
+            "name": "perphenazine"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 2)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
+        },
+        "implications": "Standard procedure"
     },
     {
         "drugid": "RxNorm:8700",
@@ -886,6 +1615,20 @@
         }
     },
     {
+        "drugid": "RxNorm:8700",
+        "drug": {
+            "name": "procainamide"
+        },
+        "phenotypes": {
+            "Nonspecific (NAT)": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 2)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
+        },
+        "implications": "Standard procedure"
+    },
+    {
         "drugid": "RxNorm:119565",
         "drug": {
             "name": "tolterodine"
@@ -900,5 +1643,19 @@
         "implications": {
             "CYP2D6": "Results in higher systemic concentrations and higher adverse reaction risk (QT prolongation)."
         }
+    },
+    {
+        "drugid": "RxNorm:119565",
+        "drug": {
+            "name": "tolterodine"
+        },
+        "phenotypes": {
+            "CYP2D6": "Any not handled in guideline"
+        },
+        "guideline": {
+            "name": "Table of Pharmacogenetic Associations (Section 2)",
+            "url": "https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations#section2"
+        },
+        "implications": "Standard procedure"
     }
 ]

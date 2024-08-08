@@ -5,8 +5,9 @@ import os
 import requests
 from bs4 import BeautifulSoup
 
-from constants import ANY_OTHER_PHENOTYPE, RECOMMENDATIONLESS_PREFIX, \
-    TEMP_DIR, UNRESOLVED_DIR, fdaFurtherGenesImplication
+from constants import ANY_OTHER_PHENOTYPE, FDA_STANDARD, \
+    RECOMMENDATIONLESS_PREFIX, TEMP_DIR, UNRESOLVED_DIR, \
+    fdaFurtherGenesImplication
 
 FDA_URL = 'https://www.fda.gov/medical-devices/precision-medicine/table-pharmacogenetic-associations'
 FDA_INFO_FILE = 'FDA_info.csv'
@@ -189,7 +190,7 @@ def main():
 
     fdaAnnotations = []
     for drug, fdaAssociation in fdaAssociations.items():
-        rxCui = getRxCui(drug)
+        rxCui = formatRxCui(getRxCui(drug))
         genes = fdaAssociation['genes']
         phenotypes = fdaAssociation['phenotypes']
         description = fdaAssociation['description']
@@ -209,24 +210,32 @@ def main():
         genePhenotypeCombinations = []
         for phenotype in phenotypes:
             completePhenotype = {}
+            anyOtherPhenotype = {}
             for gene in genes:
                 completePhenotype[gene] = phenotype
+                anyOtherPhenotype[gene] = ANY_OTHER_PHENOTYPE
             genePhenotypeCombinations.append(completePhenotype)
             if len(genes) > 1:
                 for gene in genes:
-                    geneUnknownPhenotype = copy.deepcopy(completePhenotype)
-                    geneUnknownPhenotype[gene] = ANY_OTHER_PHENOTYPE
-                    genePhenotypeCombinations.append(geneUnknownPhenotype)
+                    geneAnyOtherPhenotype = copy.deepcopy(completePhenotype)
+                    geneAnyOtherPhenotype[gene] = ANY_OTHER_PHENOTYPE
+                    genePhenotypeCombinations.append(geneAnyOtherPhenotype)
+            genePhenotypeCombinations.append(anyOtherPhenotype)
 
         for genePhenotypeCombination in genePhenotypeCombinations:
+            isFallback = all(map(
+                lambda phenotype: phenotype == ANY_OTHER_PHENOTYPE,
+                genePhenotypeCombination.values(),
+            ))
+            implications = geneImplications if not isFallback else FDA_STANDARD
             fdaAnnotations.append({
-                'drugid': formatRxCui(rxCui),
+                'drugid': rxCui,
                 'drug': {
                     'name': drug
                 },
                 'phenotypes': genePhenotypeCombination,
                 'guideline': guideline,
-                'implications': geneImplications,
+                'implications': implications,
             })
     with open(os.path.join(UNRESOLVED_DIR, 'FDA.json'), 'w') as unresolvedFile:
         json.dump(fdaAnnotations, unresolvedFile, indent=4)
