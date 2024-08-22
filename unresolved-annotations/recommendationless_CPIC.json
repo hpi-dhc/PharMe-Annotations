@@ -153,7 +153,7 @@
         "drug": {
             "name": "methadone"
         },
-        "genes": ["CYP2D6"],
+        "genes": ["CYP2D6", "CYP2B6"],
         "guideline": {
             "name": "CPIC® Guideline for Opioids and CYP2D6, OPRM1, and COMT",
             "url": "https://cpicpgx.org/guidelines/guideline-for-codeine-and-cyp2d6/"
@@ -287,6 +287,56 @@
         "guideline": {
             "name": "CPIC® Guideline for G6PD",
             "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-g6pd/"
+        }
+    },
+    {
+        "drug": {
+            "name": "acebutolol"
+        },
+        "genes": ["CYP2D6"],
+        "guideline": {
+            "name": "CPIC® Guideline for Beta-blockers and CYP2D6, ADRB1, ADRB2, ADRA2C, GRK4, and GRK5",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-beta-blockers/"
+        }
+    },
+    {
+        "drug": {
+            "name": "betaxolol"
+        },
+        "genes": ["CYP2D6"],
+        "guideline": {
+            "name": "CPIC® Guideline for Beta-blockers and CYP2D6, ADRB1, ADRB2, ADRA2C, GRK4, and GRK5",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-beta-blockers/"
+        }
+    },
+    {
+        "drug": {
+            "name": "bisoprolol"
+        },
+        "genes": ["CYP2D6"],
+        "guideline": {
+            "name": "CPIC® Guideline for Beta-blockers and CYP2D6, ADRB1, ADRB2, ADRA2C, GRK4, and GRK5",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-beta-blockers/"
+        }
+    },
+    {
+        "drug": {
+            "name": "nebivolol"
+        },
+        "genes": ["CYP2D6"],
+        "guideline": {
+            "name": "CPIC® Guideline for Beta-blockers and CYP2D6, ADRB1, ADRB2, ADRA2C, GRK4, and GRK5",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-beta-blockers/"
+        }
+    },
+    {
+        "drug": {
+            "name": "propranolol"
+        },
+        "genes": ["CYP2D6"],
+        "guideline": {
+            "name": "CPIC® Guideline for Beta-blockers and CYP2D6, ADRB1, ADRB2, ADRA2C, GRK4, and GRK5",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-beta-blockers/"
         }
     }
 ]

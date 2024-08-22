@@ -334,14 +334,17 @@
         "version": 1,
         "drugid": "RxNorm:6813",
         "phenotypes": {
-            "CYP2D6": "All"
+            "CYP2D6": "All",
+            "CYP2B6": "All"
         },
         "implications": {
-            "CYP2D6": "No implication"
+            "CYP2D6": "No implication",
+            "CYP2B6": "No implication"
         },
         "drugrecommendation": "No recommendation",
         "lookupkey": {
-            "CYP2D6": "*"
+            "CYP2D6": "*",
+            "CYP2B6": "*"
         }
     },
     {
@@ -628,6 +631,116 @@
         "drugrecommendation": "No recommendation",
         "lookupkey": {
             "G6PD": "*"
+        }
+    },
+    {
+        "drug": {
+            "name": "acebutolol"
+        },
+        "guideline": {
+            "name": "CPIC\u00ae Guideline for Beta-blockers and CYP2D6, ADRB1, ADRB2, ADRA2C, GRK4, and GRK5",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-beta-blockers/"
+        },
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:149",
+        "phenotypes": {
+            "CYP2D6": "All"
+        },
+        "implications": {
+            "CYP2D6": "No implication"
+        },
+        "drugrecommendation": "No recommendation",
+        "lookupkey": {
+            "CYP2D6": "*"
+        }
+    },
+    {
+        "drug": {
+            "name": "betaxolol"
+        },
+        "guideline": {
+            "name": "CPIC\u00ae Guideline for Beta-blockers and CYP2D6, ADRB1, ADRB2, ADRA2C, GRK4, and GRK5",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-beta-blockers/"
+        },
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:1520",
+        "phenotypes": {
+            "CYP2D6": "All"
+        },
+        "implications": {
+            "CYP2D6": "No implication"
+        },
+        "drugrecommendation": "No recommendation",
+        "lookupkey": {
+            "CYP2D6": "*"
+        }
+    },
+    {
+        "drug": {
+            "name": "bisoprolol"
+        },
+        "guideline": {
+            "name": "CPIC\u00ae Guideline for Beta-blockers and CYP2D6, ADRB1, ADRB2, ADRA2C, GRK4, and GRK5",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-beta-blockers/"
+        },
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:19484",
+        "phenotypes": {
+            "CYP2D6": "All"
+        },
+        "implications": {
+            "CYP2D6": "No implication"
+        },
+        "drugrecommendation": "No recommendation",
+        "lookupkey": {
+            "CYP2D6": "*"
+        }
+    },
+    {
+        "drug": {
+            "name": "nebivolol"
+        },
+        "guideline": {
+            "name": "CPIC\u00ae Guideline for Beta-blockers and CYP2D6, ADRB1, ADRB2, ADRA2C, GRK4, and GRK5",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-beta-blockers/"
+        },
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:31555",
+        "phenotypes": {
+            "CYP2D6": "All"
+        },
+        "implications": {
+            "CYP2D6": "No implication"
+        },
+        "drugrecommendation": "No recommendation",
+        "lookupkey": {
+            "CYP2D6": "*"
+        }
+    },
+    {
+        "drug": {
+            "name": "propranolol"
+        },
+        "guideline": {
+            "name": "CPIC\u00ae Guideline for Beta-blockers and CYP2D6, ADRB1, ADRB2, ADRA2C, GRK4, and GRK5",
+            "url": "https://cpicpgx.org/guidelines/cpic-guideline-for-beta-blockers/"
+        },
+        "id": 1,
+        "version": 1,
+        "drugid": "RxNorm:8787",
+        "phenotypes": {
+            "CYP2D6": "All"
+        },
+        "implications": {
+            "CYP2D6": "No implication"
+        },
+        "drugrecommendation": "No recommendation",
+        "lookupkey": {
+            "CYP2D6": "*"
         }
     }
 ]
