@@ -132,6 +132,6 @@ lookups).
 * The FDA content is "in the public domain and may be republished, reprinted and
   otherwise used freely by anyone without the need to obtain permission from FDA"
   (see [website policies](https://www.fda.gov/about-fda/about-website/website-policies#linking))
-* The CPIC content included from <cpicpgx.org> (level C guidelines) is is available
+* The CPIC content included from cpicpgx.org (level C guidelines) is is available
   free of restriction under the CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
-  (see [Licensing and terms of use](https://cpicpgx.org/license/)
+  (see [Licensing and terms of use](https://cpicpgx.org/license/))
