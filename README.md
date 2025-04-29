@@ -8,9 +8,9 @@ Anni reads each of the files in [`annotations/`](./annotations/) and adds their
 contents to its database when its initialization endpoint is triggered. The file
 name (with `.json` omitted) will be displayed as the source in Anni and the App.
 
-_Please note: the term "annotations" is misleading here, as the actual annotation_
-_will be created in Anni. The content here could rather be referred to as_
-_"additional medication / guideline data"._
+_Please note: the term "annotations" is a bit misleading here, as the actual_
+_annotations will be created in Anni. The content here could rather be referred_
+_to as "additional medication / guideline data"._
 
 ## Data format
 
