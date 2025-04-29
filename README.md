@@ -1,11 +1,16 @@
 # PharMe Annotations
 
 This repository holds relevant pharmacogenomic annotations from external sources
-other than CPIC to be accessed the PharMe's Annotation Interface (Anni).
+other than available through the CPIC API to be accessed the PharMe's Annotation
+Interface (Anni).
 
 Anni reads each of the files in [`annotations/`](./annotations/) and adds their
 contents to its database when its initialization endpoint is triggered. The file
 name (with `.json` omitted) will be displayed as the source in Anni and the App.
+
+_Please note: the term "annotations" is misleading here, as the actual annotation_
+_will be created in Anni. The content here could rather be referred to as_
+_"additional medication / guideline data"._
 
 ## Data format
 
@@ -121,3 +126,12 @@ introduced.
 The lookupkey for "All" is `*`, for "Any not handled in guideline" `~`
 (these are used to match user's genotypes to guidelines in the app, next to CPIC
 lookups).
+
+## Licenses
+
+* The FDA content is "in the public domain and may be republished, reprinted and
+  otherwise used freely by anyone without the need to obtain permission from FDA"
+  (see [website policies](https://www.fda.gov/about-fda/about-website/website-policies#linking))
+* The CPIC content included from <cpicpgx.org> (level C guidelines) is is available
+  free of restriction under the CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+  (see [Licensing and terms of use](https://cpicpgx.org/license/)
