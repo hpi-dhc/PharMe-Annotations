@@ -30,7 +30,13 @@ def getFdaContent():
     if os.path.isfile(fdaFilePath):
         with open(fdaFilePath, 'r') as fdaFile:
             return fdaFile.read()
-    fdaContent = requests.get(FDA_URL).text
+    fdaContentResponse = fdaContent = requests.get(
+        FDA_URL,
+        headers={
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:138.0) Gecko/20100101 Firefox/138.0',
+        },
+    )
+    fdaContent = fdaContentResponse.text
     with open(fdaFilePath, 'w') as fdaFile:
         fdaFile.write(fdaContent)
     return fdaContent
@@ -54,8 +60,9 @@ def _getCpicInformation(urlResource, params, fileName, responseHandler):
     if os.path.isfile(cpicFilePath):
         with open(cpicFilePath, 'r') as cpicFile:
             return  json.load(cpicFile)
-    cpicInformation = \
-        responseHandler(requests.get(cpicUrl, params=params).json())
+    cpicResponse = requests.get(cpicUrl, params=params)
+    cpicResponseBody = cpicResponse.json()
+    cpicInformation = responseHandler(cpicResponseBody)
     with open(cpicFilePath, 'w') as cpicFile:
         json.dump(cpicInformation, cpicFile, indent=4)
     return cpicInformation
@@ -73,6 +80,8 @@ def getCpicDrugs():
             for entry in manualCpicGuidelines:
                 cpicDrugs.add(entry['drug']['name'])
         cpicDrugs = list(cpicDrugs)
+        return cpicDrugs
+
     return _getCpicInformation(
         'recommendation',
         { 'select': 'drug(name)' },
